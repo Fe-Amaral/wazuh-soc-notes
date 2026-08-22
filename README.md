@@ -50,7 +50,7 @@ Sempre que aplicável, cada SOC Note poderá apresentar:
 
 ### Fraude e ameaças associadas
 
-* [MITRE Fight Fraud Framework (F3)](https://ctid.mitre.org/projects/fight-fraud/)
+* [MITRE Fight Fraud Framework (F3)](https://ctid.mitre.org/fraud#/)
 
 ### Cybersecurity Frameworks e Incident Response
 
