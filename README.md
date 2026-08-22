@@ -14,8 +14,10 @@ Cada publicação apresenta o raciocínio técnico aplicado ao evento, indo alé
 * Discutir falsos positivos e lacunas de telemetria.
 * Propor melhorias de regras, campos e processos de detecção.
 * Relacionar os casos ao MITRE ATT&CK quando houver aderência técnica.
+* Aplicar frameworks e referências complementares, como MITRE D3FEND, MITRE Engage e MITRE Fight Fraud Framework (F3), conforme o contexto da investigação.
+* Explorar o uso de Sigma para criação, estudo e portabilidade de regras de detecção.
 
-Os conteúdos serão adicionados progressivamente, acompanhando as publicações realizadas no LinkedIn.
+Os conteúdos serão adicionados progressivamente, acompanhando as publicações realizadas no LinkedIn e a evolução dos estudos e projetos técnicos.
 
 ## Estrutura das análises
 
@@ -29,14 +31,40 @@ Sempre que aplicável, cada SOC Note poderá apresentar:
 6. Veredito técnico.
 7. Lacunas identificadas.
 8. Recomendações de melhoria.
-9. Referências técnicas.
+9. Mapeamento para frameworks aplicáveis.
+10. Referências técnicas.
 
-## Tecnologias e referências
+## Tecnologias, frameworks e referências
+
+### SIEM, detecção e telemetria
 
 * [Wazuh](https://wazuh.com/)
+* [Sigma](https://sigmahq.io/)
+* [Sysmon - Microsoft Sysinternals](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon)
+
+### Threat-Informed Defense e comportamento adversário
+
 * [MITRE ATT&CK](https://attack.mitre.org/)
-* [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
-* [Sysmon – Microsoft Sysinternals](https://learn.microsoft.com/sysinternals/downloads/sysmon)
+* [MITRE D3FEND](https://d3fend.mitre.org/)
+* [MITRE Engage](https://engage.mitre.org/)
+
+### Fraude e ameaças associadas
+
+* [MITRE Fight Fraud Framework (F3)](https://ctid.mitre.org/projects/fight-fraud/)
+
+### Cybersecurity Frameworks e Incident Response
+
+* [NIST Cybersecurity Framework (CSF)](https://www.nist.gov/cyberframework)
+* [NIST Computer Security Incident Handling Guide](https://csrc.nist.gov/pubs/sp/800/61/r3/final)
+* [CISA](https://www.cisa.gov/)
+* [FIRST](https://www.first.org/)
+
+### Vulnerabilidades e priorização de risco
+
+* [CVE Program](https://www.cve.org/)
+* [NIST National Vulnerability Database (NVD)](https://nvd.nist.gov/)
+* [CVSS - Common Vulnerability Scoring System](https://www.first.org/cvss/)
+* [CISA Known Exploited Vulnerabilities (KEV)](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
 
 ## Aviso sobre os dados
 
@@ -48,7 +76,7 @@ Os conteúdos representam estudos técnicos e não expõem intencionalmente info
 
 ## Autor
 
-**Fernando Amaral**
+**Felipe Amaral**
 
 Profissional de Cibersegurança com atuação em Security Operations Center, análise de incidentes, hunting e melhoria contínua de detecções.
 
