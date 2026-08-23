@@ -1,7 +1,5 @@
 # Wazuh SOC Notes
 
-Estudos técnicos de SOC, Incident Response, Threat Hunting e Detection Engineering utilizando Wazuh.
-
 Notas técnicas baseadas em experiências práticas de análise, correlação, Threat Hunting, Incident Response, Detection Engineering e melhoria operacional em ambientes SOC utilizando o Wazuh.
 
 O projeto **Wazuh SOC Notes** tem como objetivo compartilhar estudos de caso, métodos de investigação, queries, correlações, classificações, frameworks e oportunidades de melhoria identificadas durante a análise de eventos e alertas de segurança.
