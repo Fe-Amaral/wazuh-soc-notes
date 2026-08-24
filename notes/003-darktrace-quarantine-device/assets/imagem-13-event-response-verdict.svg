@@ -1,0 +1,49 @@
+<svg viewBox="0 0 900 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow13c" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#8b949e"/>
+    </marker>
+  </defs>
+  <rect width="900" height="1080" fill="#0a0e14"/>
+  <text x="450" y="46" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">EVENT → RESPONSE → INVESTIGATION → VERDICT</text>
+  <line x1="300" y1="62" x2="600" y2="62" stroke="#21262d" stroke-width="1"/>
+
+  <g font-family="Consolas,monospace">
+    <rect x="170" y="95" width="560" height="70" rx="8" fill="#0d1421" stroke="#8b949e" stroke-width="1.6"/>
+    <text x="192" y="123" font-size="11" fill="#8b949e" letter-spacing="1">EVENT</text>
+    <text x="192" y="148" font-size="15" fill="#e6edf3">Suspicious Domain Activity</text>
+    <line x1="450" y1="165" x2="450" y2="197" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow13c)"/>
+
+    <rect x="170" y="201" width="560" height="70" rx="8" fill="#0d1421" stroke="#58a6ff" stroke-width="1.6"/>
+    <text x="192" y="229" font-size="11" fill="#58a6ff" letter-spacing="1">DETECTION</text>
+    <text x="192" y="254" font-size="15" fill="#e6edf3">Darktrace Threat Indicator</text>
+    <line x1="450" y1="271" x2="450" y2="303" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow13c)"/>
+
+    <rect x="170" y="307" width="560" height="70" rx="8" fill="#1a1608" stroke="#d29922" stroke-width="1.6"/>
+    <text x="192" y="335" font-size="11" fill="#d29922" letter-spacing="1">CONTAINMENT</text>
+    <text x="192" y="360" font-size="15" fill="#e6edf3">Quarantine Device</text>
+    <line x1="450" y1="377" x2="450" y2="409" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow13c)"/>
+
+    <rect x="170" y="413" width="560" height="70" rx="8" fill="#0d1421" stroke="#f0883e" stroke-width="1.6"/>
+    <text x="192" y="441" font-size="11" fill="#f0883e" letter-spacing="1">ALERT</text>
+    <text x="192" y="466" font-size="15" fill="#e6edf3">Wazuh / SOC</text>
+    <line x1="450" y1="483" x2="450" y2="515" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow13c)"/>
+
+    <rect x="170" y="519" width="560" height="70" rx="8" fill="#0d1421" stroke="#bc8cff" stroke-width="1.6"/>
+    <text x="192" y="547" font-size="11" fill="#bc8cff" letter-spacing="1">INVESTIGATION</text>
+    <text x="192" y="572" font-size="15" fill="#e6edf3">Context + Evidence</text>
+    <line x1="450" y1="589" x2="450" y2="621" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow13c)"/>
+
+    <rect x="170" y="625" width="560" height="80" rx="8" fill="#0f1f14" stroke="#3fb950" stroke-width="2.2"/>
+    <text x="192" y="653" font-size="11" fill="#3fb950" letter-spacing="1">VERDICT</text>
+    <text x="192" y="682" font-size="17" fill="#3fb950" font-weight="700">Compromise Not Confirmed</text>
+  </g>
+
+  <rect x="120" y="760" width="660" height="150" rx="12" fill="#111318" stroke="#2d3748" stroke-width="1.4"/>
+  <text x="450" y="812" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#e6edf3" text-anchor="middle" font-weight="600">Quarantine</text>
+  <text x="450" y="847" font-family="Consolas,monospace" font-size="22" fill="#f85149" text-anchor="middle">≠</text>
+  <text x="450" y="884" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#e6edf3" text-anchor="middle" font-weight="600">Compromise Verdict</text>
+
+  <text x="450" y="965" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">contenção reduz risco antes que todas as perguntas tenham resposta</text>
+  <text x="450" y="989" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">isso é vantagem operacional — não é conclusão analítica</text>
+</svg>

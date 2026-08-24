@@ -1,0 +1,60 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid01c" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#152030" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow01c" cx="75%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#d29922" stop-opacity="0.13"/>
+      <stop offset="60%" stop-color="#58a6ff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#0a0e14" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0a0e14"/>
+  <rect width="1200" height="630" fill="url(#grid01c)"/>
+  <rect width="1200" height="630" fill="url(#glow01c)"/>
+  <rect x="0" y="0" width="1200" height="630" fill="none" stroke="#21262d" stroke-width="2"/>
+
+  <text x="60" y="54" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="13" fill="#8b949e" letter-spacing="2">SOC · THREAT HUNTING · INCIDENT RESPONSE · NETWORK DETECTION &amp; RESPONSE</text>
+  <line x1="60" y1="70" x2="1140" y2="70" stroke="#21262d" stroke-width="1"/>
+
+  <text x="60" y="150" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="22" fill="#3fb950" letter-spacing="4">WAZUH SOC NOTES #003</text>
+
+  <text x="58" y="222" font-family="Segoe UI,Arial,sans-serif" font-size="36" font-weight="700" fill="#e6edf3">Darktrace: Threat Indicator</text>
+  <text x="58" y="270" font-family="Segoe UI,Arial,sans-serif" font-size="36" font-weight="700" fill="#e6edf3">e Quarantine Device</text>
+  <text x="60" y="308" font-family="Segoe UI,Arial,sans-serif" font-size="20" fill="#8b949e">Contenção não é conclusão</text>
+
+  <rect x="60" y="360" width="270" height="36" rx="18" fill="none" stroke="#d29922" stroke-width="1.5"/>
+  <text x="195" y="383" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="13" fill="#d29922" text-anchor="middle" letter-spacing="1">ACTION: QUARANTINE DEVICE</text>
+
+  <rect x="58" y="552" width="600" height="36" rx="6" fill="#0d1421" stroke="#1f2937" stroke-width="1"/>
+  <text x="76" y="576" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="14" fill="#7ee787">darktrace.threat_indicator: suspicious domain activity</text>
+
+  <g transform="translate(720,150)">
+    <rect x="0" y="0" width="420" height="290" rx="10" fill="#0d1421" stroke="#2d3748" stroke-width="1.5"/>
+    <text x="22" y="34" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="13" fill="#8b949e" letter-spacing="1">RESPONSE PATH</text>
+    <line x1="22" y1="46" x2="398" y2="46" stroke="#21262d" stroke-width="1"/>
+
+    <circle cx="60" cy="120" r="30" fill="#111827" stroke="#58a6ff" stroke-width="2"/>
+    <text x="60" y="116" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="9.5" fill="#58a6ff" text-anchor="middle">DEVICE</text>
+    <line x1="90" y1="120" x2="145" y2="120" stroke="#3fb950" stroke-width="2.2"/>
+
+    <rect x="150" y="90" width="110" height="60" rx="8" fill="#111827" stroke="#f0883e" stroke-width="2"/>
+    <text x="205" y="116" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="11" fill="#f0883e" text-anchor="middle">DARKTRACE</text>
+    <text x="205" y="132" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="9" fill="#f0883e" text-anchor="middle">Threat Indicator</text>
+    <line x1="260" y1="120" x2="310" y2="120" stroke="#d29922" stroke-width="2.2"/>
+
+    <rect x="315" y="90" width="90" height="60" rx="8" fill="#1a1608" stroke="#d29922" stroke-width="2" stroke-dasharray="5 4"/>
+    <text x="360" y="122" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="11" fill="#d29922" text-anchor="middle">QUARAN-</text>
+    <text x="360" y="136" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="11" fill="#d29922" text-anchor="middle">TINE</text>
+
+    <line x1="205" y1="150" x2="205" y2="190" stroke="#8b949e" stroke-width="1.6"/>
+
+    <rect x="95" y="196" width="150" height="56" rx="8" fill="#0f1f14" stroke="#3fb950" stroke-width="1.6"/>
+    <text x="170" y="220" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="12" fill="#3fb950" text-anchor="middle" font-weight="700">CONTAINMENT</text>
+    <text x="170" y="238" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">confirmado</text>
+
+    <rect x="260" y="196" width="150" height="56" rx="8" fill="none" stroke="#4b5563" stroke-width="1.6" stroke-dasharray="4 4"/>
+    <text x="335" y="220" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="12" fill="#8b949e" text-anchor="middle" font-weight="700">COMPROMISE?</text>
+    <text x="335" y="238" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">requer investigação</text>
+  </g>
+</svg>

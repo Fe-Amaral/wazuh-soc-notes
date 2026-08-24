@@ -1,0 +1,36 @@
+<svg viewBox="0 0 900 1020" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow11c" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#8b949e"/>
+    </marker>
+  </defs>
+  <rect width="900" height="1020" fill="#0a0e14"/>
+  <text x="450" y="46" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">DEFENSE-IN-DEPTH</text>
+  <line x1="360" y1="62" x2="540" y2="62" stroke="#21262d" stroke-width="1"/>
+
+  <g font-family="Consolas,monospace" font-size="15" fill="#e6edf3">
+    <g transform="translate(200,100)"><rect width="500" height="64" rx="8" fill="#0d1421" stroke="#8b949e" stroke-width="1.5"/><text x="250" y="39" text-anchor="middle">Asset Context</text></g>
+    <line x1="450" y1="164" x2="450" y2="192" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow11c)"/>
+
+    <g transform="translate(200,194)"><rect width="500" height="64" rx="8" fill="#0d1421" stroke="#58a6ff" stroke-width="1.5"/><text x="250" y="39" text-anchor="middle">Network Visibility</text></g>
+    <line x1="450" y1="258" x2="450" y2="286" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow11c)"/>
+
+    <g transform="translate(200,288)"><rect width="500" height="64" rx="8" fill="#0d1421" stroke="#f0883e" stroke-width="1.5"/><text x="250" y="39" text-anchor="middle">Darktrace</text></g>
+    <line x1="450" y1="352" x2="450" y2="380" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow11c)"/>
+
+    <g transform="translate(180,382)"><rect width="540" height="76" rx="8" fill="#1a1608" stroke="#d29922" stroke-width="2.2"/><text x="270" y="34" text-anchor="middle" fill="#d29922" font-weight="700" font-size="16">CONTAINMENT</text><text x="270" y="56" text-anchor="middle" fill="#e3c37a" font-size="12" font-family="Segoe UI,Arial,sans-serif">Quarantine Device</text></g>
+    <line x1="450" y1="458" x2="450" y2="486" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow11c)"/>
+
+    <g transform="translate(200,488)"><rect width="500" height="64" rx="8" fill="#0d1421" stroke="#bc8cff" stroke-width="1.5"/><text x="250" y="39" text-anchor="middle">Endpoint / Identity</text></g>
+    <line x1="450" y1="552" x2="450" y2="580" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow11c)"/>
+
+    <g transform="translate(200,582)"><rect width="500" height="64" rx="8" fill="#0d1421" stroke="#3fb950" stroke-width="1.5"/><text x="250" y="39" text-anchor="middle">Wazuh / SIEM</text></g>
+    <line x1="450" y1="646" x2="450" y2="674" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow11c)"/>
+
+    <g transform="translate(200,676)"><rect width="500" height="70" rx="8" fill="#161616" stroke="#e6edf3" stroke-width="2"/><text x="250" y="43" text-anchor="middle" font-weight="700">SOC / Threat Hunting</text></g>
+  </g>
+
+  <text x="450" y="800" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#e6edf3" text-anchor="middle" font-weight="600">CONTAINMENT IS ONE LAYER — INVESTIGATION CONTINUES</text>
+  <text x="450" y="840" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">quarentena faz parte da estratégia defensiva</text>
+  <text x="450" y="864" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">mas não representa o encerramento analítico</text>
+</svg>

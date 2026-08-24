@@ -1,0 +1,79 @@
+<svg viewBox="0 0 1200 650" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow09c" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#8b949e"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="650" fill="#0a0e14"/>
+  <text x="600" y="42" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">RESPONSE VS CONTEXT-ENRICHED INVESTIGATION</text>
+  <line x1="360" y1="58" x2="840" y2="58" stroke="#21262d" stroke-width="1"/>
+
+  <text x="150" y="108" font-family="Consolas,monospace" font-size="13" fill="#d29922" letter-spacing="2">CURRENT</text>
+
+  <g font-family="Consolas,monospace" font-size="14" fill="#e6edf3">
+    <rect x="250" y="128" width="220" height="66" rx="8" fill="#0d1421" stroke="#d29922" stroke-width="1.5"/>
+    <text x="360" y="167" text-anchor="middle">Threat Indicator</text>
+    <line x1="470" y1="161" x2="516" y2="161" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow09c)"/>
+
+    <rect x="520" y="128" width="180" height="66" rx="8" fill="#1a1608" stroke="#d29922" stroke-width="1.5"/>
+    <text x="610" y="167" text-anchor="middle">Quarantine</text>
+    <line x1="700" y1="161" x2="746" y2="161" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow09c)"/>
+
+    <rect x="750" y="128" width="200" height="66" rx="8" fill="#1f1212" stroke="#f85149" stroke-width="1.5"/>
+    <text x="850" y="167" text-anchor="middle" fill="#f85149" font-weight="700">Wazuh Alert</text>
+  </g>
+
+  <line x1="60" y1="230" x2="1140" y2="230" stroke="#21262d" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <text x="150" y="275" font-family="Consolas,monospace" font-size="13" fill="#3fb950" letter-spacing="2">ENRICHED</text>
+
+  <g font-family="Consolas,monospace" font-size="10.5" fill="#e6edf3">
+    <rect x="52" y="300" width="130" height="52" rx="7" fill="#0d1421" stroke="#58a6ff" stroke-width="1.3"/>
+    <text x="117" y="322" text-anchor="middle">Threat</text>
+    <text x="117" y="336" text-anchor="middle">Indicator</text>
+
+    <rect x="190" y="300" width="130" height="52" rx="7" fill="#0d1421" stroke="#58a6ff" stroke-width="1.3"/>
+    <text x="255" y="322" text-anchor="middle">Device</text>
+    <text x="255" y="336" text-anchor="middle">Identity</text>
+
+    <rect x="328" y="300" width="130" height="52" rx="7" fill="#0d1421" stroke="#58a6ff" stroke-width="1.3"/>
+    <text x="393" y="322" text-anchor="middle">Asset</text>
+    <text x="393" y="336" text-anchor="middle">Context</text>
+
+    <rect x="466" y="300" width="130" height="52" rx="7" fill="#0d1421" stroke="#58a6ff" stroke-width="1.3"/>
+    <text x="531" y="322" text-anchor="middle">DNS</text>
+    <text x="531" y="336" text-anchor="middle">Activity</text>
+
+    <rect x="604" y="300" width="130" height="52" rx="7" fill="#0d1421" stroke="#58a6ff" stroke-width="1.3"/>
+    <text x="669" y="322" text-anchor="middle">Network</text>
+    <text x="669" y="336" text-anchor="middle">Relationships</text>
+
+    <rect x="742" y="300" width="130" height="52" rx="7" fill="#0d1421" stroke="#58a6ff" stroke-width="1.3"/>
+    <text x="807" y="322" text-anchor="middle">Endpoint</text>
+    <text x="807" y="336" text-anchor="middle">Telemetry</text>
+
+    <rect x="880" y="300" width="130" height="52" rx="7" fill="#0d1421" stroke="#58a6ff" stroke-width="1.3"/>
+    <text x="945" y="322" text-anchor="middle">Historical</text>
+    <text x="945" y="336" text-anchor="middle">Behavior</text>
+
+    <rect x="1018" y="300" width="130" height="52" rx="7" fill="#0d1421" stroke="#58a6ff" stroke-width="1.3"/>
+    <text x="1083" y="322" text-anchor="middle">Containment</text>
+    <text x="1083" y="336" text-anchor="middle">Status</text>
+  </g>
+
+  <g stroke="#3fb950" stroke-width="1.2" opacity="0.7">
+    <line x1="117" y1="352" x2="600" y2="470"/>
+    <line x1="255" y1="352" x2="600" y2="470"/>
+    <line x1="393" y1="352" x2="600" y2="470"/>
+    <line x1="531" y1="352" x2="600" y2="470"/>
+    <line x1="669" y1="352" x2="600" y2="470"/>
+    <line x1="807" y1="352" x2="600" y2="470"/>
+    <line x1="945" y1="352" x2="600" y2="470"/>
+    <line x1="1083" y1="352" x2="600" y2="470"/>
+  </g>
+  <line x1="600" y1="470" x2="600" y2="500" stroke="#3fb950" stroke-width="2.5" marker-end="url(#arrow09c)"/>
+
+  <rect x="360" y="505" width="480" height="90" rx="10" fill="#0f1f14" stroke="#3fb950" stroke-width="2"/>
+  <text x="600" y="545" font-family="Consolas,monospace" font-size="18" fill="#3fb950" text-anchor="middle" font-weight="700" letter-spacing="1">CONTEXTUAL RISK</text>
+  <text x="600" y="570" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#8b949e" text-anchor="middle">contenção rápida e investigação contextual são complementares</text>
+</svg>
