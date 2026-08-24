@@ -1,0 +1,57 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid01f" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#152030" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow01f" cx="75%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#d29922" stop-opacity="0.11"/>
+      <stop offset="60%" stop-color="#58a6ff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#0a0e14" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0a0e14"/>
+  <rect width="1200" height="630" fill="url(#grid01f)"/>
+  <rect width="1200" height="630" fill="url(#glow01f)"/>
+  <rect x="0" y="0" width="1200" height="630" fill="none" stroke="#21262d" stroke-width="2"/>
+
+  <text x="60" y="54" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="13" fill="#8b949e" letter-spacing="2">SOC · THREAT HUNTING · INCIDENT RESPONSE · NDR · DNS · DARKTRACE</text>
+  <line x1="60" y1="70" x2="1140" y2="70" stroke="#21262d" stroke-width="1"/>
+
+  <text x="60" y="150" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="22" fill="#3fb950" letter-spacing="4">WAZUH SOC NOTES #006</text>
+
+  <text x="58" y="212" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="700" fill="#e6edf3">Darktrace Watched Domain:</text>
+  <text x="58" y="250" font-family="Segoe UI,Arial,sans-serif" font-size="20" fill="#8b949e">severidade não é impacto</text>
+
+  <rect x="58" y="552" width="560" height="36" rx="6" fill="#0d1421" stroke="#1f2937" stroke-width="1"/>
+  <text x="76" y="576" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="13.5" fill="#7ee787">model=Watched Domain score=100 severity=Critical port=53</text>
+
+  <g transform="translate(720,140)">
+    <rect x="0" y="0" width="420" height="130" rx="10" fill="#0d1421" stroke="#2d3748" stroke-width="1.5"/>
+    <text x="210" y="52" font-family="Consolas,monospace" font-size="18" fill="#d29922" text-anchor="middle" font-weight="700" letter-spacing="1">ALERT SEVERITY</text>
+    <text x="210" y="80" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle">vs</text>
+    <text x="210" y="108" font-family="Consolas,monospace" font-size="18" fill="#58a6ff" text-anchor="middle" font-weight="700" letter-spacing="1">CONFIRMED IMPACT?</text>
+  </g>
+
+  <g transform="translate(720,300)" font-family="Consolas,monospace">
+    <rect x="0" y="0" width="420" height="270" rx="10" fill="#0d1421" stroke="#2d3748" stroke-width="1.5"/>
+
+    <rect x="20" y="18" width="380" height="36" rx="6" fill="#111827" stroke="#8b949e" stroke-width="1.4"/>
+    <text x="210" y="41" font-size="12" fill="#e6edf3" text-anchor="middle">MOBILE DEVICE</text>
+    <line x1="210" y1="54" x2="210" y2="72" stroke="#4b5563" stroke-width="1.6"/>
+
+    <rect x="20" y="74" width="380" height="36" rx="6" fill="#111827" stroke="#56c2d4" stroke-width="1.4"/>
+    <text x="210" y="97" font-size="12" fill="#56c2d4" text-anchor="middle">DNS QUERY</text>
+    <line x1="210" y1="110" x2="210" y2="128" stroke="#4b5563" stroke-width="1.6"/>
+
+    <rect x="20" y="130" width="380" height="36" rx="6" fill="#111827" stroke="#f0883e" stroke-width="1.4"/>
+    <text x="210" y="153" font-size="12" fill="#f0883e" text-anchor="middle">WATCHED DOMAIN</text>
+    <line x1="210" y1="166" x2="210" y2="184" stroke="#4b5563" stroke-width="1.6"/>
+
+    <rect x="20" y="186" width="380" height="36" rx="6" fill="#1f1212" stroke="#f85149" stroke-width="1.4"/>
+    <text x="210" y="209" font-size="12" fill="#f85149" text-anchor="middle" font-weight="700">CRITICAL ALERT</text>
+    <line x1="210" y1="222" x2="210" y2="240" stroke="#4b5563" stroke-width="1.6"/>
+
+    <rect x="20" y="242" width="380" height="28" rx="14" fill="none" stroke="#d29922" stroke-width="1.6"/>
+    <text x="210" y="262" font-size="12" fill="#d29922" text-anchor="middle" font-weight="700">REQUIRES INVESTIGATION</text>
+  </g>
+</svg>

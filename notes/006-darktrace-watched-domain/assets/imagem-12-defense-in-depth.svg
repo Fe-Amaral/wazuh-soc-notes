@@ -1,0 +1,47 @@
+<svg viewBox="0 0 700 940" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow12f" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="700" height="940" fill="#0a0e14"/>
+  <text x="350" y="46" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">DEFENSE-IN-DEPTH</text>
+  <line x1="255" y1="62" x2="445" y2="62" stroke="#21262d" stroke-width="1"/>
+
+  <g font-family="Consolas,monospace" font-size="13.5" font-weight="700">
+    <rect x="110" y="90" width="480" height="58" rx="8" fill="#1a1214" stroke="#f85149" stroke-width="1.8"/>
+    <text x="350" y="125" fill="#f85149" text-anchor="middle">MOBILE / DEVICE CONTEXT</text>
+    <line x1="350" y1="148" x2="350" y2="170" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow12f)"/>
+
+    <rect x="110" y="172" width="480" height="58" rx="8" fill="#0d1421" stroke="#56c2d4" stroke-width="1.8"/>
+    <text x="350" y="207" fill="#56c2d4" text-anchor="middle">DNS VISIBILITY</text>
+    <line x1="350" y1="230" x2="350" y2="252" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow12f)"/>
+
+    <rect x="110" y="254" width="480" height="58" rx="8" fill="#0d1421" stroke="#f0883e" stroke-width="1.8"/>
+    <text x="350" y="289" fill="#f0883e" text-anchor="middle">DARKTRACE</text>
+    <line x1="350" y1="312" x2="350" y2="334" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow12f)"/>
+
+    <rect x="110" y="336" width="480" height="58" rx="8" fill="#0d1421" stroke="#d29922" stroke-width="1.8"/>
+    <text x="350" y="371" fill="#d29922" text-anchor="middle">FIREWALL / PROXY</text>
+    <line x1="350" y1="394" x2="350" y2="416" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow12f)"/>
+
+    <rect x="110" y="418" width="480" height="58" rx="8" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="350" y="453" fill="#58a6ff" text-anchor="middle">ENDPOINT / MDM</text>
+    <line x1="350" y1="476" x2="350" y2="498" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow12f)"/>
+
+    <rect x="110" y="500" width="480" height="58" rx="8" fill="#0d1421" stroke="#bc8cff" stroke-width="1.8"/>
+    <text x="350" y="535" fill="#bc8cff" text-anchor="middle">WAZUH</text>
+    <line x1="350" y1="558" x2="350" y2="580" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow12f)"/>
+
+    <rect x="110" y="582" width="480" height="58" rx="8" fill="#0f1f14" stroke="#3fb950" stroke-width="2.2"/>
+    <text x="350" y="617" fill="#3fb950" text-anchor="middle">SOC / HUNTING</text>
+  </g>
+
+  <rect x="120" y="690" width="460" height="90" rx="10" fill="#0d1421" stroke="#e6edf3" stroke-width="1.4"/>
+  <text x="350" y="730" font-family="Consolas,monospace" font-size="16" fill="#e6edf3" text-anchor="middle" font-weight="700">ONE DNS ALERT</text>
+  <text x="350" y="753" font-family="Consolas,monospace" font-size="14" fill="#8b949e" text-anchor="middle">≠</text>
+  <text x="350" y="776" font-family="Consolas,monospace" font-size="16" fill="#d29922" text-anchor="middle" font-weight="700">FULL INCIDENT CONTEXT</text>
+
+  <text x="350" y="830" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">cada camada responde a uma pergunta diferente</text>
+  <text x="350" y="854" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#6b7280" text-anchor="middle">correlação multissinal é necessária</text>
+</svg>

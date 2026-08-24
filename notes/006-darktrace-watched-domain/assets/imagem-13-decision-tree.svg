@@ -1,0 +1,112 @@
+<svg viewBox="0 0 1000 1500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow13f" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="1500" fill="#0a0e14"/>
+  <text x="500" y="46" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">DECISION TREE</text>
+  <line x1="410" y1="62" x2="590" y2="62" stroke="#21262d" stroke-width="1"/>
+
+  <g font-family="Consolas,monospace" font-size="12.5">
+
+    <!-- Q1 Watched Domain Alert? -->
+    <polygon points="460,90 570,140 460,190 350,140" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="460" y="136" fill="#e6edf3" text-anchor="middle" font-size="10.5">Watched Domain</text>
+    <text x="460" y="150" fill="#e6edf3" text-anchor="middle" font-size="10.5">Alert?</text>
+    <text x="510" y="115" fill="#3fb950" font-size="11">YES</text>
+    <line x1="460" y1="190" x2="460" y2="222" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow13f)"/>
+
+    <!-- Q2 Event Type / Protocol? (branches DNS vs DIRECT/OTHER) -->
+    <polygon points="460,224 610,274 460,324 310,274" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="460" y="270" fill="#e6edf3" text-anchor="middle" font-size="10.5">Event Type /</text>
+    <text x="460" y="286" fill="#e6edf3" text-anchor="middle" font-size="10.5">Protocol?</text>
+
+    <!-- DIRECT/OTHER branch: right, to Analyze Connection box -->
+    <line x1="610" y1="274" x2="760" y2="330" stroke="#d29922" stroke-width="1.6" marker-end="url(#arrow13f)"/>
+    <text x="650" y="290" fill="#d29922" font-size="10.5">DIRECT / OTHER</text>
+    <rect x="762" y="332" width="200" height="56" rx="8" fill="#1a1608" stroke="#d29922" stroke-width="1.8"/>
+    <text x="862" y="365" fill="#d29922" text-anchor="middle" font-weight="700" font-size="12">Analyze Connection</text>
+    <!-- long diagonal back down to merge diamond's right vertex -->
+    <line x1="862" y1="388" x2="610" y2="744" stroke="#4b5563" stroke-width="1.4" stroke-dasharray="3 3" marker-end="url(#arrow13f)"/>
+
+    <!-- DNS branch: down the main spine -->
+    <text x="500" y="345" fill="#3fb950" font-size="11">DNS</text>
+    <line x1="460" y1="324" x2="460" y2="356" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow13f)"/>
+
+    <!-- Q3 Destination / Resolver Context? -->
+    <polygon points="460,358 610,404 460,450 310,404" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="460" y="400" fill="#e6edf3" text-anchor="middle" font-size="10">Destination /</text>
+    <text x="460" y="416" fill="#e6edf3" text-anchor="middle" font-size="10">Resolver Context?</text>
+    <line x1="460" y1="450" x2="460" y2="474" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow13f)"/>
+
+    <!-- Q4 Port 53? -->
+    <polygon points="460,476 570,516 460,556 350,516" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="460" y="521" fill="#e6edf3" text-anchor="middle">Port 53?</text>
+    <line x1="460" y1="556" x2="460" y2="580" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow13f)"/>
+
+    <!-- Q5 Resolver Context Supported? -->
+    <polygon points="460,582 620,632 460,682 300,632" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="460" y="628" fill="#e6edf3" text-anchor="middle" font-size="10">Resolver Context</text>
+    <text x="460" y="644" fill="#e6edf3" text-anchor="middle" font-size="10">Supported?</text>
+    <!-- down/right to merge diamond's left vertex -->
+    <line x1="500" y1="670" x2="580" y2="720" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow13f)"/>
+
+    <!-- Merge: Follow-up Connection Available? -->
+    <polygon points="610,676 760,726 610,776 460,726" fill="#0d1421" stroke="#58a6ff" stroke-width="2"/>
+    <text x="610" y="722" fill="#e6edf3" text-anchor="middle" font-size="10.5">Follow-up Connection</text>
+    <text x="610" y="738" fill="#e6edf3" text-anchor="middle" font-size="10.5">Available?</text>
+
+    <!-- YES branch: Analyze Connection -->
+    <line x1="760" y1="726" x2="870" y2="726" stroke="#3fb950" stroke-width="1.6" marker-end="url(#arrow13f)"/>
+    <text x="786" y="719" fill="#3fb950" font-size="11">YES</text>
+    <rect x="872" y="700" width="220" height="52" rx="8" fill="#0f1f14" stroke="#3fb950" stroke-width="1.6"/>
+    <text x="982" y="731" fill="#3fb950" text-anchor="middle" font-weight="700" font-size="12">Analyze Connection</text>
+
+    <!-- NO branch: down to NOT AVAILABLE -->
+    <text x="640" y="800" fill="#8b949e" font-size="10">NO</text>
+    <line x1="610" y1="776" x2="610" y2="810" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow13f)"/>
+
+    <!-- NOT AVAILABLE waypoint (intermediate, not terminal) -->
+    <polygon points="550,812 610,798 670,812 670,858 610,872 550,858" fill="#15161a" stroke="#8b949e" stroke-width="2.2" stroke-dasharray="6 3"/>
+    <text x="610" y="839" fill="#8b949e" text-anchor="middle" font-weight="700" font-size="11">NOT</text>
+    <text x="610" y="855" fill="#8b949e" text-anchor="middle" font-weight="700" font-size="11">AVAILABLE</text>
+    <text x="740" y="825" fill="#6b7280" font-size="10.5" font-style="italic">intermediate state</text>
+    <text x="740" y="840" fill="#6b7280" font-size="10.5" font-style="italic">— not a conclusion</text>
+    <line x1="610" y1="872" x2="610" y2="904" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow13f)"/>
+
+    <!-- Q6 Supporting Malicious Evidence? -->
+    <polygon points="610,906 780,956 610,1006 440,956" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="610" y="952" fill="#e6edf3" text-anchor="middle" font-size="11">Supporting</text>
+    <text x="610" y="968" fill="#e6edf3" text-anchor="middle" font-size="11">Evidence?</text>
+    <!-- YES branch: ESCALATE -->
+    <line x1="780" y1="956" x2="890" y2="956" stroke="#f85149" stroke-width="1.6" marker-end="url(#arrow13f)"/>
+    <text x="806" y="949" fill="#f85149" font-size="11">YES</text>
+    <rect x="892" y="930" width="90" height="52" rx="8" fill="#1a1214" stroke="#f85149" stroke-width="2"/>
+    <text x="937" y="961" fill="#f85149" text-anchor="middle" font-weight="700" font-size="11">ESCALATE</text>
+    <text x="650" y="1011" fill="#8b949e" font-size="10">NO / NOT CONFIRMED</text>
+    <line x1="610" y1="1006" x2="610" y2="1040" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow13f)"/>
+
+    <!-- Q7 Device Context Known? -->
+    <polygon points="610,1042 780,1092 610,1142 440,1092" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="610" y="1088" fill="#e6edf3" text-anchor="middle" font-size="11">Device Context</text>
+    <text x="610" y="1104" fill="#e6edf3" text-anchor="middle" font-size="11">Known?</text>
+    <!-- NO branch -->
+    <line x1="780" y1="1092" x2="890" y2="1092" stroke="#d29922" stroke-width="1.6" marker-end="url(#arrow13f)"/>
+    <text x="806" y="1085" fill="#d29922" font-size="11">NO</text>
+    <rect x="892" y="1056" width="95" height="72" rx="8" fill="#1a1608" stroke="#d29922" stroke-width="1.8"/>
+    <text x="939" y="1084" fill="#d29922" text-anchor="middle" font-weight="700" font-size="10">VALIDATE</text>
+    <text x="939" y="1098" fill="#d29922" text-anchor="middle" font-weight="700" font-size="10">ASSET /</text>
+    <text x="939" y="1112" fill="#d29922" text-anchor="middle" font-weight="700" font-size="10">BYOD</text>
+    <text x="650" y="1147" fill="#3fb950" font-size="11">YES</text>
+    <line x1="610" y1="1142" x2="610" y2="1176" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow13f)"/>
+
+    <!-- Final verdict -->
+    <rect x="420" y="1178" width="380" height="80" rx="10" fill="#0d1421" stroke="#e6edf3" stroke-width="2.4"/>
+    <text x="610" y="1213" fill="#e6edf3" text-anchor="middle" font-weight="700" font-size="15">SUSPICIOUS</text>
+    <text x="610" y="1238" fill="#d29922" text-anchor="middle" font-weight="700" font-size="13">REQUIRES VALIDATION</text>
+  </g>
+
+  <text x="500" y="1310" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">um destino externo não significa automaticamente conexão direta maliciosa</text>
+  <text x="500" y="1334" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#6b7280" text-anchor="middle">score e severidade não abrem caminho direto para "comprometido"</text>
+</svg>

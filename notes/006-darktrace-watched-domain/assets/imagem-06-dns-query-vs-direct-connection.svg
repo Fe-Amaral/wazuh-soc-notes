@@ -1,0 +1,49 @@
+<svg viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow06f" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="600" fill="#0a0e14"/>
+  <text x="600" y="50" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">DNS QUERY VS DIRECT CONNECTION</text>
+  <line x1="450" y1="66" x2="750" y2="66" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Left: OBSERVED -->
+  <g>
+    <rect x="60" y="100" width="500" height="400" rx="10" fill="#0f1f14" stroke="#3fb950" stroke-width="1.8"/>
+    <text x="310" y="140" font-family="Consolas,monospace" font-size="14" fill="#3fb950" text-anchor="middle" font-weight="700" letter-spacing="1">OBSERVED</text>
+    <line x1="90" y1="158" x2="530" y2="158" stroke="#1f3a24"/>
+
+    <rect x="180" y="190" width="260" height="52" rx="8" fill="#111827" stroke="#8b949e" stroke-width="1.6"/>
+    <text x="310" y="222" font-family="Consolas,monospace" font-size="13" fill="#e6edf3" text-anchor="middle">MOBILE DEVICE</text>
+    <line x1="310" y1="242" x2="310" y2="278" stroke="#4b5563" stroke-width="2" marker-end="url(#arrow06f)"/>
+
+    <rect x="150" y="280" width="320" height="52" rx="8" fill="#111827" stroke="#56c2d4" stroke-width="1.6"/>
+    <text x="310" y="312" font-family="Consolas,monospace" font-size="12" fill="#56c2d4" text-anchor="middle">INTERNAL DNS RESOLVER :53</text>
+    <line x1="310" y1="332" x2="310" y2="368" stroke="#4b5563" stroke-width="2" marker-end="url(#arrow06f)"/>
+
+    <rect x="160" y="370" width="300" height="60" rx="8" fill="#111827" stroke="#f0883e" stroke-width="1.8"/>
+    <text x="310" y="406" font-family="Consolas,monospace" font-size="12.5" fill="#f0883e" text-anchor="middle" font-weight="700">WATCHED DOMAIN QUERY</text>
+  </g>
+
+  <!-- Right: NOT CONFIRMED -->
+  <g>
+    <rect x="640" y="100" width="500" height="400" rx="10" fill="#1a1214" stroke="#f85149" stroke-width="1.8"/>
+    <text x="890" y="140" font-family="Consolas,monospace" font-size="14" fill="#f85149" text-anchor="middle" font-weight="700" letter-spacing="1">NOT CONFIRMED</text>
+    <line x1="670" y1="158" x2="1110" y2="158" stroke="#3a1f1f"/>
+
+    <rect x="760" y="190" width="260" height="52" rx="8" fill="#111827" stroke="#8b949e" stroke-width="1.6"/>
+    <text x="890" y="222" font-family="Consolas,monospace" font-size="13" fill="#e6edf3" text-anchor="middle">MOBILE DEVICE</text>
+    <line x1="890" y1="242" x2="890" y2="278" stroke="#d29922" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrow06f)"/>
+
+    <rect x="730" y="280" width="320" height="52" rx="8" fill="#111827" stroke="#d29922" stroke-width="1.6" stroke-dasharray="4 3"/>
+    <text x="890" y="312" font-family="Consolas,monospace" font-size="11.5" fill="#d29922" text-anchor="middle">DIRECT EXTERNAL CONNECTION</text>
+    <line x1="890" y1="332" x2="890" y2="368" stroke="#d29922" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrow06f)"/>
+
+    <rect x="740" y="370" width="300" height="60" rx="8" fill="#1f1212" stroke="#f85149" stroke-width="1.8" stroke-dasharray="5 4"/>
+    <text x="890" y="406" font-family="Consolas,monospace" font-size="12" fill="#f85149" text-anchor="middle" font-weight="700">C2 / DOWNLOAD / PAYLOAD</text>
+  </g>
+
+  <rect x="330" y="520" width="540" height="46" rx="8" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+  <text x="600" y="548" font-family="Consolas,monospace" font-size="14" fill="#58a6ff" text-anchor="middle" font-weight="700">DNS QUERY  ≠  DIRECT MALICIOUS CONNECTION</text>
+</svg>

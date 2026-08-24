@@ -1,0 +1,38 @@
+<svg viewBox="0 0 1100 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1100" height="600" fill="#0a0e14"/>
+  <text x="550" y="50" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">WATCHED DOMAIN ≠ CONFIRMED THREAT</text>
+  <line x1="410" y1="66" x2="690" y2="66" stroke="#21262d" stroke-width="1"/>
+
+  <rect x="350" y="90" width="400" height="60" rx="30" fill="#1a1608" stroke="#d29922" stroke-width="2.2"/>
+  <text x="550" y="128" font-family="Consolas,monospace" font-size="17" fill="#d29922" text-anchor="middle" font-weight="700" letter-spacing="1">WATCHED DOMAIN</text>
+
+  <line x1="550" y1="150" x2="330" y2="196" stroke="#3fb950" stroke-width="1.6"/>
+  <line x1="550" y1="150" x2="770" y2="196" stroke="#f85149" stroke-width="1.6"/>
+
+  <g>
+    <rect x="60" y="196" width="460" height="330" rx="10" fill="#0f1f14" stroke="#3fb950" stroke-width="1.8"/>
+    <text x="290" y="234" font-family="Consolas,monospace" font-size="13.5" fill="#3fb950" text-anchor="middle" font-weight="700" letter-spacing="0.5">WHAT IT CONFIRMS</text>
+    <line x1="90" y1="252" x2="490" y2="252" stroke="#1f3a24"/>
+    <g font-family="Consolas,monospace" font-size="14" fill="#e6edf3">
+      <circle cx="110" cy="290" r="4" fill="#3fb950"/><text x="128" y="295">Domain is monitored</text>
+      <circle cx="110" cy="332" r="4" fill="#3fb950"/><text x="128" y="337" font-size="13">Related activity triggered model</text>
+      <circle cx="110" cy="374" r="4" fill="#3fb950"/><text x="128" y="379">Security event exists</text>
+    </g>
+  </g>
+
+  <g>
+    <rect x="580" y="196" width="460" height="330" rx="10" fill="#1a1214" stroke="#f85149" stroke-width="1.8"/>
+    <text x="810" y="234" font-family="Consolas,monospace" font-size="13.5" fill="#f85149" text-anchor="middle" font-weight="700" letter-spacing="0.5">WHAT IT DOES NOT CONFIRM</text>
+    <line x1="610" y1="252" x2="1010" y2="252" stroke="#3a1f1f"/>
+    <g font-family="Consolas,monospace" font-size="14" fill="#e6edf3">
+      <circle cx="630" cy="288" r="4" fill="#f85149"/><text x="648" y="293">Malware</text>
+      <circle cx="630" cy="322" r="4" fill="#f85149"/><text x="648" y="327">C2</text>
+      <circle cx="630" cy="356" r="4" fill="#f85149"/><text x="648" y="361">Payload</text>
+      <circle cx="630" cy="390" r="4" fill="#f85149"/><text x="648" y="395">Compromise</text>
+      <circle cx="630" cy="424" r="4" fill="#f85149"/><text x="648" y="429">Impact</text>
+    </g>
+  </g>
+
+  <rect x="290" y="550" width="520" height="46" rx="8" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+  <text x="550" y="578" font-family="Consolas,monospace" font-size="14.5" fill="#58a6ff" text-anchor="middle" font-weight="700">WATCHLIST MATCH  ≠  INCIDENT VERDICT</text>
+</svg>
