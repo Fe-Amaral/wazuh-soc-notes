@@ -19,7 +19,7 @@ Neste repositório, os mesmos estudos poderão ser aprofundados com análises t�
 | **#001** | Linux / Wazuh | Promiscuous Mode em interfaces `veth` | **Falso Positivo** | [Ver análise completa](notes/001-promiscuous-mode-veth/README.md) |
 | **#002** | Cloudflare WAF / Wazuh | Scanning automatizado bloqueado pelo WAF | **Falso Positivo Contextual** | [Ver análise completa](notes/002-cloudflare-waf-scanning/README.md) |
 | **#003** | Darktrace / Wazuh | Threat Indicator e Quarantine Device | **Contenção Preventiva** | [Ver análise completa](notes/003-darktrace-quarantine-device/README.md) |
-| **#004** | Linux / AF_ALG / Wazuh | CVE-2026-31431 em processo legítimo (`pg_dump`) | **Forte Indício de Falso Positivo (Limitação de Telemetria)** | [Ver análise completa](notes/004-cve-2026-31431-af-alg/README.md) |
+| **#004** | Linux / AF_ALG / Wazuh | CVE-2026-31431 em processo legítimo (`pg_dump`) | **Falso Positivo** | [Ver análise completa](notes/004-cve-2026-31431-af-alg/README.md) |
 
 ---
 
