@@ -12,6 +12,14 @@ Neste repositório, os mesmos estudos poderão ser aprofundados com análises t�
 
 ---
 
+## 📚 SOC Notes publicados
+
+| Note | Ambiente / Tecnologia | Tema | Classificação | Análise |
+|---|---|---|---|---|
+| **#001** | Linux / Wazuh | Promiscuous Mode em interfaces `veth` | **Falso Positivo** | [Ver análise completa](notes/001-promiscuous-mode-veth/README.md) |
+
+---
+
 ## Objetivos
 
 * Compartilhar conhecimento prático sobre operações de SOC e Resposta a Incidentes.
