@@ -1374,6 +1374,8 @@ A decisão é resultado da investigação.
 
 Este estudo foi sanitizado para preservar a confidencialidade do ambiente originalmente analisado.
 
+As investigações, decisões técnicas e veredictos apresentados neste estudo refletem experiência prática real do autor. Ferramentas de Inteligência Artificial foram utilizadas como apoio para formatação, diagramação e publicação do conteúdo — não para a condução da investigação em si.
+
 Nomes de organizações, clientes, usuários, hostnames, endereços IP, identificadores de interfaces, identificadores de incidentes, timestamps específicos e demais informações operacionais foram removidos, generalizados ou substituídos.
 
 Informações relacionadas a processos internos, SLAs, fluxos de atendimento, relacionamentos comerciais ou validações organizacionais não fazem parte deste estudo.

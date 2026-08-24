@@ -1912,6 +1912,8 @@ DECISION
 
 Este estudo foi sanitizado para preservar integralmente a confidencialidade do ambiente originalmente analisado.
 
+As investigações, decisões técnicas e veredictos apresentados neste estudo refletem experiência prática real do autor. Ferramentas de Inteligência Artificial foram utilizadas como apoio para formatação, diagramação e publicação do conteúdo — não para a condução da investigação em si.
+
 Nomes e valores relacionados aos seguintes elementos foram removidos, generalizados ou substituídos:
 
 ```text
