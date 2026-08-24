@@ -1,0 +1,59 @@
+<svg viewBox="0 0 800 880" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow06g" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="800" height="880" fill="#0a0e14"/>
+  <text x="400" y="46" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">DETECTION ≠ ESTABLISHED SESSION</text>
+  <line x1="290" y1="62" x2="510" y2="62" stroke="#21262d" stroke-width="1"/>
+
+  <g font-family="Consolas,monospace" font-size="13">
+    <!-- 1 INSTALLED? Not Confirmed -->
+    <rect x="150" y="90" width="500" height="58" rx="8" fill="#1a1608" stroke="#d29922" stroke-width="1.6"/>
+    <text x="400" y="115" fill="#e6edf3" text-anchor="middle" font-weight="700">INSTALLED?</text>
+    <text x="400" y="135" fill="#d29922" text-anchor="middle">Not Confirmed</text>
+    <line x1="400" y1="148" x2="400" y2="172" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow06g)"/>
+
+    <!-- 2 EXECUTED? Not Available -->
+    <rect x="150" y="174" width="500" height="58" rx="8" fill="#15161a" stroke="#8b949e" stroke-width="1.6" stroke-dasharray="5 4"/>
+    <text x="400" y="199" fill="#e6edf3" text-anchor="middle" font-weight="700">EXECUTED?</text>
+    <text x="400" y="219" fill="#8b949e" text-anchor="middle">Not Available</text>
+    <line x1="400" y1="232" x2="400" y2="256" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow06g)"/>
+
+    <!-- 3 NETWORK ATTEMPT? CONFIRMED -->
+    <rect x="150" y="258" width="500" height="58" rx="8" fill="#0f1f14" stroke="#3fb950" stroke-width="1.8"/>
+    <text x="400" y="283" fill="#e6edf3" text-anchor="middle" font-weight="700">NETWORK ATTEMPT?</text>
+    <text x="400" y="303" fill="#3fb950" text-anchor="middle" font-weight="700">CONFIRMED</text>
+    <line x1="400" y1="316" x2="400" y2="340" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow06g)"/>
+
+    <!-- 4 ANYDESK IDENTIFIED? CONFIRMED -->
+    <rect x="150" y="342" width="500" height="58" rx="8" fill="#0f1f14" stroke="#3fb950" stroke-width="1.8"/>
+    <text x="400" y="367" fill="#e6edf3" text-anchor="middle" font-weight="700">ANYDESK IDENTIFIED?</text>
+    <text x="400" y="387" fill="#3fb950" text-anchor="middle" font-weight="700">CONFIRMED</text>
+    <line x1="400" y1="400" x2="400" y2="424" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow06g)"/>
+
+    <!-- 5 BLOCKED? CONFIRMED -->
+    <rect x="150" y="426" width="500" height="58" rx="8" fill="#0f1f14" stroke="#3fb950" stroke-width="1.8"/>
+    <text x="400" y="451" fill="#e6edf3" text-anchor="middle" font-weight="700">BLOCKED?</text>
+    <text x="400" y="471" fill="#3fb950" text-anchor="middle" font-weight="700">CONFIRMED</text>
+    <line x1="400" y1="484" x2="400" y2="508" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow06g)"/>
+
+    <!-- 6 SESSION ESTABLISHED? Not Confirmed -->
+    <rect x="150" y="510" width="500" height="58" rx="8" fill="#1a1608" stroke="#d29922" stroke-width="1.8"/>
+    <text x="400" y="535" fill="#e6edf3" text-anchor="middle" font-weight="700">SESSION ESTABLISHED?</text>
+    <text x="400" y="555" fill="#d29922" text-anchor="middle" font-weight="700">Not Confirmed</text>
+    <line x1="400" y1="568" x2="400" y2="592" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow06g)"/>
+
+    <!-- 7 INTERACTIVE CONTROL? Not Confirmed -->
+    <rect x="150" y="594" width="500" height="58" rx="8" fill="#1a1608" stroke="#d29922" stroke-width="1.8"/>
+    <text x="400" y="619" fill="#e6edf3" text-anchor="middle" font-weight="700">INTERACTIVE CONTROL?</text>
+    <text x="400" y="639" fill="#d29922" text-anchor="middle" font-weight="700">Not Confirmed</text>
+  </g>
+
+  <rect x="130" y="700" width="540" height="66" rx="8" fill="#0d1421" stroke="#f85149" stroke-width="1.8"/>
+  <text x="400" y="730" font-family="Consolas,monospace" font-size="14" fill="#e6edf3" text-anchor="middle" font-weight="700">BLOCKED ANYDESK TRAFFIC</text>
+  <text x="400" y="750" font-family="Consolas,monospace" font-size="14" fill="#f85149" text-anchor="middle" font-weight="700">≠ ESTABLISHED REMOTE SESSION</text>
+
+  <text x="400" y="820" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">impede o salto lógico entre detecção de rede e sessão estabelecida</text>
+</svg>

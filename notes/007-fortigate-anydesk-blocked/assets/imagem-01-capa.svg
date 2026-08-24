@@ -1,0 +1,52 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid01g" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#152030" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow01g" cx="75%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#f85149" stop-opacity="0.11"/>
+      <stop offset="60%" stop-color="#58a6ff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#0a0e14" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0a0e14"/>
+  <rect width="1200" height="630" fill="url(#grid01g)"/>
+  <rect width="1200" height="630" fill="url(#glow01g)"/>
+  <rect x="0" y="0" width="1200" height="630" fill="none" stroke="#21262d" stroke-width="2"/>
+
+  <text x="60" y="54" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="13" fill="#8b949e" letter-spacing="2">SOC · THREAT HUNTING · INCIDENT RESPONSE · DETECTION ENGINEERING · FORTIGATE</text>
+  <line x1="60" y1="70" x2="1140" y2="70" stroke="#21262d" stroke-width="1"/>
+
+  <text x="60" y="150" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="22" fill="#3fb950" letter-spacing="4">WAZUH SOC NOTES #007</text>
+
+  <text x="58" y="212" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#e6edf3">AnyDesk bloqueado pelo FortiGate:</text>
+  <text x="58" y="248" font-family="Segoe UI,Arial,sans-serif" font-size="19" fill="#8b949e">detecção de acesso remoto não é</text>
+  <text x="58" y="276" font-family="Segoe UI,Arial,sans-serif" font-size="19" fill="#8b949e">sessão remota confirmada</text>
+
+  <rect x="58" y="552" width="600" height="36" rx="6" fill="#0d1421" stroke="#1f2937" stroke-width="1"/>
+  <text x="76" y="576" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="13.5" fill="#7ee787">app=AnyDesk appcat=Remote.Access direction=outgoing action=block</text>
+
+  <g transform="translate(720,140)" font-family="Consolas,monospace">
+    <rect x="0" y="0" width="420" height="270" rx="10" fill="#0d1421" stroke="#2d3748" stroke-width="1.5"/>
+
+    <rect x="20" y="18" width="380" height="40" rx="6" fill="#111827" stroke="#8b949e" stroke-width="1.4"/>
+    <text x="210" y="43" font-size="12.5" fill="#e6edf3" text-anchor="middle" font-weight="700">REMOTE ACCESS DETECTED</text>
+    <line x1="210" y1="58" x2="210" y2="76" stroke="#4b5563" stroke-width="1.6"/>
+
+    <rect x="20" y="78" width="380" height="40" rx="6" fill="#111827" stroke="#f0883e" stroke-width="1.4"/>
+    <text x="210" y="103" font-size="13" fill="#f0883e" text-anchor="middle" font-weight="700">ANYDESK</text>
+    <line x1="210" y1="118" x2="210" y2="136" stroke="#4b5563" stroke-width="1.6"/>
+
+    <rect x="20" y="138" width="380" height="40" rx="6" fill="#111827" stroke="#58a6ff" stroke-width="1.4"/>
+    <text x="210" y="163" font-size="12" fill="#58a6ff" text-anchor="middle">APPLICATION CONTROL</text>
+    <line x1="210" y1="178" x2="210" y2="196" stroke="#4b5563" stroke-width="1.6"/>
+
+    <rect x="20" y="198" width="380" height="40" rx="6" fill="#1f1212" stroke="#f85149" stroke-width="1.8"/>
+    <text x="210" y="223" font-size="14" fill="#f85149" text-anchor="middle" font-weight="700">BLOCK</text>
+  </g>
+
+  <rect x="720" y="430" width="420" height="66" rx="8" fill="#0d1421" stroke="#d29922" stroke-width="1.6"/>
+  <text x="930" y="456" font-family="Consolas,monospace" font-size="13" fill="#d29922" text-anchor="middle" font-weight="700">BLOCKED TRAFFIC</text>
+  <text x="930" y="474" font-family="Consolas,monospace" font-size="11" fill="#8b949e" text-anchor="middle">≠</text>
+  <text x="930" y="488" font-family="Consolas,monospace" font-size="12" fill="#e6edf3" text-anchor="middle">ESTABLISHED REMOTE SESSION</text>
+</svg>

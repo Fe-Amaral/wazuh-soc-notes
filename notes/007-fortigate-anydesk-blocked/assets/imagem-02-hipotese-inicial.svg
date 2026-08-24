@@ -1,0 +1,57 @@
+<svg viewBox="0 0 1100 950" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow02g" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="950" fill="#0a0e14"/>
+  <text x="550" y="50" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">HIPÓTESE INICIAL</text>
+  <line x1="440" y1="66" x2="660" y2="66" stroke="#21262d" stroke-width="1"/>
+
+  <g font-family="Consolas,monospace">
+    <rect x="440" y="90" width="220" height="56" rx="8" fill="#0d1421" stroke="#8b949e" stroke-width="1.8"/>
+    <text x="550" y="124" font-size="14" fill="#e6edf3" text-anchor="middle" font-weight="700">FORTIGATE EVENT</text>
+    <line x1="550" y1="146" x2="550" y2="176" stroke="#4b5563" stroke-width="2" marker-end="url(#arrow02g)"/>
+
+    <rect x="420" y="178" width="260" height="56" rx="8" fill="#0d1421" stroke="#f0883e" stroke-width="1.8"/>
+    <text x="550" y="212" font-size="14" fill="#f0883e" text-anchor="middle" font-weight="700">ANYDESK DETECTED</text>
+    <line x1="550" y1="234" x2="550" y2="264" stroke="#4b5563" stroke-width="2" marker-end="url(#arrow02g)"/>
+
+    <rect x="440" y="266" width="220" height="56" rx="8" fill="#0d1421" stroke="#56c2d4" stroke-width="1.8"/>
+    <text x="550" y="300" font-size="14" fill="#56c2d4" text-anchor="middle" font-weight="700">REMOTE.ACCESS</text>
+    <line x1="550" y1="322" x2="550" y2="352" stroke="#4b5563" stroke-width="2" marker-end="url(#arrow02g)"/>
+
+    <rect x="380" y="354" width="340" height="56" rx="8" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="550" y="388" font-size="13.5" fill="#58a6ff" text-anchor="middle" font-weight="700">OUTBOUND COMMUNICATION</text>
+    <line x1="550" y1="410" x2="550" y2="440" stroke="#4b5563" stroke-width="2" marker-end="url(#arrow02g)"/>
+
+    <rect x="460" y="442" width="180" height="56" rx="8" fill="#1f1212" stroke="#f85149" stroke-width="1.8"/>
+    <text x="550" y="476" font-size="16" fill="#f85149" text-anchor="middle" font-weight="700">BLOCK</text>
+    <line x1="550" y1="498" x2="550" y2="528" stroke="#4b5563" stroke-width="2" marker-end="url(#arrow02g)"/>
+
+    <rect x="360" y="530" width="380" height="56" rx="8" fill="#1a1608" stroke="#d29922" stroke-width="1.8" stroke-dasharray="6 4"/>
+    <text x="550" y="564" font-size="13.5" fill="#d29922" text-anchor="middle" font-weight="700">AUTHORIZED OR UNAUTHORIZED?</text>
+    <line x1="550" y1="586" x2="550" y2="616" stroke="#4b5563" stroke-width="2" marker-end="url(#arrow02g)"/>
+
+    <rect x="350" y="618" width="400" height="60" rx="8" fill="#0d1421" stroke="#e6edf3" stroke-width="2.2"/>
+    <text x="550" y="654" font-size="15" fill="#e6edf3" text-anchor="middle" font-weight="700" letter-spacing="1">REQUIRES INVESTIGATION</text>
+  </g>
+
+  <g font-family="Consolas,monospace" font-size="12.5">
+    <rect x="60" y="720" width="460" height="180" rx="10" fill="#0f1f14" stroke="#3fb950" stroke-width="1.8"/>
+    <text x="290" y="750" fill="#3fb950" text-anchor="middle" font-weight="700" letter-spacing="0.5">LEGITIMATE POSSIBILITY</text>
+    <line x1="90" y1="764" x2="490" y2="764" stroke="#1f3a24"/>
+    <text x="100" y="794" fill="#e6edf3">Authorized Support</text>
+    <text x="100" y="822" fill="#e6edf3">IT Administration</text>
+    <text x="100" y="850" fill="#e6edf3">Approved Vendor</text>
+    <text x="100" y="878" fill="#e6edf3">Homologated Remote Access</text>
+
+    <rect x="580" y="720" width="460" height="180" rx="10" fill="#1a1214" stroke="#f85149" stroke-width="1.8"/>
+    <text x="810" y="750" fill="#f85149" text-anchor="middle" font-weight="700" letter-spacing="0.5">SUSPICIOUS POSSIBILITY</text>
+    <line x1="610" y1="764" x2="1010" y2="764" stroke="#3a1f1f"/>
+    <text x="620" y="794" fill="#e6edf3">Unauthorized RMM</text>
+    <text x="620" y="822" fill="#e6edf3">Persistence</text>
+    <text x="620" y="850" fill="#e6edf3">Post-Compromise Access</text>
+    <text x="620" y="878" fill="#e6edf3">Interactive Remote Control</text>
+  </g>
+</svg>

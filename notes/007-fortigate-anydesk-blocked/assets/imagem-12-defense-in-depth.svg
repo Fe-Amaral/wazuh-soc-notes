@@ -1,0 +1,54 @@
+<svg viewBox="0 0 700 1060" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow12g" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="700" height="1060" fill="#0a0e14"/>
+  <text x="350" y="46" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">DEFENSE-IN-DEPTH</text>
+  <line x1="255" y1="62" x2="445" y2="62" stroke="#21262d" stroke-width="1"/>
+
+  <rect x="200" y="80" width="300" height="40" rx="20" fill="#1a1608" stroke="#d29922" stroke-width="1.8"/>
+  <text x="350" y="106" font-family="Consolas,monospace" font-size="12.5" fill="#d29922" text-anchor="middle" font-weight="700">REMOTE ACCESS SOFTWARE</text>
+
+  <!-- 8 layers, 56 tall, gap 20, start y=140, x=110 w=480 -->
+  <g font-family="Consolas,monospace" font-size="13" font-weight="700">
+    <rect x="110" y="140" width="480" height="52" rx="8" fill="#1a1214" stroke="#f85149" stroke-width="1.8"/>
+    <text x="350" y="172" fill="#f85149" text-anchor="middle">SOFTWARE GOVERNANCE</text>
+    <line x1="350" y1="192" x2="350" y2="212" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow12g)"/>
+
+    <rect x="110" y="214" width="480" height="52" rx="8" fill="#0d1421" stroke="#f0883e" stroke-width="1.8"/>
+    <text x="350" y="246" fill="#f0883e" text-anchor="middle">APPLICATION CONTROL</text>
+    <line x1="350" y1="266" x2="350" y2="286" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow12g)"/>
+
+    <rect x="110" y="288" width="480" height="52" rx="8" fill="#0d1421" stroke="#d29922" stroke-width="1.8"/>
+    <text x="350" y="320" fill="#d29922" text-anchor="middle">EDR / ENDPOINT</text>
+    <line x1="350" y1="340" x2="350" y2="360" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow12g)"/>
+
+    <rect x="110" y="362" width="480" height="52" rx="8" fill="#0d1421" stroke="#56c2d4" stroke-width="1.8"/>
+    <text x="350" y="394" fill="#56c2d4" text-anchor="middle">PROCESS TELEMETRY</text>
+    <line x1="350" y1="414" x2="350" y2="434" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow12g)"/>
+
+    <rect x="110" y="436" width="480" height="52" rx="8" fill="#0d1421" stroke="#56c2d4" stroke-width="1.8"/>
+    <text x="350" y="468" fill="#56c2d4" text-anchor="middle">NETWORK MONITORING</text>
+    <line x1="350" y1="488" x2="350" y2="508" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow12g)"/>
+
+    <rect x="110" y="510" width="480" height="52" rx="8" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="350" y="542" fill="#58a6ff" text-anchor="middle">IDENTITY</text>
+    <line x1="350" y1="562" x2="350" y2="582" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow12g)"/>
+
+    <rect x="110" y="584" width="480" height="52" rx="8" fill="#0d1421" stroke="#bc8cff" stroke-width="1.8"/>
+    <text x="350" y="616" fill="#bc8cff" text-anchor="middle">WAZUH / SIEM</text>
+    <line x1="350" y1="636" x2="350" y2="656" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow12g)"/>
+
+    <rect x="110" y="658" width="480" height="52" rx="8" fill="#0f1f14" stroke="#3fb950" stroke-width="2.2"/>
+    <text x="350" y="690" fill="#3fb950" text-anchor="middle">SOC DECISION</text>
+  </g>
+
+  <rect x="120" y="760" width="460" height="90" rx="10" fill="#0d1421" stroke="#e6edf3" stroke-width="1.4"/>
+  <text x="350" y="800" font-family="Consolas,monospace" font-size="15" fill="#e6edf3" text-anchor="middle" font-weight="700">ONE NETWORK SIGNAL</text>
+  <text x="350" y="823" font-family="Consolas,monospace" font-size="13" fill="#8b949e" text-anchor="middle">≠</text>
+  <text x="350" y="846" font-family="Consolas,monospace" font-size="15" fill="#d29922" text-anchor="middle" font-weight="700">FULL REMOTE ACCESS CONTEXT</text>
+
+  <text x="350" y="900" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">controle de ferramentas remotas precisa ser multicamada</text>
+</svg>

@@ -1,0 +1,57 @@
+<svg viewBox="0 0 1100 620" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow07g" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="620" fill="#0a0e14"/>
+  <text x="550" y="50" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">RECURRING BLOCKED ATTEMPTS</text>
+  <line x1="420" y1="66" x2="680" y2="66" stroke="#21262d" stroke-width="1"/>
+
+  <!-- WINDOW A -->
+  <g font-family="Consolas,monospace">
+    <rect x="60" y="110" width="380" height="300" rx="10" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="250" y="146" font-size="14" fill="#58a6ff" text-anchor="middle" font-weight="700" letter-spacing="1">WINDOW A</text>
+    <line x1="90" y1="162" x2="410" y2="162" stroke="#1c2b40"/>
+
+    <rect x="160" y="184" width="180" height="46" rx="6" fill="#111827" stroke="#8b949e" stroke-width="1.4"/>
+    <text x="250" y="212" font-size="12.5" fill="#e6edf3" text-anchor="middle">SOURCE DEVICE</text>
+    <line x1="250" y1="230" x2="250" y2="256" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow07g)"/>
+
+    <rect x="160" y="258" width="180" height="46" rx="6" fill="#111827" stroke="#f0883e" stroke-width="1.4"/>
+    <text x="250" y="286" font-size="13" fill="#f0883e" text-anchor="middle">ANYDESK</text>
+    <line x1="250" y1="304" x2="250" y2="330" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow07g)"/>
+
+    <rect x="160" y="332" width="180" height="46" rx="6" fill="#1f1212" stroke="#f85149" stroke-width="1.6"/>
+    <text x="250" y="360" font-size="13" fill="#f85149" text-anchor="middle" font-weight="700">BLOCK</text>
+  </g>
+
+  <!-- WINDOW B -->
+  <g font-family="Consolas,monospace">
+    <rect x="660" y="110" width="380" height="300" rx="10" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="850" y="146" font-size="14" fill="#58a6ff" text-anchor="middle" font-weight="700" letter-spacing="1">WINDOW B</text>
+    <line x1="690" y1="162" x2="1010" y2="162" stroke="#1c2b40"/>
+
+    <rect x="760" y="184" width="180" height="46" rx="6" fill="#111827" stroke="#8b949e" stroke-width="1.4"/>
+    <text x="850" y="206" font-size="11.5" fill="#e6edf3" text-anchor="middle">SAME SOURCE</text>
+    <text x="850" y="222" font-size="11.5" fill="#e6edf3" text-anchor="middle">DEVICE</text>
+    <line x1="850" y1="230" x2="850" y2="256" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow07g)"/>
+
+    <rect x="760" y="258" width="180" height="46" rx="6" fill="#111827" stroke="#f0883e" stroke-width="1.4"/>
+    <text x="850" y="286" font-size="13" fill="#f0883e" text-anchor="middle">ANYDESK</text>
+    <line x1="850" y1="304" x2="850" y2="330" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow07g)"/>
+
+    <rect x="760" y="332" width="180" height="46" rx="6" fill="#1f1212" stroke="#f85149" stroke-width="1.6"/>
+    <text x="850" y="360" font-size="13" fill="#f85149" text-anchor="middle" font-weight="700">BLOCK</text>
+  </g>
+
+  <rect x="460" y="220" width="180" height="80" rx="10" fill="#0f1f14" stroke="#3fb950" stroke-width="2.2"/>
+  <text x="550" y="256" font-family="Consolas,monospace" font-size="12" fill="#3fb950" text-anchor="middle" font-weight="700">RECURRENCE</text>
+  <text x="550" y="278" font-family="Consolas,monospace" font-size="12" fill="#3fb950" text-anchor="middle" font-weight="700">CONFIRMED</text>
+
+  <rect x="270" y="460" width="560" height="90" rx="8" fill="#0d1421" stroke="#d29922" stroke-width="1.6"/>
+  <text x="550" y="490" font-family="Consolas,monospace" font-size="13.5" fill="#e6edf3" text-anchor="middle" font-weight="700">RECURRENCE  ≠  SUCCESSFUL SESSION</text>
+  <text x="550" y="518" font-family="Consolas,monospace" font-size="13.5" fill="#e6edf3" text-anchor="middle" font-weight="700">RECURRENCE  ≠  CONFIRMED COMPROMISE</text>
+
+  <text x="550" y="590" font-family="Segoe UI,Arial,sans-serif" font-size="12.5" fill="#8b949e" text-anchor="middle">destaca a relevância da recorrência sem overclaim</text>
+</svg>

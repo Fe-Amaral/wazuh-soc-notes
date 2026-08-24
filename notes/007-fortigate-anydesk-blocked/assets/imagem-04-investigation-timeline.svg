@@ -1,0 +1,55 @@
+<svg viewBox="0 0 1400 480" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="480" fill="#0a0e14"/>
+  <text x="700" y="50" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">INVESTIGATION TIMELINE</text>
+  <line x1="580" y1="66" x2="820" y2="66" stroke="#21262d" stroke-width="1"/>
+
+  <line x1="90" y1="220" x2="1310" y2="220" stroke="#21262d" stroke-width="2"/>
+
+  <g>
+    <circle cx="90" cy="220" r="13" fill="#0d1421" stroke="#f0883e" stroke-width="2.5"/>
+    <text x="90" y="180" font-family="Consolas,monospace" font-size="11.5" fill="#f0883e" text-anchor="middle" font-weight="700">DETECTION</text>
+    <text x="90" y="260" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">AnyDesk</text>
+  </g>
+  <g>
+    <circle cx="293" cy="220" r="13" fill="#0d1421" stroke="#f85149" stroke-width="2.5"/>
+    <text x="293" y="180" font-family="Consolas,monospace" font-size="11.5" fill="#f85149" text-anchor="middle" font-weight="700">CONTROL</text>
+    <text x="293" y="260" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">BLOCK</text>
+  </g>
+  <g>
+    <circle cx="496" cy="220" r="13" fill="#0d1421" stroke="#d29922" stroke-width="2.5"/>
+    <text x="496" y="180" font-family="Consolas,monospace" font-size="11.5" fill="#d29922" text-anchor="middle" font-weight="700">ALERT</text>
+    <text x="496" y="260" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">Wazuh</text>
+  </g>
+  <g>
+    <circle cx="699" cy="220" r="13" fill="#0d1421" stroke="#bc8cff" stroke-width="2.5"/>
+    <text x="699" y="180" font-family="Consolas,monospace" font-size="11.5" fill="#bc8cff" text-anchor="middle" font-weight="700">HUNTING</text>
+    <text x="699" y="260" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">Historical Search</text>
+  </g>
+  <g>
+    <circle cx="902" cy="220" r="13" fill="#0d1421" stroke="#56c2d4" stroke-width="2.5"/>
+    <text x="902" y="180" font-family="Consolas,monospace" font-size="11.5" fill="#56c2d4" text-anchor="middle" font-weight="700">CORRELATION</text>
+    <text x="902" y="260" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">Recurrence</text>
+  </g>
+  <g>
+    <circle cx="1105" cy="220" r="13" fill="#0d1421" stroke="#58a6ff" stroke-width="2.5"/>
+    <text x="1105" y="180" font-family="Consolas,monospace" font-size="11.5" fill="#58a6ff" text-anchor="middle" font-weight="700">EVIDENCE</text>
+    <text x="1105" y="260" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">Endpoint Context Gap</text>
+  </g>
+  <g>
+    <circle cx="1310" cy="220" r="15" fill="#0d1421" stroke="#e6edf3" stroke-width="3"/>
+    <text x="1310" y="180" font-family="Consolas,monospace" font-size="11.5" fill="#e6edf3" text-anchor="middle" font-weight="700">DECISION</text>
+    <text x="1310" y="260" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">Validation Required</text>
+  </g>
+
+  <line x1="902" y1="233" x2="902" y2="290" stroke="#3fb950" stroke-width="1.4" stroke-dasharray="4 3"/>
+  <rect x="770" y="294" width="264" height="52" rx="6" fill="#0f1f14" stroke="#3fb950" stroke-width="1.6"/>
+  <text x="902" y="316" font-family="Consolas,monospace" font-size="11" fill="#3fb950" text-anchor="middle" font-weight="700">CONFIRMED</text>
+  <text x="902" y="334" font-family="Segoe UI,Arial,sans-serif" font-size="9.5" fill="#8b949e" text-anchor="middle">repeated blocked communication</text>
+
+  <line x1="1105" y1="233" x2="1105" y2="360" stroke="#d29922" stroke-width="1.4" stroke-dasharray="4 3"/>
+  <rect x="973" y="364" width="264" height="52" rx="6" fill="#1a1608" stroke="#d29922" stroke-width="1.6"/>
+  <text x="1105" y="386" font-family="Consolas,monospace" font-size="11" fill="#d29922" text-anchor="middle" font-weight="700">NOT CONFIRMED</text>
+  <text x="1105" y="404" font-family="Segoe UI,Arial,sans-serif" font-size="9.5" fill="#8b949e" text-anchor="middle">remote session / compromise</text>
+
+  <text x="700" y="430" font-family="Segoe UI,Arial,sans-serif" font-size="12.5" fill="#8b949e" text-anchor="middle">o hunting confirmou recorrência — não confirmou sucesso</text>
+</svg>
