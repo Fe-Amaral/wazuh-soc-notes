@@ -1,0 +1,55 @@
+<svg viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="700" fill="#0a0e14"/>
+  <text x="600" y="50" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">EVIDENCE ASSESSMENT</text>
+  <line x1="500" y1="66" x2="700" y2="66" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Left: CONFIRMED -->
+  <g>
+    <rect x="60" y="100" width="510" height="420" rx="10" fill="#0f1f14" stroke="#3fb950" stroke-width="1.8"/>
+    <text x="315" y="140" font-family="Consolas,monospace" font-size="14" fill="#3fb950" text-anchor="middle" font-weight="700" letter-spacing="1">CONFIRMED</text>
+    <line x1="90" y1="158" x2="540" y2="158" stroke="#1f3a24"/>
+
+    <g font-family="Consolas,monospace" font-size="14.5" fill="#e6edf3">
+      <circle cx="105" cy="192" r="4" fill="#3fb950"/><text x="122" y="197">Sysmon EID 11</text>
+      <circle cx="105" cy="230" r="4" fill="#3fb950"/><text x="122" y="235">CL_Utility.ps1</text>
+      <circle cx="105" cy="268" r="4" fill="#3fb950"/><text x="122" y="273">Windows Temp</text>
+      <circle cx="105" cy="306" r="4" fill="#3fb950"/><text x="122" y="311">taskhostw.exe</text>
+      <circle cx="105" cy="344" r="4" fill="#3fb950"/><text x="122" y="349">System32</text>
+      <circle cx="105" cy="382" r="4" fill="#3fb950"/><text x="122" y="387">SDIAG_&lt;GUID&gt;</text>
+    </g>
+
+    <rect x="90" y="440" width="450" height="56" rx="6" fill="#0a140d" stroke="#1f3a24" stroke-width="1"/>
+    <text x="315" y="464" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#8b949e" text-anchor="middle">criador, arquivo e diretório</text>
+    <text x="315" y="482" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#8b949e" text-anchor="middle">diretamente confirmados pela telemetria</text>
+  </g>
+
+  <!-- Right: NOT CONFIRMED / NOT OBSERVED -->
+  <g>
+    <rect x="630" y="100" width="510" height="420" rx="10" fill="#1a1214" stroke="#f85149" stroke-width="1.8"/>
+    <text x="885" y="140" font-family="Consolas,monospace" font-size="13.5" fill="#f85149" text-anchor="middle" font-weight="700" letter-spacing="1">NOT CONFIRMED / NOT OBSERVED</text>
+    <line x1="660" y1="158" x2="1110" y2="158" stroke="#3a1f1f"/>
+
+    <g font-family="Consolas,monospace" font-size="13.5">
+      <text x="660" y="196" fill="#e6edf3">PowerShell execution</text>
+      <text x="1110" y="196" fill="#d29922" text-anchor="end" font-weight="700">Not Confirmed</text>
+      <text x="660" y="232" fill="#e6edf3">Malicious process chain</text>
+      <text x="1110" y="232" fill="#d29922" text-anchor="end" font-weight="700">Not Confirmed</text>
+      <text x="660" y="268" fill="#e6edf3">Suspicious network activity</text>
+      <text x="1110" y="268" fill="#8b949e" text-anchor="end">Not Observed</text>
+      <text x="660" y="304" fill="#e6edf3">Persistence</text>
+      <text x="1110" y="304" fill="#8b949e" text-anchor="end">Not Observed</text>
+      <text x="660" y="340" fill="#e6edf3">Post-exploitation</text>
+      <text x="1110" y="340" fill="#8b949e" text-anchor="end">Not Observed</text>
+      <text x="660" y="376" fill="#e6edf3">Full parent telemetry</text>
+      <text x="1110" y="376" fill="#d29922" text-anchor="end" font-weight="700">Not Available</text>
+    </g>
+
+    <rect x="660" y="440" width="450" height="56" rx="6" fill="#1f1212" stroke="#3a1f1f" stroke-width="1"/>
+    <text x="885" y="464" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#8b949e" text-anchor="middle">nenhuma evidência complementar</text>
+    <text x="885" y="482" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#8b949e" text-anchor="middle">de execução ou atividade maliciosa</text>
+  </g>
+
+  <rect x="330" y="570" width="540" height="66" rx="8" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+  <text x="600" y="600" font-family="Consolas,monospace" font-size="16" fill="#58a6ff" text-anchor="middle" font-weight="700">FILE CREATED  ≠  FILE EXECUTED</text>
+  <text x="600" y="620" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#8b949e" text-anchor="middle">o limite probatório do Event ID 11</text>
+</svg>

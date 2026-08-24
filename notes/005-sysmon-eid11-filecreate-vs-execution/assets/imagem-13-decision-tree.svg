@@ -1,0 +1,101 @@
+<svg viewBox="0 0 1000 1400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow13e" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="1400" fill="#0a0e14"/>
+  <text x="500" y="46" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">DECISION TREE</text>
+  <line x1="410" y1="62" x2="590" y2="62" stroke="#21262d" stroke-width="1"/>
+
+  <g font-family="Consolas,monospace" font-size="12.5">
+
+    <!-- Q1 File Created? -->
+    <polygon points="460,90 570,140 460,190 350,140" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="460" y="145" fill="#e6edf3" text-anchor="middle" font-size="11">File Created?</text>
+    <text x="500" y="115" fill="#3fb950" font-size="11">YES</text>
+    <line x1="460" y1="190" x2="460" y2="222" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow13e)"/>
+
+    <!-- Q2 Sensitive Directory? -->
+    <polygon points="460,224 610,274 460,324 310,274" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="460" y="270" fill="#e6edf3" text-anchor="middle" font-size="10.5">Sensitive</text>
+    <text x="460" y="286" fill="#e6edf3" text-anchor="middle" font-size="10.5">Directory?</text>
+    <text x="510" y="249" fill="#3fb950" font-size="11">YES</text>
+    <line x1="460" y1="324" x2="460" y2="356" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow13e)"/>
+
+    <!-- Q3 Script File? -->
+    <polygon points="460,358 590,408 460,458 330,408" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="460" y="413" fill="#e6edf3" text-anchor="middle">Script?</text>
+    <text x="510" y="383" fill="#3fb950" font-size="11">YES</text>
+    <line x1="460" y1="458" x2="460" y2="490" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow13e)"/>
+
+    <!-- Q4 Creator Known? -->
+    <polygon points="460,492 610,542 460,592 310,542" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="460" y="538" fill="#e6edf3" text-anchor="middle" font-size="10.5">Creator</text>
+    <text x="460" y="554" fill="#e6edf3" text-anchor="middle" font-size="10.5">Known?</text>
+    <!-- NO branch -->
+    <line x1="610" y1="542" x2="720" y2="542" stroke="#f85149" stroke-width="1.6" marker-end="url(#arrow13e)"/>
+    <text x="636" y="535" fill="#f85149" font-size="11">NO</text>
+    <rect x="722" y="516" width="230" height="52" rx="8" fill="#1a1214" stroke="#f85149" stroke-width="1.6"/>
+    <text x="837" y="547" fill="#f85149" text-anchor="middle" font-weight="700" font-size="12">Increase Suspicion</text>
+    <text x="500" y="597" fill="#3fb950" font-size="11">YES</text>
+    <line x1="460" y1="592" x2="460" y2="624" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow13e)"/>
+
+    <!-- Q5 Creator Legitimate? -->
+    <polygon points="460,626 610,676 460,726 310,676" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="460" y="672" fill="#e6edf3" text-anchor="middle" font-size="10.5">Creator</text>
+    <text x="460" y="688" fill="#e6edf3" text-anchor="middle" font-size="10.5">Legitimate?</text>
+    <!-- NO branch -->
+    <line x1="610" y1="676" x2="720" y2="676" stroke="#f85149" stroke-width="1.6" marker-end="url(#arrow13e)"/>
+    <text x="636" y="669" fill="#f85149" font-size="11">NO</text>
+    <rect x="722" y="650" width="230" height="52" rx="8" fill="#1a1214" stroke="#f85149" stroke-width="1.8"/>
+    <text x="837" y="681" fill="#f85149" text-anchor="middle" font-weight="700" font-size="12">Escalate Investigation</text>
+    <text x="500" y="731" fill="#3fb950" font-size="11">YES</text>
+    <line x1="460" y1="726" x2="460" y2="758" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow13e)"/>
+
+    <!-- Q6 Execution Confirmed? -->
+    <polygon points="460,760 620,810 460,860 300,810" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="460" y="806" fill="#e6edf3" text-anchor="middle" font-size="10.5">Execution</text>
+    <text x="460" y="822" fill="#e6edf3" text-anchor="middle" font-size="10.5">Confirmed?</text>
+    <!-- YES branch -->
+    <line x1="620" y1="810" x2="730" y2="810" stroke="#d29922" stroke-width="1.6" marker-end="url(#arrow13e)"/>
+    <text x="646" y="803" fill="#d29922" font-size="11">YES</text>
+    <rect x="732" y="784" width="240" height="52" rx="8" fill="#1a1608" stroke="#d29922" stroke-width="1.6"/>
+    <text x="852" y="806" fill="#d29922" text-anchor="middle" font-weight="700" font-size="11">Analyze Command</text>
+    <text x="852" y="822" fill="#d29922" text-anchor="middle" font-weight="700" font-size="11">Line / Parent</text>
+    <text x="500" y="865" fill="#8b949e" font-size="10.5">NO / NOT AVAILABLE</text>
+    <line x1="460" y1="860" x2="460" y2="894" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow13e)"/>
+
+    <!-- Q7 Supporting Malicious Evidence? -->
+    <polygon points="460,896 630,946 460,996 290,946" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="460" y="942" fill="#e6edf3" text-anchor="middle" font-size="11">Supporting</text>
+    <text x="460" y="958" fill="#e6edf3" text-anchor="middle" font-size="11">Evidence?</text>
+    <!-- YES branch: ESCALATE -->
+    <line x1="630" y1="946" x2="740" y2="946" stroke="#f85149" stroke-width="1.6" marker-end="url(#arrow13e)"/>
+    <text x="656" y="939" fill="#f85149" font-size="11">YES</text>
+    <rect x="742" y="920" width="230" height="52" rx="8" fill="#1a1214" stroke="#f85149" stroke-width="2"/>
+    <text x="857" y="951" fill="#f85149" text-anchor="middle" font-weight="700" font-size="12">ESCALATE</text>
+    <text x="500" y="1001" fill="#3fb950" font-size="11">NO</text>
+    <line x1="460" y1="996" x2="460" y2="1030" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow13e)"/>
+
+    <!-- Q8 Known Diagnostic Pattern? -->
+    <polygon points="460,1032 630,1082 460,1132 290,1082" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="460" y="1078" fill="#e6edf3" text-anchor="middle" font-size="10.5">Diagnostic</text>
+    <text x="460" y="1094" fill="#e6edf3" text-anchor="middle" font-size="10.5">Pattern?</text>
+    <!-- NO branch: CONTINUE -->
+    <line x1="630" y1="1082" x2="740" y2="1082" stroke="#d29922" stroke-width="1.6" marker-end="url(#arrow13e)"/>
+    <text x="656" y="1075" fill="#d29922" font-size="11">NO</text>
+    <rect x="742" y="1056" width="230" height="52" rx="8" fill="#1a1608" stroke="#d29922" stroke-width="1.8"/>
+    <text x="857" y="1087" fill="#d29922" text-anchor="middle" font-weight="700" font-size="12">CONTINUE</text>
+    <text x="500" y="1137" fill="#3fb950" font-size="11">YES</text>
+    <line x1="460" y1="1132" x2="460" y2="1166" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow13e)"/>
+
+    <!-- Final verdict -->
+    <rect x="270" y="1168" width="380" height="80" rx="10" fill="#0f1f14" stroke="#3fb950" stroke-width="2.4"/>
+    <text x="460" y="1206" fill="#3fb950" text-anchor="middle" font-weight="700" font-size="16">FALSE POSITIVE</text>
+    <text x="460" y="1230" fill="#8b949e" text-anchor="middle" font-weight="700" font-size="12.5">LEGITIMATE FILE CREATION</text>
+  </g>
+
+  <text x="500" y="1300" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">extensão e diretório são apenas os primeiros passos da decisão</text>
+  <text x="500" y="1324" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#6b7280" text-anchor="middle">a validação de criador, execução e evidência complementar fecha o veredito</text>
+</svg>

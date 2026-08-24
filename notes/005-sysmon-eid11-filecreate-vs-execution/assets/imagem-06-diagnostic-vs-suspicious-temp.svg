@@ -1,0 +1,37 @@
+<svg viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="600" fill="#0a0e14"/>
+  <text x="600" y="50" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">DIAGNOSTIC CONTEXT VS SUSPICIOUS TEMP ACTIVITY</text>
+  <line x1="440" y1="66" x2="760" y2="66" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Left -->
+  <g>
+    <rect x="60" y="100" width="500" height="380" rx="10" fill="#0f1f14" stroke="#3fb950" stroke-width="1.8"/>
+    <text x="310" y="140" font-family="Consolas,monospace" font-size="13.5" fill="#3fb950" text-anchor="middle" font-weight="700" letter-spacing="0.5">LEGITIMATE / DIAGNOSTIC CONTEXT</text>
+    <line x1="90" y1="158" x2="530" y2="158" stroke="#1f3a24"/>
+    <g font-family="Consolas,monospace" font-size="14.5" fill="#e6edf3">
+      <circle cx="110" cy="196" r="4" fill="#3fb950"/><text x="128" y="201">taskhostw.exe</text>
+      <circle cx="110" cy="240" r="4" fill="#3fb950"/><text x="128" y="245">System32</text>
+      <circle cx="110" cy="284" r="4" fill="#3fb950"/><text x="128" y="289">SDIAG_&lt;GUID&gt;</text>
+      <circle cx="110" cy="328" r="4" fill="#3fb950"/><text x="128" y="333">CL_Utility.ps1</text>
+      <circle cx="110" cy="372" r="4" fill="#3fb950"/><text x="128" y="377" font-size="12.5">Windows diagnostic-like pattern</text>
+    </g>
+  </g>
+
+  <!-- Right -->
+  <g>
+    <rect x="640" y="100" width="500" height="380" rx="10" fill="#1a1214" stroke="#f85149" stroke-width="1.8"/>
+    <text x="890" y="140" font-family="Consolas,monospace" font-size="13.5" fill="#f85149" text-anchor="middle" font-weight="700" letter-spacing="0.5">SUSPICIOUS TEMP CONTEXT</text>
+    <line x1="670" y1="158" x2="1110" y2="158" stroke="#3a1f1f"/>
+    <g font-family="Consolas,monospace" font-size="14.5" fill="#e6edf3">
+      <circle cx="690" cy="196" r="4" fill="#f85149"/><text x="708" y="201">unknown process</text>
+      <circle cx="690" cy="234" r="4" fill="#f85149"/><text x="708" y="239">random filename</text>
+      <circle cx="690" cy="272" r="4" fill="#f85149"/><text x="708" y="277">encoded PowerShell</text>
+      <circle cx="690" cy="310" r="4" fill="#f85149"/><text x="708" y="315">external download</text>
+      <circle cx="690" cy="348" r="4" fill="#f85149"/><text x="708" y="353">execution + persistence</text>
+      <circle cx="690" cy="386" r="4" fill="#f85149"/><text x="708" y="391">network activity</text>
+    </g>
+  </g>
+
+  <rect x="330" y="500" width="540" height="46" rx="8" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+  <text x="600" y="528" font-family="Consolas,monospace" font-size="14" fill="#58a6ff" text-anchor="middle" font-weight="700">SAME DIRECTORY · DIFFERENT CONTEXT</text>
+</svg>

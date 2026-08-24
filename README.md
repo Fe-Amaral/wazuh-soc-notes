@@ -20,6 +20,7 @@ Neste repositório, os mesmos estudos poderão ser aprofundados com análises t�
 | **#002** | Cloudflare WAF / Wazuh | Scanning automatizado bloqueado pelo WAF | **Falso Positivo Contextual** | [Ver análise completa](notes/002-cloudflare-waf-scanning/README.md) |
 | **#003** | Darktrace / Wazuh | Threat Indicator e Quarantine Device | **Contenção Preventiva** | [Ver análise completa](notes/003-darktrace-quarantine-device/README.md) |
 | **#004** | Linux / AF_ALG / Wazuh | CVE-2026-31431 em processo legítimo (`pg_dump`) | **Falso Positivo** | [Ver análise completa](notes/004-cve-2026-31431-af-alg/README.md) |
+| **#005** | Windows / Sysmon / Wazuh | Script `.ps1` criado em Windows Temp (`taskhostw.exe`) | **Falso Positivo** | [Ver análise completa](notes/005-sysmon-eid11-filecreate-vs-execution/README.md) |
 
 ---
 

@@ -1,0 +1,63 @@
+<svg viewBox="0 0 1600 460" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="460" fill="#0a0e14"/>
+  <text x="800" y="46" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">INVESTIGATION FLOW — FINAL</text>
+  <line x1="670" y1="62" x2="930" y2="62" stroke="#21262d" stroke-width="1"/>
+
+  <!-- chevron segments: y0=150 y1=240 mid=195 d=24 w=190 start=40 -->
+  <g font-family="Consolas,monospace" font-weight="700">
+
+    <!-- 1 DETECTION -->
+    <polygon points="40,150 206,150 230,195 206,240 40,240" fill="#0d1421" stroke="#f0883e" stroke-width="1.8"/>
+    <text x="115" y="180" font-size="12" fill="#f0883e" text-anchor="middle">DETECTION</text>
+    <text x="115" y="202" font-size="9" font-weight="400" fill="#8b949e" text-anchor="middle">Sysmon</text>
+    <text x="115" y="216" font-size="9" font-weight="400" fill="#8b949e" text-anchor="middle">Event ID 11</text>
+
+    <!-- 2 FILE -->
+    <polygon points="230,150 396,150 420,195 396,240 230,240 206,195" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="313" y="180" font-size="12.5" fill="#58a6ff" text-anchor="middle">FILE</text>
+    <text x="313" y="202" font-size="9" font-weight="400" fill="#8b949e" text-anchor="middle">CL_Utility.ps1</text>
+    <text x="313" y="216" font-size="9" font-weight="400" fill="#8b949e" text-anchor="middle">Windows Temp</text>
+
+    <!-- 3 CREATOR -->
+    <polygon points="420,150 586,150 610,195 586,240 420,240 396,195" fill="#0d1421" stroke="#56c2d4" stroke-width="1.8"/>
+    <text x="503" y="180" font-size="12" fill="#56c2d4" text-anchor="middle">CREATOR</text>
+    <text x="503" y="202" font-size="9" font-weight="400" fill="#8b949e" text-anchor="middle">taskhostw.exe</text>
+    <text x="503" y="216" font-size="9" font-weight="400" fill="#8b949e" text-anchor="middle">System32</text>
+
+    <!-- 4 HYPOTHESIS -->
+    <polygon points="610,150 776,150 800,195 776,240 610,240 586,195" fill="#0d1421" stroke="#d29922" stroke-width="1.8"/>
+    <text x="693" y="180" font-size="11.5" fill="#d29922" text-anchor="middle">HYPOTHESIS</text>
+    <text x="693" y="202" font-size="8.5" font-weight="400" fill="#8b949e" text-anchor="middle">Possible PowerShell</text>
+    <text x="693" y="216" font-size="8.5" font-weight="400" fill="#8b949e" text-anchor="middle">Activity</text>
+
+    <!-- 5 HUNTING -->
+    <polygon points="800,150 966,150 990,195 966,240 800,240 776,195" fill="#0d1421" stroke="#bc8cff" stroke-width="1.8"/>
+    <text x="883" y="180" font-size="12.5" fill="#bc8cff" text-anchor="middle">HUNTING</text>
+    <text x="883" y="202" font-size="8.5" font-weight="400" fill="#8b949e" text-anchor="middle">Execution + Network</text>
+    <text x="883" y="216" font-size="8.5" font-weight="400" fill="#8b949e" text-anchor="middle">+ Persistence</text>
+
+    <!-- 6 CONTEXT -->
+    <polygon points="990,150 1156,150 1180,195 1156,240 990,240 966,195" fill="#0d1421" stroke="#56c2d4" stroke-width="1.8"/>
+    <text x="1073" y="180" font-size="12.5" fill="#56c2d4" text-anchor="middle">CONTEXT</text>
+    <text x="1073" y="202" font-size="8.5" font-weight="400" fill="#8b949e" text-anchor="middle">SDIAG /</text>
+    <text x="1073" y="216" font-size="8.5" font-weight="400" fill="#8b949e" text-anchor="middle">Diagnostic Pattern</text>
+
+    <!-- 7 EVIDENCE -->
+    <polygon points="1180,150 1346,150 1370,195 1346,240 1180,240 1156,195" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="1263" y="174" font-size="12" fill="#58a6ff" text-anchor="middle">EVIDENCE</text>
+    <text x="1263" y="194" font-size="7.6" font-weight="400" fill="#8b949e" text-anchor="middle">Script Execution</text>
+    <text x="1263" y="205" font-size="7.6" font-weight="400" fill="#8b949e" text-anchor="middle">Not Confirmed</text>
+    <text x="1263" y="218" font-size="7.6" font-weight="400" fill="#8b949e" text-anchor="middle">No Malicious</text>
+    <text x="1263" y="229" font-size="7.6" font-weight="400" fill="#8b949e" text-anchor="middle">Evidence</text>
+
+    <!-- 8 DECISION -->
+    <polygon points="1370,150 1560,150 1560,240 1370,240 1346,195" fill="#0f1f14" stroke="#3fb950" stroke-width="2.4"/>
+    <text x="1465" y="185" font-size="13" fill="#3fb950" text-anchor="middle">DECISION</text>
+    <text x="1465" y="210" font-size="10.5" font-weight="400" fill="#8b949e" text-anchor="middle">False Positive</text>
+  </g>
+
+  <rect x="500" y="290" width="600" height="56" rx="8" fill="#0d1421" stroke="#e6edf3" stroke-width="1.4"/>
+  <text x="800" y="325" font-family="Consolas,monospace" font-size="16" fill="#e6edf3" text-anchor="middle" font-weight="700">CREATION  ≠  EXECUTION</text>
+
+  <text x="800" y="400" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">toda a lógica analítica do caso, ponta a ponta</text>
+</svg>

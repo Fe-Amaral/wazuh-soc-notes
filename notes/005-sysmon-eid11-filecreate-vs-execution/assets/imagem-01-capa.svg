@@ -1,0 +1,59 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid01e" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#152030" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow01e" cx="75%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.11"/>
+      <stop offset="60%" stop-color="#3fb950" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#0a0e14" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0a0e14"/>
+  <rect width="1200" height="630" fill="url(#grid01e)"/>
+  <rect width="1200" height="630" fill="url(#glow01e)"/>
+  <rect x="0" y="0" width="1200" height="630" fill="none" stroke="#21262d" stroke-width="2"/>
+
+  <text x="60" y="54" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="13" fill="#8b949e" letter-spacing="2">SOC · THREAT HUNTING · INCIDENT RESPONSE · DETECTION ENGINEERING · WINDOWS</text>
+  <line x1="60" y1="70" x2="1140" y2="70" stroke="#21262d" stroke-width="1"/>
+
+  <text x="60" y="150" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="22" fill="#3fb950" letter-spacing="4">WAZUH SOC NOTES #005</text>
+
+  <text x="58" y="212" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="700" fill="#e6edf3">Sysmon Event ID 11:</text>
+  <text x="58" y="250" font-family="Segoe UI,Arial,sans-serif" font-size="20" fill="#8b949e">criação de script em Windows Temp</text>
+  <text x="58" y="280" font-family="Segoe UI,Arial,sans-serif" font-size="20" fill="#8b949e">não confirma execução maliciosa</text>
+
+  <rect x="58" y="552" width="620" height="36" rx="6" fill="#0d1421" stroke="#1f2937" stroke-width="1"/>
+  <text x="76" y="576" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="13.5" fill="#7ee787">EventID=11 TargetFilename=...\CL_Utility.ps1 Image=taskhostw.exe</text>
+
+  <!-- central equation -->
+  <g transform="translate(720,140)">
+    <rect x="0" y="0" width="420" height="130" rx="10" fill="#0d1421" stroke="#2d3748" stroke-width="1.5"/>
+    <text x="210" y="48" font-family="Consolas,monospace" font-size="18" fill="#e6edf3" text-anchor="middle" font-weight="700">FILE CREATED</text>
+    <text x="210" y="76" font-family="Consolas,monospace" font-size="16" fill="#8b949e" text-anchor="middle">≠</text>
+    <text x="210" y="106" font-family="Consolas,monospace" font-size="18" fill="#f85149" text-anchor="middle" font-weight="700">FILE EXECUTED</text>
+  </g>
+
+  <g transform="translate(720,300)" font-family="Consolas,monospace">
+    <rect x="0" y="0" width="420" height="270" rx="10" fill="#0d1421" stroke="#2d3748" stroke-width="1.5"/>
+
+    <rect x="20" y="18" width="380" height="36" rx="6" fill="#111827" stroke="#8b949e" stroke-width="1.4"/>
+    <text x="210" y="41" font-size="12.5" fill="#e6edf3" text-anchor="middle">taskhostw.exe</text>
+    <line x1="210" y1="54" x2="210" y2="72" stroke="#4b5563" stroke-width="1.6"/>
+
+    <rect x="20" y="74" width="380" height="36" rx="6" fill="#111827" stroke="#f0883e" stroke-width="1.4"/>
+    <text x="210" y="97" font-size="12.5" fill="#f0883e" text-anchor="middle">CL_Utility.ps1</text>
+    <line x1="210" y1="110" x2="210" y2="128" stroke="#4b5563" stroke-width="1.6"/>
+
+    <rect x="20" y="130" width="380" height="36" rx="6" fill="#111827" stroke="#8b949e" stroke-width="1.4"/>
+    <text x="210" y="153" font-size="12.5" fill="#e6edf3" text-anchor="middle">Windows Temp</text>
+    <line x1="210" y1="166" x2="210" y2="184" stroke="#4b5563" stroke-width="1.6"/>
+
+    <rect x="20" y="186" width="380" height="36" rx="6" fill="#111827" stroke="#58a6ff" stroke-width="1.4"/>
+    <text x="210" y="209" font-size="12.5" fill="#58a6ff" text-anchor="middle">Sysmon Event ID 11</text>
+    <line x1="210" y1="222" x2="210" y2="240" stroke="#4b5563" stroke-width="1.6"/>
+
+    <rect x="20" y="242" width="380" height="28" rx="14" fill="none" stroke="#d29922" stroke-width="1.6"/>
+    <text x="210" y="262" font-size="12" fill="#d29922" text-anchor="middle" font-weight="700">REQUIRES INVESTIGATION</text>
+  </g>
+</svg>
