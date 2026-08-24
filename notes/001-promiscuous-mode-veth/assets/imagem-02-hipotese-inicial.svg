@@ -1,0 +1,52 @@
+<svg viewBox="0 0 800 920" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow02" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#8b949e"/>
+    </marker>
+  </defs>
+  <rect width="800" height="920" fill="#0a0e14"/>
+  <text x="400" y="50" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="14" fill="#8b949e" text-anchor="middle" letter-spacing="3">HIPÓTESE INICIAL — A CONFIRMAR</text>
+  <line x1="260" y1="66" x2="540" y2="66" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Box 1 -->
+  <g transform="translate(160,100)">
+    <rect width="480" height="80" rx="8" fill="#0d1421" stroke="#58a6ff" stroke-width="1.5"/>
+    <rect x="0" y="0" width="6" height="80" fill="#58a6ff"/>
+    <text x="240" y="38" font-family="Consolas,monospace" font-size="19" fill="#e6edf3" text-anchor="middle" font-weight="600">PROMISCUOUS MODE</text>
+    <text x="240" y="60" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">interface entra em modo promíscuo</text>
+  </g>
+  <line x1="400" y1="180" x2="400" y2="240" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow02)"/>
+
+  <!-- Box 2 -->
+  <g transform="translate(160,250)">
+    <rect width="480" height="80" rx="8" fill="#0d1421" stroke="#58a6ff" stroke-width="1.5"/>
+    <rect x="0" y="0" width="6" height="80" fill="#58a6ff"/>
+    <text x="240" y="38" font-family="Consolas,monospace" font-size="19" fill="#e6edf3" text-anchor="middle" font-weight="600">PACKET VISIBILITY</text>
+    <text x="240" y="60" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">interface pode observar mais tráfego</text>
+  </g>
+  <line x1="400" y1="330" x2="400" y2="390" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow02)"/>
+
+  <!-- Box 3 -->
+  <g transform="translate(160,400)">
+    <rect width="480" height="80" rx="8" fill="#0d1421" stroke="#d29922" stroke-width="1.5"/>
+    <rect x="0" y="0" width="6" height="80" fill="#d29922"/>
+    <text x="240" y="38" font-family="Consolas,monospace" font-size="19" fill="#e6edf3" text-anchor="middle" font-weight="600">POSSIBLE PACKET CAPTURE</text>
+    <text x="240" y="60" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">capacidade técnica, ainda não confirmada</text>
+  </g>
+  <line x1="400" y1="480" x2="400" y2="540" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow02)"/>
+
+  <!-- Box 4 -->
+  <g transform="translate(140,550)">
+    <rect width="520" height="90" rx="8" fill="#0d1421" stroke="#d29922" stroke-width="1.5" stroke-dasharray="7 5"/>
+    <text x="260" y="42" font-family="Consolas,monospace" font-size="21" fill="#d29922" text-anchor="middle" font-weight="700">NETWORK SNIFFING ?</text>
+    <text x="260" y="66" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">hipótese — MITRE ATT&amp;CK T1040 (não confirmada)</text>
+  </g>
+  <line x1="400" y1="640" x2="400" y2="700" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow02)"/>
+
+  <!-- Box 5 -->
+  <g transform="translate(120,710)">
+    <rect width="560" height="90" rx="8" fill="#161616" stroke="#e6edf3" stroke-width="2"/>
+    <text x="280" y="44" font-family="Consolas,monospace" font-size="22" fill="#e6edf3" text-anchor="middle" font-weight="700" letter-spacing="1">REQUIRES INVESTIGATION</text>
+    <text x="280" y="68" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">a severidade da regra, isoladamente, não define o veredito</text>
+  </g>
+</svg>

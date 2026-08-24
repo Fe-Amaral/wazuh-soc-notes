@@ -1,0 +1,97 @@
+<svg viewBox="0 0 1260 1150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowG" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#8b949e"/>
+    </marker>
+    <marker id="arrowR" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#f85149"/>
+    </marker>
+  </defs>
+  <rect width="1260" height="1150" fill="#0a0e14"/>
+  <text x="630" y="40" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">DECISION TREE</text>
+  <line x1="510" y1="56" x2="750" y2="56" stroke="#21262d" stroke-width="1"/>
+
+  <!-- red bus + terminal -->
+  <line x1="960" y1="228" x2="960" y2="936" stroke="#f85149" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <rect x="830" y="512" width="260" height="140" rx="10" fill="#1f1212" stroke="#f85149" stroke-width="2"/>
+  <text x="960" y="562" font-family="Consolas,monospace" font-size="15" fill="#f85149" text-anchor="middle" font-weight="700">ESCALATE</text>
+  <text x="960" y="582" font-family="Consolas,monospace" font-size="15" fill="#f85149" text-anchor="middle" font-weight="700">INVESTIGATION</text>
+  <text x="960" y="608" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#f0a7a3" text-anchor="middle">suspicion increased —</text>
+  <text x="960" y="626" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#f0a7a3" text-anchor="middle">additional validation required</text>
+  <line x1="960" y1="652" x2="960" y2="652" stroke="#f85149"/>
+
+  <!-- n1 -->
+  <rect x="220" y="80" width="320" height="60" rx="8" fill="#0d1421" stroke="#58a6ff" stroke-width="1.6"/>
+  <text x="380" y="107" font-family="Consolas,monospace" font-size="13" fill="#e6edf3" text-anchor="middle" font-weight="700">RULE 5104</text>
+  <text x="380" y="126" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">Promiscuous Mode detectado</text>
+  <line x1="380" y1="140" x2="380" y2="183" stroke="#8b949e" stroke-width="2" marker-end="url(#arrowG)"/>
+
+  <!-- n2 diamond: Interface Type? -->
+  <polygon points="380,188 520,228 380,268 240,228" fill="#0d1421" stroke="#c9d1d9" stroke-width="1.6"/>
+  <text x="380" y="224" font-family="Consolas,monospace" font-size="13" fill="#e6edf3" text-anchor="middle" font-weight="700">Interface</text>
+  <text x="380" y="240" font-family="Consolas,monospace" font-size="13" fill="#e6edf3" text-anchor="middle" font-weight="700">Type?</text>
+  <line x1="380" y1="268" x2="380" y2="300" stroke="#3fb950" stroke-width="2" marker-end="url(#arrowG)"/>
+  <text x="398" y="288" font-family="Consolas,monospace" font-size="11" fill="#3fb950">veth</text>
+  <line x1="520" y1="228" x2="954" y2="228" stroke="#f85149" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arrowR)"/>
+  <text x="700" y="220" font-family="Consolas,monospace" font-size="11" fill="#f85149" text-anchor="middle">physical</text>
+
+  <!-- n3 diamond: Virtual Network Context? -->
+  <polygon points="380,306 550,346 380,386 210,346" fill="#0d1421" stroke="#c9d1d9" stroke-width="1.6"/>
+  <text x="380" y="342" font-family="Consolas,monospace" font-size="12.5" fill="#e6edf3" text-anchor="middle" font-weight="700">Virtual Network</text>
+  <text x="380" y="358" font-family="Consolas,monospace" font-size="12.5" fill="#e6edf3" text-anchor="middle" font-weight="700">Context?</text>
+  <line x1="380" y1="386" x2="380" y2="418" stroke="#3fb950" stroke-width="2" marker-end="url(#arrowG)"/>
+  <text x="396" y="406" font-family="Consolas,monospace" font-size="11" fill="#3fb950">yes</text>
+  <line x1="550" y1="346" x2="954" y2="346" stroke="#f85149" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arrowR)"/>
+  <text x="700" y="338" font-family="Consolas,monospace" font-size="11" fill="#f85149" text-anchor="middle">no</text>
+
+  <!-- n4 diamond: Sniffing Tool? -->
+  <polygon points="380,424 520,464 380,504 240,464" fill="#0d1421" stroke="#c9d1d9" stroke-width="1.6"/>
+  <text x="380" y="460" font-family="Consolas,monospace" font-size="12.5" fill="#e6edf3" text-anchor="middle" font-weight="700">Sniffing</text>
+  <text x="380" y="476" font-family="Consolas,monospace" font-size="12.5" fill="#e6edf3" text-anchor="middle" font-weight="700">Tool?</text>
+  <line x1="380" y1="504" x2="380" y2="536" stroke="#3fb950" stroke-width="2" marker-end="url(#arrowG)"/>
+  <text x="440" y="524" font-family="Consolas,monospace" font-size="11" fill="#3fb950">not observed</text>
+  <line x1="520" y1="464" x2="954" y2="464" stroke="#f85149" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arrowR)"/>
+  <text x="700" y="456" font-family="Consolas,monospace" font-size="11" fill="#f85149" text-anchor="middle">observed</text>
+
+  <!-- n5 diamond: Capture Artifact? -->
+  <polygon points="380,542 530,582 380,622 230,582" fill="#0d1421" stroke="#c9d1d9" stroke-width="1.6"/>
+  <text x="380" y="578" font-family="Consolas,monospace" font-size="12.5" fill="#e6edf3" text-anchor="middle" font-weight="700">Capture</text>
+  <text x="380" y="594" font-family="Consolas,monospace" font-size="12.5" fill="#e6edf3" text-anchor="middle" font-weight="700">Artifact?</text>
+  <line x1="380" y1="622" x2="380" y2="654" stroke="#3fb950" stroke-width="2" marker-end="url(#arrowG)"/>
+  <text x="440" y="642" font-family="Consolas,monospace" font-size="11" fill="#3fb950">not observed</text>
+  <line x1="530" y1="582" x2="954" y2="582" stroke="#f85149" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arrowR)"/>
+  <text x="700" y="574" font-family="Consolas,monospace" font-size="11" fill="#f85149" text-anchor="middle">observed</text>
+
+  <!-- n6 diamond: Suspicious Process? -->
+  <polygon points="380,660 540,700 380,740 220,700" fill="#0d1421" stroke="#c9d1d9" stroke-width="1.6"/>
+  <text x="380" y="696" font-family="Consolas,monospace" font-size="12.5" fill="#e6edf3" text-anchor="middle" font-weight="700">Suspicious</text>
+  <text x="380" y="712" font-family="Consolas,monospace" font-size="12.5" fill="#e6edf3" text-anchor="middle" font-weight="700">Process?</text>
+  <line x1="380" y1="740" x2="380" y2="772" stroke="#3fb950" stroke-width="2" marker-end="url(#arrowG)"/>
+  <text x="440" y="760" font-family="Consolas,monospace" font-size="11" fill="#3fb950">not observed</text>
+  <line x1="540" y1="700" x2="954" y2="700" stroke="#f85149" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arrowR)"/>
+  <text x="700" y="692" font-family="Consolas,monospace" font-size="11" fill="#f85149" text-anchor="middle">observed</text>
+
+  <!-- n7 diamond: Additional Malicious Evidence? -->
+  <polygon points="380,778 560,818 380,858 200,818" fill="#0d1421" stroke="#c9d1d9" stroke-width="1.6"/>
+  <text x="380" y="808" font-family="Consolas,monospace" font-size="11.5" fill="#e6edf3" text-anchor="middle" font-weight="700">Additional Malicious</text>
+  <text x="380" y="826" font-family="Consolas,monospace" font-size="11.5" fill="#e6edf3" text-anchor="middle" font-weight="700">Evidence?</text>
+  <line x1="380" y1="858" x2="380" y2="890" stroke="#3fb950" stroke-width="2" marker-end="url(#arrowG)"/>
+  <text x="440" y="878" font-family="Consolas,monospace" font-size="11" fill="#3fb950">not observed</text>
+  <line x1="560" y1="818" x2="954" y2="818" stroke="#f85149" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arrowR)"/>
+  <text x="700" y="810" font-family="Consolas,monospace" font-size="11" fill="#f85149" text-anchor="middle">observed</text>
+
+  <!-- n8 diamond: Correlated Legitimate Pattern? -->
+  <polygon points="380,896 560,936 380,976 200,936" fill="#0d1421" stroke="#c9d1d9" stroke-width="1.6"/>
+  <text x="380" y="926" font-family="Consolas,monospace" font-size="11.5" fill="#e6edf3" text-anchor="middle" font-weight="700">Correlated Legitimate</text>
+  <text x="380" y="944" font-family="Consolas,monospace" font-size="11.5" fill="#e6edf3" text-anchor="middle" font-weight="700">Pattern?</text>
+  <line x1="380" y1="976" x2="380" y2="1010" stroke="#3fb950" stroke-width="2" marker-end="url(#arrowG)"/>
+  <text x="424" y="998" font-family="Consolas,monospace" font-size="11" fill="#3fb950">supported</text>
+  <line x1="560" y1="936" x2="954" y2="936" stroke="#f85149" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arrowR)"/>
+  <text x="700" y="928" font-family="Consolas,monospace" font-size="11" fill="#f85149" text-anchor="middle">not supported</text>
+
+  <!-- terminal -->
+  <rect x="220" y="1016" width="320" height="70" rx="10" fill="#0f1f14" stroke="#3fb950" stroke-width="2.2"/>
+  <text x="380" y="1058" font-family="Consolas,monospace" font-size="19" fill="#3fb950" text-anchor="middle" font-weight="700" letter-spacing="1">FALSE POSITIVE</text>
+
+  <text x="630" y="1125" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">o raciocínio, não o parágrafo — cada ramo representa uma pergunta que a evidência precisou responder</text>
+</svg>

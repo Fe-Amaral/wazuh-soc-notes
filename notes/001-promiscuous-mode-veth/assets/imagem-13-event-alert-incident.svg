@@ -1,0 +1,44 @@
+<svg viewBox="0 0 900 980" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow13" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#8b949e"/>
+    </marker>
+  </defs>
+  <rect width="900" height="980" fill="#0a0e14"/>
+
+  <text x="450" y="60" font-family="Consolas,monospace" font-size="26" fill="#e6edf3" text-anchor="middle" font-weight="700" letter-spacing="1">EVENT &#8800; ALERT &#8800; INCIDENT</text>
+  <line x1="300" y1="82" x2="600" y2="82" stroke="#21262d" stroke-width="1"/>
+
+  <g font-family="Consolas,monospace">
+    <rect x="170" y="115" width="560" height="76" rx="8" fill="#0d1421" stroke="#8b949e" stroke-width="1.6"/>
+    <text x="192" y="145" font-size="11" fill="#8b949e" letter-spacing="1">EVENT</text>
+    <text x="192" y="172" font-size="16" fill="#e6edf3">veth entered promiscuous mode</text>
+    <line x1="450" y1="191" x2="450" y2="221" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow13)"/>
+
+    <rect x="170" y="231" width="560" height="76" rx="8" fill="#0d1421" stroke="#58a6ff" stroke-width="1.6"/>
+    <text x="192" y="261" font-size="11" fill="#58a6ff" letter-spacing="1">DETECTION</text>
+    <text x="192" y="288" font-size="16" fill="#e6edf3">Rule 5104</text>
+    <line x1="450" y1="307" x2="450" y2="337" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow13)"/>
+
+    <rect x="170" y="347" width="560" height="76" rx="8" fill="#0d1421" stroke="#d29922" stroke-width="1.6"/>
+    <text x="192" y="377" font-size="11" fill="#d29922" letter-spacing="1">ALERT</text>
+    <text x="192" y="404" font-size="16" fill="#e6edf3">Possible Network Sniffing</text>
+    <line x1="450" y1="423" x2="450" y2="453" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow13)"/>
+
+    <rect x="170" y="463" width="560" height="76" rx="8" fill="#0d1421" stroke="#bc8cff" stroke-width="1.6"/>
+    <text x="192" y="493" font-size="11" fill="#bc8cff" letter-spacing="1">INVESTIGATION</text>
+    <text x="192" y="520" font-size="16" fill="#e6edf3">Context + Evidence</text>
+    <line x1="450" y1="539" x2="450" y2="569" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow13)"/>
+
+    <rect x="170" y="579" width="560" height="86" rx="8" fill="#0f1f14" stroke="#3fb950" stroke-width="2.2"/>
+    <text x="192" y="611" font-size="11" fill="#3fb950" letter-spacing="1">VERDICT</text>
+    <text x="192" y="642" font-size="20" fill="#3fb950" font-weight="700">False Positive</text>
+  </g>
+
+  <rect x="120" y="740" width="660" height="150" rx="12" fill="#111318" stroke="#2d3748" stroke-width="1.4"/>
+  <text x="450" y="795" font-family="Segoe UI,Arial,sans-serif" font-size="22" fill="#e6edf3" text-anchor="middle" font-weight="600">True Event</text>
+  <text x="450" y="830" font-family="Consolas,monospace" font-size="22" fill="#f85149" text-anchor="middle">≠</text>
+  <text x="450" y="865" font-family="Segoe UI,Arial,sans-serif" font-size="22" fill="#e6edf3" text-anchor="middle" font-weight="600">Confirmed Security Incident</text>
+
+  <text x="450" y="945" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">um evento pode ser verdadeiro e a detecção funcionar corretamente — mesmo assim, o risco pode não se confirmar</text>
+</svg>

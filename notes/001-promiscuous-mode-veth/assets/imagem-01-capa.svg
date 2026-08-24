@@ -1,0 +1,54 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid01" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#152030" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow01" cx="75%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#3fb950" stop-opacity="0.14"/>
+      <stop offset="60%" stop-color="#58a6ff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#0a0e14" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0a0e14"/>
+  <rect width="1200" height="630" fill="url(#grid01)"/>
+  <rect width="1200" height="630" fill="url(#glow01)"/>
+  <rect x="0" y="0" width="1200" height="630" fill="none" stroke="#21262d" stroke-width="2"/>
+
+  <text x="60" y="54" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="13" fill="#8b949e" letter-spacing="2">SOC · THREAT HUNTING · INCIDENT RESPONSE · DETECTION ENGINEERING · LINUX · WAZUH</text>
+  <line x1="60" y1="70" x2="1140" y2="70" stroke="#21262d" stroke-width="1"/>
+
+  <text x="60" y="150" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="22" fill="#3fb950" letter-spacing="4">WAZUH SOC NOTES #001</text>
+
+  <text x="58" y="235" font-family="Segoe UI,Arial,sans-serif" font-size="46" font-weight="700" fill="#e6edf3">Interfaces veth em</text>
+  <text x="58" y="292" font-family="Segoe UI,Arial,sans-serif" font-size="46" font-weight="700" fill="#e6edf3">modo promíscuo</text>
+  <text x="58" y="336" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#8b949e">Quando um alerta de sniffing exige contexto</text>
+
+  <rect x="60" y="400" width="248" height="36" rx="18" fill="none" stroke="#d29922" stroke-width="1.5"/>
+  <text x="184" y="423" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="13" fill="#d29922" text-anchor="middle" letter-spacing="1">RULE 5104 · PROMISCUOUS MODE</text>
+
+  <rect x="58" y="552" width="586" height="36" rx="6" fill="#0d1421" stroke="#1f2937" stroke-width="1"/>
+  <text x="76" y="576" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="14" fill="#7ee787">kernel: device veth&lt;INTERFACE_ID&gt; entered promiscuous mode</text>
+
+  <g transform="translate(730,150)">
+    <rect x="0" y="0" width="410" height="290" rx="10" fill="#0d1421" stroke="#2d3748" stroke-width="1.5"/>
+    <text x="22" y="34" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="13" fill="#8b949e" letter-spacing="1">LINUX HOST</text>
+    <line x1="22" y1="46" x2="388" y2="46" stroke="#21262d" stroke-width="1"/>
+
+    <rect x="24" y="66" width="170" height="190" rx="8" fill="#0a0e14" stroke="#3fb950" stroke-width="1.2" stroke-dasharray="5 4"/>
+    <text x="38" y="88" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="11" fill="#3fb950" letter-spacing="1">NAMESPACE</text>
+    <circle cx="109" cy="165" r="30" fill="#111827" stroke="#58a6ff" stroke-width="2"/>
+    <text x="109" y="170" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="13" fill="#58a6ff" text-anchor="middle">eth0</text>
+
+    <circle cx="268" cy="165" r="30" fill="#111827" stroke="#58a6ff" stroke-width="2"/>
+    <text x="268" y="161" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="11" fill="#58a6ff" text-anchor="middle">veth</text>
+    <text x="268" y="175" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="11" fill="#58a6ff" text-anchor="middle">A</text>
+    <line x1="139" y1="165" x2="238" y2="165" stroke="#3fb950" stroke-width="2.5"/>
+
+    <circle cx="360" cy="165" r="24" fill="#111827" stroke="#8b949e" stroke-width="2"/>
+    <text x="360" y="161" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="10" fill="#8b949e" text-anchor="middle">veth</text>
+    <text x="360" y="174" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="10" fill="#8b949e" text-anchor="middle">B</text>
+    <line x1="298" y1="165" x2="336" y2="165" stroke="#2d3748" stroke-width="2" stroke-dasharray="3 3"/>
+
+    <text x="209" y="242" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="12" fill="#8b949e" text-anchor="middle">virtual ethernet pair</text>
+  </g>
+</svg>

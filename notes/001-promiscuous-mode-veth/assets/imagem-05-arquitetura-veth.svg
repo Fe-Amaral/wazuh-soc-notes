@@ -1,0 +1,56 @@
+<svg viewBox="0 0 1200 650" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow05" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#8b949e"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="650" fill="#0a0e14"/>
+  <text x="600" y="46" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">ARQUITETURA VETH</text>
+  <line x1="500" y1="62" x2="700" y2="62" stroke="#21262d" stroke-width="1"/>
+
+  <!-- HOST boundary -->
+  <rect x="60" y="100" width="900" height="420" rx="12" fill="none" stroke="#4b5563" stroke-width="1.5" stroke-dasharray="8 5"/>
+  <text x="84" y="128" font-family="Consolas,monospace" font-size="13" fill="#c9d1d9" letter-spacing="1">LINUX HOST</text>
+
+  <!-- NAMESPACE boundary -->
+  <rect x="100" y="180" width="240" height="280" rx="10" fill="#0d1421" stroke="#3fb950" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="120" y="206" font-family="Consolas,monospace" font-size="12" fill="#3fb950" letter-spacing="1">CONTAINER /</text>
+  <text x="120" y="222" font-family="Consolas,monospace" font-size="12" fill="#3fb950" letter-spacing="1">NAMESPACE</text>
+
+  <circle cx="220" cy="330" r="38" fill="#111827" stroke="#58a6ff" stroke-width="2.2"/>
+  <text x="220" y="336" font-family="Consolas,monospace" font-size="15" fill="#58a6ff" text-anchor="middle">eth0</text>
+
+  <!-- veth pair -->
+  <line x1="258" y1="330" x2="392" y2="330" stroke="#8b949e" stroke-width="2" stroke-dasharray="3 4" marker-end="url(#arrow05)"/>
+  <circle cx="430" cy="330" r="34" fill="#111827" stroke="#58a6ff" stroke-width="2.2"/>
+  <text x="430" y="326" font-family="Consolas,monospace" font-size="12" fill="#58a6ff" text-anchor="middle">veth</text>
+  <text x="430" y="340" font-family="Consolas,monospace" font-size="12" fill="#58a6ff" text-anchor="middle">A</text>
+
+  <line x1="464" y1="330" x2="536" y2="330" stroke="#3fb950" stroke-width="3"/>
+  <text x="500" y="312" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#3fb950" text-anchor="middle">pair</text>
+
+  <circle cx="570" cy="330" r="34" fill="#111827" stroke="#58a6ff" stroke-width="2.2"/>
+  <text x="570" y="326" font-family="Consolas,monospace" font-size="12" fill="#58a6ff" text-anchor="middle">veth</text>
+  <text x="570" y="340" font-family="Consolas,monospace" font-size="12" fill="#58a6ff" text-anchor="middle">B</text>
+
+  <line x1="604" y1="330" x2="660" y2="330" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow05)"/>
+
+  <!-- Bridge -->
+  <rect x="670" y="295" width="140" height="70" rx="8" fill="#0d1421" stroke="#d29922" stroke-width="2"/>
+  <text x="740" y="325" font-family="Consolas,monospace" font-size="14" fill="#d29922" text-anchor="middle" font-weight="700">BRIDGE</text>
+  <text x="740" y="345" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">Linux bridge / vSwitch</text>
+  <line x1="810" y1="330" x2="866" y2="330" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow05)"/>
+
+  <!-- Physical NIC -->
+  <rect x="876" y="295" width="140" height="70" rx="8" fill="#0d1421" stroke="#c9d1d9" stroke-width="1.6"/>
+  <text x="946" y="320" font-family="Consolas,monospace" font-size="12" fill="#e6edf3" text-anchor="middle" font-weight="700">PHYSICAL</text>
+  <text x="946" y="336" font-family="Consolas,monospace" font-size="12" fill="#e6edf3" text-anchor="middle" font-weight="700">INTERFACE</text>
+  <text x="946" y="352" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">NIC física</text>
+
+  <!-- crosses host boundary to Network -->
+  <line x1="1016" y1="330" x2="1080" y2="330" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow05)"/>
+  <ellipse cx="1140" cy="330" rx="55" ry="40" fill="#0d1421" stroke="#58a6ff" stroke-width="1.6"/>
+  <text x="1140" y="336" font-family="Consolas,monospace" font-size="13" fill="#58a6ff" text-anchor="middle">NETWORK</text>
+
+  <text x="510" y="560" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">pacotes enviados em uma ponta do par veth aparecem na outra — mecanismo padrão de containers, namespaces e bridges</text>
+</svg>

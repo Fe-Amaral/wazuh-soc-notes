@@ -1,0 +1,31 @@
+<svg viewBox="0 0 1400 420" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="420" fill="#0a0e14"/>
+  <text x="700" y="46" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">INVESTIGATION FLOW — VISÃO FINAL</text>
+  <line x1="570" y1="62" x2="830" y2="62" stroke="#21262d" stroke-width="1"/>
+
+  <g font-family="Consolas,monospace" fill="#0d1421" stroke-width="1.8">
+    <polygon points="40,150 230,150 250,195 230,240 40,240" stroke="#58a6ff"/>
+    <polygon points="250,150 420,150 440,195 420,240 250,240 230,195" stroke="#d29922"/>
+    <polygon points="440,150 610,150 630,195 610,240 440,240 420,195" stroke="#bc8cff"/>
+    <polygon points="630,150 800,150 820,195 800,240 630,240 610,195" stroke="#56c2d4"/>
+    <polygon points="820,150 990,150 1010,195 990,240 820,240 800,195" stroke="#f0883e"/>
+    <polygon points="1010,150 1180,150 1200,195 1180,240 1010,240 990,195" stroke="#3fb950"/>
+  </g>
+
+  <text x="145" y="188" font-family="Consolas,monospace" font-size="15" fill="#58a6ff" text-anchor="middle" font-weight="700">DETECTION</text>
+  <text x="335" y="188" font-family="Consolas,monospace" font-size="15" fill="#d29922" text-anchor="middle" font-weight="700">HYPOTHESIS</text>
+  <text x="525" y="188" font-family="Consolas,monospace" font-size="15" fill="#bc8cff" text-anchor="middle" font-weight="700">HUNTING</text>
+  <text x="715" y="188" font-family="Consolas,monospace" font-size="15" fill="#56c2d4" text-anchor="middle" font-weight="700">CONTEXT</text>
+  <text x="905" y="188" font-family="Consolas,monospace" font-size="15" fill="#f0883e" text-anchor="middle" font-weight="700">EVIDENCE</text>
+  <text x="1095" y="188" font-family="Consolas,monospace" font-size="15" fill="#3fb950" text-anchor="middle" font-weight="700">DECISION</text>
+
+  <text x="145" y="212" font-family="Segoe UI,Arial,sans-serif" font-size="10.5" fill="#8b949e" text-anchor="middle">Rule 5104</text>
+  <text x="335" y="212" font-family="Segoe UI,Arial,sans-serif" font-size="10.5" fill="#8b949e" text-anchor="middle">Network Sniffing?</text>
+  <text x="525" y="212" font-family="Segoe UI,Arial,sans-serif" font-size="10.5" fill="#8b949e" text-anchor="middle">veth identificado</text>
+  <text x="715" y="212" font-family="Segoe UI,Arial,sans-serif" font-size="10.5" fill="#8b949e" text-anchor="middle">virtual networking</text>
+  <text x="905" y="212" font-family="Segoe UI,Arial,sans-serif" font-size="10.5" fill="#8b949e" text-anchor="middle">nenhuma evidência maliciosa</text>
+  <text x="1095" y="212" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#c9d1d9" text-anchor="middle" font-weight="600">False Positive</text>
+
+  <text x="700" y="310" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#8b949e" text-anchor="middle">esta é a cadeia analítica do SOC — não a cadeia técnica de telemetria</text>
+  <text x="700" y="335" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#6b7280" text-anchor="middle">hipóteses mudam quando as evidências mudam</text>
+</svg>
