@@ -1,58 +1,90 @@
-<svg viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="720" fill="#0a0e14"/>
-  <text x="600" y="50" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">FRAMEWORK APPLICABILITY MAP</text>
-  <line x1="470" y1="66" x2="730" y2="66" stroke="#21262d" stroke-width="1"/>
+<svg viewBox="0 0 1200 780" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="780" fill="#0a0e14"/>
+  <text x="600" y="46" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">FRAMEWORK &amp; METHODOLOGY MAP</text>
+  <line x1="410" y1="62" x2="790" y2="62" stroke="#21262d" stroke-width="1"/>
 
-  <g>
-    <rect x="60" y="100" width="1080" height="120" rx="10" fill="#0f1f14" stroke="#3fb950" stroke-width="1.8"/>
-    <text x="90" y="132" font-family="Consolas,monospace" font-size="13" fill="#3fb950" font-weight="700" letter-spacing="1">DIRECT / STRONG</text>
-    <g font-family="Consolas,monospace" font-size="13" fill="#e6edf3">
-      <rect x="90" y="150" width="260" height="46" rx="6" fill="#111827" stroke="#3fb950" stroke-width="1.2"/>
-      <text x="220" y="178" text-anchor="middle">NIST CSF</text>
-      <rect x="370" y="150" width="260" height="46" rx="6" fill="#111827" stroke="#3fb950" stroke-width="1.2"/>
-      <text x="500" y="178" text-anchor="middle">NIST SP 800-61</text>
+  <!-- Row 1: Technique / adversarial chain -->
+  <g transform="translate(60,90)">
+    <rect width="1080" height="100" rx="10" fill="#1a1608" stroke="#d29922" stroke-width="1.8"/>
+    <rect width="10" height="100" fill="#d29922"/>
+    <text x="34" y="30" font-family="Consolas,monospace" font-size="13.5" fill="#d29922" font-weight="700" letter-spacing="1">TÉCNICA / CADEIA ADVERSARIAL</text>
+    <g font-family="Consolas,monospace" font-size="12.5" fill="#e6edf3">
+      <rect x="34" y="42" width="290" height="42" rx="8" fill="#0a0e14" stroke="#d29922" stroke-width="1.3"/>
+      <text x="179" y="60" text-anchor="middle" font-weight="700">MITRE ATT&amp;CK</text>
+      <text x="179" y="76" text-anchor="middle" font-size="10" fill="#8b949e">T1071.004 (hipótese, não confirmada)</text>
+
+      <rect x="336" y="42" width="470" height="42" rx="8" fill="#0a0e14" stroke="#d29922" stroke-width="1.3"/>
+      <text x="571" y="60" text-anchor="middle" font-weight="700">MITRE Attack Flow / Cyber Kill Chain</text>
+      <text x="571" y="76" text-anchor="middle" font-size="10" fill="#8b949e">lente analítica — nenhum estágio confirmado</text>
     </g>
   </g>
 
-  <g>
-    <rect x="60" y="240" width="1080" height="120" rx="10" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
-    <text x="90" y="272" font-family="Consolas,monospace" font-size="13" fill="#58a6ff" font-weight="700" letter-spacing="1">SUPPORTING</text>
-    <g font-family="Consolas,monospace" font-size="13" fill="#e6edf3">
-      <rect x="90" y="290" width="220" height="46" rx="6" fill="#111827" stroke="#58a6ff" stroke-width="1.2"/>
-      <text x="200" y="318" text-anchor="middle">MITRE D3FEND</text>
-      <rect x="330" y="290" width="200" height="46" rx="6" fill="#111827" stroke="#58a6ff" stroke-width="1.2"/>
-      <text x="430" y="318" text-anchor="middle">CIS Controls</text>
-      <rect x="550" y="290" width="180" height="46" rx="6" fill="#111827" stroke="#58a6ff" stroke-width="1.2"/>
-      <text x="640" y="318" text-anchor="middle">VERIS</text>
-      <rect x="750" y="290" width="180" height="46" rx="6" fill="#111827" stroke="#58a6ff" stroke-width="1.2"/>
-      <text x="840" y="318" text-anchor="middle">SOC-CMM</text>
+  <!-- Row 2: Governance -->
+  <g transform="translate(60,204)">
+    <rect width="1080" height="310" rx="10" fill="#0f1f14" stroke="#3fb950" stroke-width="1.8"/>
+    <rect width="10" height="310" fill="#3fb950"/>
+    <text x="34" y="30" font-family="Consolas,monospace" font-size="13.5" fill="#3fb950" font-weight="700" letter-spacing="1">GOVERNANÇA / METODOLOGIA / MELHORIA CONTÍNUA</text>
+
+    <g font-family="Consolas,monospace" font-size="12.5" fill="#e6edf3">
+      <rect x="34" y="42" width="150" height="38" rx="19" fill="#0a0e14" stroke="#3fb950" stroke-width="1.2"/>
+      <text x="109" y="66" text-anchor="middle">NIST CSF</text>
+      <rect x="196" y="42" width="180" height="38" rx="19" fill="#0a0e14" stroke="#3fb950" stroke-width="1.2"/>
+      <text x="286" y="66" text-anchor="middle">NIST SP 800-61</text>
+      <rect x="388" y="42" width="180" height="38" rx="19" fill="#0a0e14" stroke="#3fb950" stroke-width="1.2"/>
+      <text x="478" y="66" text-anchor="middle">ISO/IEC 27035</text>
+      <rect x="580" y="42" width="180" height="38" rx="19" fill="#0a0e14" stroke="#3fb950" stroke-width="1.2"/>
+      <text x="670" y="66" text-anchor="middle">ISO/IEC 27001</text>
+      <rect x="772" y="42" width="150" height="38" rx="19" fill="#0a0e14" stroke="#3fb950" stroke-width="1.2"/>
+      <text x="847" y="66" text-anchor="middle">COBIT 2019</text>
+      <rect x="934" y="42" width="110" height="38" rx="19" fill="#0a0e14" stroke="#3fb950" stroke-width="1.2"/>
+      <text x="989" y="66" text-anchor="middle">ITIL 4</text>
+    </g>
+
+    <g font-family="Consolas,monospace" font-size="12" fill="#e6edf3">
+      <rect x="34" y="96" width="1010" height="138" rx="8" fill="#0a0e14" stroke="#3fb950" stroke-width="1.3"/>
+      <text x="54" y="120" font-weight="700" fill="#3fb950">CIS CONTROLS</text>
+      <text x="54" y="144" font-size="11.5">CIS 1 — Inventory and Control of Enterprise Assets</text>
+      <text x="54" y="164" font-size="11.5">CIS 8 — Audit Log Management</text>
+      <text x="54" y="184" font-size="11.5">CIS 10 — Malware Defenses</text>
+      <text x="54" y="204" font-size="11.5">CIS 13/17 — Network Monitoring / IR Management</text>
+      <text x="620" y="144" font-size="11.5" fill="#8b949e">ISO 27035: Plan&amp;Prepare · Detect&amp;Report ·</text>
+      <text x="620" y="164" font-size="11.5" fill="#8b949e">Assess&amp;Decide · Respond · Lessons Learned</text>
+      <text x="620" y="184" font-size="11.5" fill="#8b949e">ISO 27001: Anexo A 5.24–5.28</text>
+      <text x="620" y="204" font-size="11.5" fill="#8b949e">COBIT: DSS02 + MEA01/MEA02</text>
+    </g>
+
+    <rect x="34" y="248" width="320" height="42" rx="8" fill="#0a0e14" stroke="#3fb950" stroke-width="1.3"/>
+    <text x="194" y="266" font-family="Consolas,monospace" font-size="12.5" fill="#e6edf3" text-anchor="middle" font-weight="700">SOC-CMM</text>
+    <text x="194" y="282" font-family="Consolas,monospace" font-size="10.5" fill="#8b949e" text-anchor="middle">Asset Context · Alert Triage</text>
+
+    <rect x="370" y="248" width="280" height="42" rx="8" fill="#0a0e14" stroke="#4b5563" stroke-width="1.2" stroke-dasharray="4 3"/>
+    <text x="510" y="266" font-family="Consolas,monospace" font-size="12" fill="#8b949e" text-anchor="middle" font-weight="700">Agile / Kanban</text>
+    <text x="510" y="282" font-family="Consolas,monospace" font-size="9.5" fill="#6b7280" text-anchor="middle">operacional — não classifica evidência</text>
+
+    <rect x="666" y="248" width="380" height="42" rx="8" fill="#0a0e14" stroke="#3fb950" stroke-width="1.3"/>
+    <text x="856" y="266" font-family="Consolas,monospace" font-size="12" fill="#e6edf3" text-anchor="middle" font-weight="700">SANS PICERL</text>
+    <text x="856" y="282" font-family="Consolas,monospace" font-size="9.5" fill="#8b949e" text-anchor="middle">Identification + Lessons Learned</text>
+  </g>
+
+  <!-- Row 3: Analytical methodology -->
+  <g transform="translate(60,530)">
+    <rect width="1080" height="110" rx="10" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <rect width="10" height="110" fill="#58a6ff"/>
+    <text x="34" y="30" font-family="Consolas,monospace" font-size="13.5" fill="#58a6ff" font-weight="700" letter-spacing="1">METODOLOGIA ANALÍTICA APLICADA</text>
+    <g font-family="Consolas,monospace" font-size="12.5" fill="#e6edf3">
+      <rect x="34" y="42" width="360" height="52" rx="8" fill="#0a0e14" stroke="#58a6ff" stroke-width="1.3"/>
+      <text x="214" y="62" text-anchor="middle" font-weight="700" font-size="11.5">ACH — Competing Hypotheses</text>
+      <text x="214" y="80" text-anchor="middle" font-size="9.5" fill="#8b949e">C2 via DNS vs. resolvedor interno</text>
+
+      <rect x="404" y="42" width="270" height="52" rx="8" fill="#0a0e14" stroke="#58a6ff" stroke-width="1.3"/>
+      <text x="539" y="62" text-anchor="middle" font-weight="700">Método Científico</text>
+      <text x="539" y="80" text-anchor="middle" font-size="10.5" fill="#8b949e">Hipótese → Evidência → Teste → Conclusão</text>
+
+      <rect x="704" y="42" width="342" height="52" rx="8" fill="#0a0e14" stroke="#58a6ff" stroke-width="1.3"/>
+      <text x="875" y="62" text-anchor="middle" font-weight="700">OODA Loop</text>
+      <text x="875" y="80" text-anchor="middle" font-size="10" fill="#8b949e">Observe → Orient → Decide → Act</text>
     </g>
   </g>
 
-  <g>
-    <rect x="60" y="380" width="1080" height="120" rx="10" fill="#1a1608" stroke="#d29922" stroke-width="1.8"/>
-    <text x="90" y="412" font-family="Consolas,monospace" font-size="13" fill="#d29922" font-weight="700" letter-spacing="1">PARTIAL / LIMITED</text>
-    <g font-family="Consolas,monospace" font-size="13" fill="#e6edf3">
-      <rect x="90" y="430" width="230" height="46" rx="6" fill="#111827" stroke="#d29922" stroke-width="1.2"/>
-      <text x="205" y="458" text-anchor="middle">MITRE ATT&amp;CK</text>
-      <rect x="340" y="430" width="250" height="46" rx="6" fill="#111827" stroke="#d29922" stroke-width="1.2"/>
-      <text x="465" y="458" text-anchor="middle">MITRE Attack Flow</text>
-      <rect x="610" y="430" width="180" height="46" rx="6" fill="#111827" stroke="#d29922" stroke-width="1.2"/>
-      <text x="700" y="458" text-anchor="middle">Sigma</text>
-    </g>
-  </g>
-
-  <g>
-    <rect x="60" y="520" width="1080" height="100" rx="10" fill="#15161a" stroke="#4b5563" stroke-width="1.8"/>
-    <text x="90" y="552" font-family="Consolas,monospace" font-size="13" fill="#8b949e" font-weight="700" letter-spacing="1">NOT APPLICABLE</text>
-    <g font-family="Consolas,monospace" font-size="13" fill="#8b949e">
-      <rect x="90" y="568" width="240" height="42" rx="6" fill="#111827" stroke="#4b5563" stroke-width="1.2" stroke-dasharray="4 3"/>
-      <text x="210" y="594" text-anchor="middle">MITRE Engage</text>
-      <rect x="350" y="568" width="330" height="42" rx="6" fill="#111827" stroke="#4b5563" stroke-width="1.2" stroke-dasharray="4 3"/>
-      <text x="515" y="594" text-anchor="middle">MITRE Fight Fraud Framework</text>
-    </g>
-  </g>
-
-  <text x="600" y="670" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">ATT&amp;CK pode orientar uma hipótese</text>
-  <text x="600" y="692" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#6b7280" text-anchor="middle">sem ser tratado como comprovação de TTP</text>
+  <text x="600" y="680" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">ATT&amp;CK pode orientar uma hipótese sem ser tratado como comprovação de TTP</text>
 </svg>

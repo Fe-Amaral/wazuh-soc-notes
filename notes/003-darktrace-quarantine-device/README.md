@@ -986,21 +986,13 @@ A qualidade do veredito depende da correlação.
 
 ## 18. Framework Mapping
 
-### MITRE ATT&CK
-
-**Aplicabilidade: parcial.**
-
-Pode orientar hipóteses investigativas.
-
-Nenhuma técnica adversarial específica foi confirmada.
+Um framework só entra nesta lista quando há um número, técnica ou controle real e específico que se aplique a este case — não como referência genérica.
 
 ### MITRE D3FEND
 
-**Aplicabilidade: forte / supporting.**
+**Aplicabilidade: direta.**
 
-A ação de quarentena possui relação conceitual com mecanismos defensivos de isolamento.
-
-Um conceito relevante é:
+A ação de quarentena possui relação direta com o mecanismo defensivo:
 
 ```text
 D3-NI — Network Isolation
@@ -1008,29 +1000,11 @@ D3-NI — Network Isolation
 
 A ideia defensiva consiste em restringir a capacidade de determinado host interagir com recursos de rede não necessários.
 
-### MITRE Attack Flow
+### MITRE Attack Flow / Cyber Kill Chain
 
-**Aplicabilidade: limitada.**
+**Aplicabilidade: lente analítica, sem cadeia confirmada.**
 
-Não existe cadeia adversarial suficiente para reconstrução.
-
-### MITRE Engage
-
-**Aplicabilidade: Not Applicable.**
-
-Não houve deception ou adversary engagement.
-
-### MITRE Fight Fraud Framework
-
-**Aplicabilidade: Not Applicable.**
-
-Nenhum cenário de fraude foi identificado.
-
-### VERIS
-
-**Aplicabilidade: supporting.**
-
-Pode apoiar diferenciação entre evento, ação e impacto.
+Estruturam a pergunta "houve progressão adversarial?" feita na Seção 15 (Attack Chain Assessment). Nenhum estágio foi confirmado — nem mesmo uma técnica MITRE ATT&CK específica (ver Seção 16).
 
 ### NIST CSF
 
@@ -1044,23 +1018,79 @@ Especialmente Detect, Respond e Improve.
 
 A contenção é apenas uma etapa dentro do tratamento do incidente.
 
+### ISO/IEC 27035
+
+**Aplicabilidade: direta.**
+
+Ciclo de 5 fases (Plan & Prepare / Detection & Reporting / Assessment & Decision / Responses / Lessons Learned).
+
+### SANS PICERL
+
+**Aplicabilidade: direta.**
+
+Identification, Containment (quarentena aplicada) e Lessons Learned mapeados diretamente na estrutura deste note.
+
+### ISO/IEC 27001
+
+**Aplicabilidade: direta.**
+
+Anexo A 5.24–5.28 — controles de gestão de incidente de segurança da informação.
+
+### COBIT 2019
+
+**Aplicabilidade: direta.**
+
+DSS02 (Managed Service Requests and Incidents) e MEA01/MEA02 (monitoramento e melhoria contínua).
+
+### ITIL 4
+
+**Aplicabilidade: direta.**
+
+Prática de Incident Management e prática de Continual Improvement.
+
+### Agile / Kanban
+
+**Aplicabilidade: operacional (não classifica evidência do case).**
+
+O pipeline de Detection Engineering (Seção 24) poderia ser gerenciado como backlog Scrum/Kanban — cada nova hipótese de detecção como item de sprint. Não é usado para classificar nenhum fato técnico deste alerta.
+
 ### CIS Controls
 
-**Aplicabilidade: supporting.**
+**Aplicabilidade: direta.**
 
-Principalmente inventário, monitoring, network defense e incident response.
-
-### Sigma
-
-**Aplicabilidade: limitada.**
-
-Pode complementar outras fontes de telemetria.
+```text
+CIS 1  — Inventory and Control of Enterprise Assets
+CIS 6  — Access Control Management
+CIS 8  — Audit Log Management
+CIS 13 — Network Monitoring and Defense
+CIS 17 — Incident Response Management
+```
 
 ### SOC-CMM
 
-**Aplicabilidade: supporting.**
+**Aplicabilidade: direta.**
 
-Útil para discutir capacidade de detecção, contenção e investigação.
+Detection Management e Asset Context.
+
+### Metodologia analítica aplicada
+
+```text
+ACH — Analysis of Competing Hypotheses
+```
+
+A Seção 13 avalia cenários concorrentes (falso positivo vs. comprometimento real) e os refuta por evidência disponível.
+
+```text
+Método Científico
+```
+
+Hipótese → Evidência → Teste → Conclusão é a estrutura epistêmica de todo o note.
+
+```text
+OODA Loop
+```
+
+Observe (telemetria) → Orient (hipótese/evidência) → Decide (veredito) → Act (recomendações).
 
 ![Aplicabilidade dos frameworks](assets/imagem-08-framework-map.svg)
 

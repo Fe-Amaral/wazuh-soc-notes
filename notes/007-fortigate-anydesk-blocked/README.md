@@ -1216,49 +1216,56 @@ Uma Detection Strategy madura precisa combinar rede e endpoint.
 
 ## 19. Framework Mapping
 
+Um framework só entra nesta lista quando há um número, técnica ou controle real e específico que se aplique a este case — não como referência genérica.
+
 ### MITRE ATT&CK
 
-**Aplicabilidade: parcial / hipótese.**
+**Aplicabilidade: hipótese de investigação (não confirmada).**
 
-T1219.002 possui aderência comportamental.
+```text
+T1219.002 — Remote Desktop Software
+```
 
-Uso adversarial não foi confirmado.
-
-### MITRE Detection Strategy
-
-**Aplicabilidade: forte.**
-
-A correlação entre software de acesso remoto, processo e rede é diretamente relevante.
+Uso adversarial não foi confirmado; a técnica permanece hipótese.
 
 ### MITRE D3FEND
 
-**Aplicabilidade: supporting.**
+**Aplicabilidade: direta.**
 
-Controles de rede, filtragem e monitoramento possuem aderência defensiva.
+```text
+D3-NTF — Network Traffic Filtering
+```
 
-### MITRE Attack Flow
+O Application Control aplicou uma ação de bloqueio real sobre o tráfego — uma técnica defensiva efetivamente empregada, não apenas hipotética.
 
-**Aplicabilidade: limitada.**
+### MITRE Attack Flow / Cyber Kill Chain
 
-Não existe cadeia adversarial confirmada.
+**Aplicabilidade: lente analítica, sem cadeia confirmada.**
 
-### MITRE Engage
-
-**Aplicabilidade: Not Applicable.**
-
-Não houve adversary engagement.
-
-### MITRE Fight Fraud Framework
-
-**Aplicabilidade: Not Applicable.**
-
-Nenhum cenário de fraude.
+Estruturam a pergunta "houve progressão adversarial?" feita na Seção 16 (Attack Chain Assessment). Nenhum estágio foi confirmado.
 
 ### VERIS
 
-**Aplicabilidade: supporting.**
+**Aplicabilidade: direta.**
 
-Pode apoiar classificação estruturada do evento.
+Diferente da maioria das notes desta série, este case teve uma ação confirmada e não autorizada — há um evento real a classificar:
+
+```text
+Actor: Internal (não identificado)
+Action: Misuse — Unapproved Software
+Asset: User Device
+Attribute: Confidentiality (potencial, não confirmada)
+```
+
+### Sigma
+
+**Aplicabilidade: direta (exemplo conceitual, não evidência do case).**
+
+```text
+title: Remote Desktop Software - AnyDesk Execution
+```
+
+Regra de detecção na camada de processo (Seção 26); não foi utilizada para gerar o alerta original, que veio do FortiGate Application Control.
 
 ### NIST CSF
 
@@ -1272,23 +1279,80 @@ Principalmente Detect, Respond e Improve.
 
 Investigação e resposta.
 
+### ISO/IEC 27035
+
+**Aplicabilidade: direta.**
+
+Ciclo de 5 fases (Plan & Prepare / Detection & Reporting / Assessment & Decision / Responses / Lessons Learned).
+
+### SANS PICERL
+
+**Aplicabilidade: direta.**
+
+Identification, Containment (Application Control já bloqueou o tráfego), Eradication (GPO para impedir a instalação) e Lessons Learned mapeados diretamente na estrutura deste note.
+
+### ISO/IEC 27001
+
+**Aplicabilidade: direta.**
+
+Anexo A 5.24–5.28 — controles de gestão de incidente de segurança da informação.
+
+### COBIT 2019
+
+**Aplicabilidade: direta.**
+
+DSS02 (Managed Service Requests and Incidents) e MEA01/MEA02 (monitoramento e melhoria contínua).
+
+### ITIL 4
+
+**Aplicabilidade: direta.**
+
+Prática de Incident Management e prática de Continual Improvement.
+
+### Agile / Kanban
+
+**Aplicabilidade: operacional (não classifica evidência do case).**
+
+O pipeline de Detection Engineering (Seção 25) poderia ser gerenciado como backlog Scrum/Kanban — cada nova hipótese de detecção como item de sprint. Não é usado para classificar nenhum fato técnico deste alerta.
+
 ### CIS Controls
 
-**Aplicabilidade: supporting / forte.**
+**Aplicabilidade: direta.**
 
-Inventário de software, logs e monitoramento de rede são particularmente relevantes.
-
-### Sigma
-
-**Aplicabilidade: parcial.**
-
-Pode complementar a detecção na camada de processo.
+```text
+CIS 1  — Inventory and Control of Enterprise Assets
+CIS 2  — Inventory and Control of Software Assets
+CIS 8  — Audit Log Management
+CIS 12 — Network Infrastructure Management
+CIS 13 — Network Monitoring and Defense
+CIS 17 — Incident Response Management
+```
 
 ### SOC-CMM
 
-**Aplicabilidade: supporting.**
+**Aplicabilidade: direta.**
 
-Expõe oportunidades de maturidade de contexto e correlação.
+Detection Quality e Asset Context.
+
+### Metodologia analítica aplicada
+
+```text
+ACH — Analysis of Competing Hypotheses
+```
+
+A Seção 13 avalia quatro cenários concorrentes (A: autorizado, B: não homologado, C: residual, D: adversarial) e os refuta por evidência disponível.
+
+```text
+Método Científico
+```
+
+Hipótese → Evidência → Teste → Conclusão é a estrutura epistêmica de todo o note.
+
+```text
+OODA Loop
+```
+
+Observe (telemetria) → Orient (hipótese/evidência) → Decide (veredito) → Act (GPO como ação corretiva).
 
 ![Framework Applicability Map](assets/imagem-09-framework-applicability-map.svg)
 

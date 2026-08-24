@@ -1148,41 +1148,23 @@ Higher Detection Confidence
 
 ## 19. Framework Mapping
 
+Um framework só entra nesta lista quando há um número, técnica ou controle real e específico que se aplique a este case — não como referência genérica.
+
 ### MITRE ATT&CK
 
-**Aplicabilidade: parcial.**
+**Aplicabilidade: hipótese de investigação (não confirmada).**
 
-T1059.001 somente como hipótese, pois execução PowerShell não foi confirmada.
+```text
+T1059.001 — PowerShell
+```
 
-### MITRE D3FEND
+Execução PowerShell não foi confirmada; a técnica permanece hipótese.
 
-**Aplicabilidade: supporting.**
+### MITRE Attack Flow / Cyber Kill Chain
 
-Pode apoiar monitoramento e análise de artefatos e processos.
+**Aplicabilidade: lente analítica, sem cadeia confirmada.**
 
-### MITRE Attack Flow
-
-**Aplicabilidade: limitada.**
-
-Nenhuma cadeia adversarial completa foi observada.
-
-### MITRE Engage
-
-**Aplicabilidade: Not Applicable.**
-
-Não houve adversary engagement.
-
-### MITRE Fight Fraud Framework
-
-**Aplicabilidade: Not Applicable.**
-
-Sem cenário de fraude.
-
-### VERIS
-
-**Aplicabilidade: supporting.**
-
-Pode auxiliar na estruturação de evento, ação e impacto.
+Estruturam a pergunta "houve progressão adversarial (criação → execução)?" feita na Seção 16 (Attack Chain Assessment). Nenhum estágio foi confirmado.
 
 ### NIST CSF
 
@@ -1196,23 +1178,81 @@ Detect, Respond e Improve.
 
 Investigação, classificação e tratamento.
 
+### ISO/IEC 27035
+
+**Aplicabilidade: direta.**
+
+Ciclo de 5 fases (Plan & Prepare / Detection & Reporting / Assessment & Decision / Responses / Lessons Learned).
+
+### SANS PICERL
+
+**Aplicabilidade: direta.**
+
+Identification (Seções 1–10) e Lessons Learned (Seção 34) mapeados diretamente. Containment/Eradication não se aplicam — execução maliciosa não foi confirmada.
+
+### ISO/IEC 27001
+
+**Aplicabilidade: direta.**
+
+Anexo A 5.24–5.28 — controles de gestão de incidente de segurança da informação.
+
+### COBIT 2019
+
+**Aplicabilidade: direta.**
+
+DSS02 (Managed Service Requests and Incidents) e MEA01/MEA02 (monitoramento e melhoria contínua).
+
+### ITIL 4
+
+**Aplicabilidade: direta.**
+
+Prática de Incident Management e prática de Continual Improvement.
+
+### Agile / Kanban
+
+**Aplicabilidade: operacional (não classifica evidência do case).**
+
+O pipeline de Detection Engineering (Seção 25) poderia ser gerenciado como backlog Scrum/Kanban — cada nova hipótese de detecção como item de sprint. Não é usado para classificar nenhum fato técnico deste alerta.
+
 ### CIS Controls
 
-**Aplicabilidade: supporting.**
+**Aplicabilidade: direta.**
 
-Logging, monitoring e endpoint visibility.
-
-### Sigma
-
-**Aplicabilidade: parcial.**
-
-Pode apoiar detecções relacionadas a criação e execução de scripts.
+```text
+CIS 1  — Inventory and Control of Enterprise Assets
+CIS 2  — Inventory and Control of Software Assets
+CIS 4  — Secure Configuration of Enterprise Assets and Software
+CIS 8  — Audit Log Management
+CIS 10 — Malware Defenses
+CIS 13 — Network Monitoring and Defense
+CIS 17 — Incident Response Management
+```
 
 ### SOC-CMM
 
-**Aplicabilidade: supporting.**
+**Aplicabilidade: direta.**
 
-Especialmente Detection Quality e Telemetry Coverage.
+Detection Quality e Telemetry Coverage.
+
+### Metodologia analítica aplicada
+
+```text
+ACH — Analysis of Competing Hypotheses
+```
+
+A Seção 13 avalia cenários concorrentes (execução maliciosa vs. rotina de diagnóstico do Windows) e os refuta por evidência.
+
+```text
+Método Científico
+```
+
+Hipótese → Evidência → Teste → Conclusão é a estrutura epistêmica de todo o note.
+
+```text
+OODA Loop
+```
+
+Observe (telemetria) → Orient (hipótese/evidência) → Decide (veredito) → Act (recomendações).
 
 ![Framework Applicability Map](assets/imagem-09-framework-applicability-map.svg)
 

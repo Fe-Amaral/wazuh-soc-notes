@@ -866,55 +866,115 @@ Deve ser aumentar o contexto disponível para sua classificação.
 
 ## 18. Framework Mapping
 
-O caso pode ser analisado utilizando diferentes referências, desde que sua aderência seja respeitada.
+Um framework só entra nesta lista quando há um número, técnica ou controle real e específico que se aplique a este case — não como referência genérica.
 
 ### MITRE ATT&CK
 
-**Aplicabilidade: parcial.**
+**Aplicabilidade: hipótese de investigação.**
 
-T1595 foi utilizado como hipótese comportamental durante a investigação.
+T1595 — Active Scanning foi utilizado como hipótese comportamental durante a investigação.
 
 ### MITRE D3FEND
 
-**Aplicabilidade: supporting.**
+**Aplicabilidade: direta.**
 
-Pode apoiar a análise das capacidades defensivas responsáveis por observar e bloquear o tráfego.
+```text
+D3-NTF — Network Traffic Filtering
+```
 
-### MITRE Attack Flow
+O WAF aplicou uma ação de bloqueio real sobre o tráfego — uma técnica defensiva efetivamente empregada, não apenas hipotética.
 
-**Aplicabilidade: limitada.**
+### MITRE Attack Flow / Cyber Kill Chain
 
-Não existiu cadeia adversarial confirmada.
+**Aplicabilidade: lente analítica, sem cadeia confirmada.**
 
-### MITRE Engage
-
-**Aplicabilidade: Not Applicable.**
-
-Não houve deception, honeypot, honeytoken ou adversary engagement.
-
-### MITRE Fight Fraud Framework
-
-**Aplicabilidade: Not Applicable.**
-
-Nenhum elemento de fraude foi identificado.
-
-### VERIS
-
-**Aplicabilidade: supporting.**
-
-Pode apoiar a estruturação e classificação do evento.
+Estruturam a pergunta "houve progressão adversarial?" já feita na Seção 15 (Attack Chain Assessment). Nenhum estágio foi confirmado.
 
 ### NIST CSF
 
 **Aplicabilidade: direta.**
 
-O caso possui relação com Detect, Respond, Govern e Improve.
+Detect, Respond, Govern e Improve.
+
+### NIST SP 800-61
+
+**Aplicabilidade: direta.**
+
+Investigação, classificação e resposta ao evento.
+
+### ISO/IEC 27035
+
+**Aplicabilidade: direta.**
+
+Ciclo de 5 fases (Plan & Prepare / Detection & Reporting / Assessment & Decision / Responses / Lessons Learned).
+
+### SANS PICERL
+
+**Aplicabilidade: direta.**
+
+Identification, Containment (o WAF já bloqueou o tráfego) e Lessons Learned mapeados diretamente na estrutura deste note.
+
+### ISO/IEC 27001
+
+**Aplicabilidade: direta.**
+
+Anexo A 5.24–5.28 — controles de gestão de incidente de segurança da informação.
+
+### COBIT 2019
+
+**Aplicabilidade: direta.**
+
+DSS02 (Managed Service Requests and Incidents) e MEA01/MEA02 (monitoramento e melhoria contínua).
+
+### ITIL 4
+
+**Aplicabilidade: direta.**
+
+Prática de Incident Management e prática de Continual Improvement.
+
+### Agile / Kanban
+
+**Aplicabilidade: operacional (não classifica evidência do case).**
+
+O pipeline de Detection Engineering (Seção 24) poderia ser gerenciado como backlog Scrum/Kanban — cada nova hipótese de detecção como item de sprint. Não é usado para classificar nenhum fato técnico deste alerta.
 
 ### CIS Controls
 
-**Aplicabilidade: supporting.**
+**Aplicabilidade: direta.**
 
-Principalmente monitoring, application security, incident response e gestão de fornecedores.
+```text
+CIS 8  — Audit Log Management
+CIS 13 — Network Monitoring and Defense
+CIS 15 — Service Provider Management
+CIS 16 — Application Software Security
+CIS 17 — Incident Response Management
+```
+
+### SOC-CMM
+
+**Aplicabilidade: direta.**
+
+Detection Quality e Third-Party Context.
+
+### Metodologia analítica aplicada
+
+```text
+ACH — Analysis of Competing Hypotheses
+```
+
+A investigação avaliou hipóteses concorrentes (scanner legítimo autorizado vs. reconhecimento adversarial) e refutou uma por evidência de contexto.
+
+```text
+Método Científico
+```
+
+Hipótese → Evidência → Teste → Conclusão é a estrutura epistêmica de todo o note.
+
+```text
+OODA Loop
+```
+
+Observe (telemetria) → Orient (hipótese/evidência) → Decide (veredito) → Act (recomendações).
 
 ![Aplicabilidade dos frameworks](assets/imagem-08-framework-map.svg)
 
