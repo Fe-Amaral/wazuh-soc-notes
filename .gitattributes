@@ -1,0 +1,12 @@
+# Normalize line endings to LF in the repository, regardless of the
+# committer's OS. Prevents the LF/CRLF checkout noise seen on Windows.
+* text=auto eol=lf
+
+*.svg text eol=lf
+*.md  text eol=lf
+
+# Treat these as binary (no line-ending conversion, no text diff)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
