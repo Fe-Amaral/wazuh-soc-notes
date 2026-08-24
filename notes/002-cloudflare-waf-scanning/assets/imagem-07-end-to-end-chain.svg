@@ -1,0 +1,73 @@
+<svg viewBox="0 0 1320 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow07b" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="1320" height="800" fill="#0a0e14"/>
+  <text x="660" y="50" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">END-TO-END INVESTIGATION CHAIN</text>
+  <line x1="520" y1="66" x2="800" y2="66" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Zone A: Infrastructure h=120 top=340 -->
+  <g transform="translate(30,340)">
+    <rect width="210" height="120" rx="8" fill="#0d1421" stroke="#8b949e" stroke-width="1.6"/>
+    <text x="105" y="24" font-family="Consolas,monospace" font-size="12" fill="#8b949e" text-anchor="middle" font-weight="700" letter-spacing="1">SOURCE</text>
+    <line x1="0" y1="36" x2="210" y2="36" stroke="#21262d"/>
+    <text x="105" y="63" font-family="Consolas,monospace" font-size="13" fill="#e6edf3" text-anchor="middle">Consultancy</text>
+    <line x1="20" y1="78" x2="190" y2="78" stroke="#1c2129"/>
+    <text x="105" y="105" font-family="Consolas,monospace" font-size="13" fill="#e6edf3" text-anchor="middle">Internet</text>
+  </g>
+  <line x1="240" y1="400" x2="288" y2="400" stroke="#4b5563" stroke-width="2" marker-end="url(#arrow07b)"/>
+
+  <!-- Zone B: Telemetry h=120 top=340 -->
+  <g transform="translate(290,340)">
+    <rect width="210" height="120" rx="8" fill="#0d1421" stroke="#58a6ff" stroke-width="1.6"/>
+    <text x="105" y="24" font-family="Consolas,monospace" font-size="12" fill="#58a6ff" text-anchor="middle" font-weight="700" letter-spacing="1">TELEMETRY</text>
+    <line x1="0" y1="36" x2="210" y2="36" stroke="#21262d"/>
+    <text x="105" y="63" font-family="Consolas,monospace" font-size="13" fill="#e6edf3" text-anchor="middle">Cloudflare</text>
+    <line x1="20" y1="78" x2="190" y2="78" stroke="#1c2129"/>
+    <text x="105" y="105" font-family="Consolas,monospace" font-size="13" fill="#e6edf3" text-anchor="middle">WAF Rule</text>
+  </g>
+  <line x1="500" y1="400" x2="548" y2="400" stroke="#4b5563" stroke-width="2" marker-end="url(#arrow07b)"/>
+
+  <!-- Zone C: Detection h=162 top=319 -->
+  <g transform="translate(550,319)">
+    <rect width="210" height="162" rx="8" fill="#0d1421" stroke="#d29922" stroke-width="1.6"/>
+    <text x="105" y="24" font-family="Consolas,monospace" font-size="12" fill="#d29922" text-anchor="middle" font-weight="700" letter-spacing="1">DETECTION</text>
+    <line x1="0" y1="36" x2="210" y2="36" stroke="#21262d"/>
+    <text x="105" y="63" font-family="Consolas,monospace" font-size="13" fill="#e6edf3" text-anchor="middle">BLOCK</text>
+    <line x1="20" y1="78" x2="190" y2="78" stroke="#1c2129"/>
+    <text x="105" y="105" font-family="Consolas,monospace" font-size="13" fill="#e6edf3" text-anchor="middle">Log Collection</text>
+    <line x1="20" y1="120" x2="190" y2="120" stroke="#1c2129"/>
+    <text x="105" y="147" font-family="Consolas,monospace" font-size="13" fill="#e6edf3" text-anchor="middle">Wazuh Alert</text>
+  </g>
+  <line x1="760" y1="400" x2="808" y2="400" stroke="#4b5563" stroke-width="2" marker-end="url(#arrow07b)"/>
+
+  <!-- Zone D: Analysis h=204 top=298 -->
+  <g transform="translate(810,298)">
+    <rect width="210" height="204" rx="8" fill="#0d1421" stroke="#bc8cff" stroke-width="1.6"/>
+    <text x="105" y="24" font-family="Consolas,monospace" font-size="12" fill="#bc8cff" text-anchor="middle" font-weight="700" letter-spacing="1">ANALYSIS</text>
+    <line x1="0" y1="36" x2="210" y2="36" stroke="#21262d"/>
+    <text x="105" y="63" font-family="Consolas,monospace" font-size="13" fill="#e6edf3" text-anchor="middle">Investigation</text>
+    <line x1="20" y1="78" x2="190" y2="78" stroke="#1c2129"/>
+    <text x="105" y="105" font-family="Consolas,monospace" font-size="13" fill="#e6edf3" text-anchor="middle">Hunting</text>
+    <line x1="20" y1="120" x2="190" y2="120" stroke="#1c2129"/>
+    <text x="105" y="147" font-family="Consolas,monospace" font-size="13" fill="#e6edf3" text-anchor="middle">Validation</text>
+    <line x1="20" y1="162" x2="190" y2="162" stroke="#1c2129"/>
+    <text x="105" y="189" font-family="Consolas,monospace" font-size="13" fill="#e6edf3" text-anchor="middle">Correlation</text>
+  </g>
+  <line x1="1020" y1="400" x2="1068" y2="400" stroke="#4b5563" stroke-width="2" marker-end="url(#arrow07b)"/>
+
+  <!-- Zone E: Decision h=120 top=340 -->
+  <g transform="translate(1070,340)">
+    <rect width="210" height="120" rx="8" fill="#0f1f14" stroke="#3fb950" stroke-width="1.8"/>
+    <text x="105" y="24" font-family="Consolas,monospace" font-size="12" fill="#3fb950" text-anchor="middle" font-weight="700" letter-spacing="1">DECISION</text>
+    <line x1="0" y1="36" x2="210" y2="36" stroke="#1f3a24"/>
+    <text x="105" y="63" font-family="Consolas,monospace" font-size="13" fill="#e6edf3" text-anchor="middle">Reassessment</text>
+    <line x1="20" y1="78" x2="190" y2="78" stroke="#1f3a24"/>
+    <text x="105" y="105" font-family="Consolas,monospace" font-size="12" fill="#3fb950" text-anchor="middle" font-weight="700">Contextual FP</text>
+  </g>
+
+  <text x="660" y="600" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#8b949e" text-anchor="middle">telemetria → detecção → investigação → decisão</text>
+  <text x="660" y="626" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#6b7280" text-anchor="middle">esta é a cadeia analítica completa do caso — não uma cadeia de ataque</text>
+</svg>

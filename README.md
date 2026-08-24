@@ -17,6 +17,7 @@ Neste repositório, os mesmos estudos poderão ser aprofundados com análises t�
 | Note | Ambiente / Tecnologia | Tema | Classificação | Análise |
 |---|---|---|---|---|
 | **#001** | Linux / Wazuh | Promiscuous Mode em interfaces `veth` | **Falso Positivo** | [Ver análise completa](notes/001-promiscuous-mode-veth/README.md) |
+| **#002** | Cloudflare WAF / Wazuh | Scanning automatizado bloqueado pelo WAF | **Falso Positivo Contextual** | [Ver análise completa](notes/002-cloudflare-waf-scanning/README.md) |
 
 ---
 

@@ -1,0 +1,42 @@
+<svg viewBox="0 0 900 980" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow13b" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#8b949e"/>
+    </marker>
+  </defs>
+  <rect width="900" height="980" fill="#0a0e14"/>
+
+  <text x="450" y="56" font-family="Consolas,monospace" font-size="22" fill="#e6edf3" text-anchor="middle" font-weight="700" letter-spacing="1">TRUE EVENT + CONTEXT = VERDICT</text>
+  <line x1="300" y1="78" x2="600" y2="78" stroke="#21262d" stroke-width="1"/>
+
+  <g font-family="Consolas,monospace">
+    <rect x="170" y="112" width="560" height="64" rx="8" fill="#0d1421" stroke="#58a6ff" stroke-width="1.6"/>
+    <text x="192" y="150" font-size="16" fill="#e6edf3">Request</text>
+    <text x="698" y="150" font-size="16" fill="#3fb950" text-anchor="end" font-weight="700">TRUE</text>
+    <line x1="450" y1="176" x2="450" y2="200" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow13b)"/>
+
+    <rect x="170" y="210" width="560" height="64" rx="8" fill="#0d1421" stroke="#d29922" stroke-width="1.6"/>
+    <text x="192" y="248" font-size="16" fill="#e6edf3">Scanning Activity</text>
+    <text x="698" y="248" font-size="16" fill="#3fb950" text-anchor="end" font-weight="700">TRUE</text>
+    <line x1="450" y1="274" x2="450" y2="298" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow13b)"/>
+
+    <rect x="170" y="308" width="560" height="64" rx="8" fill="#1f1212" stroke="#f85149" stroke-width="1.6"/>
+    <text x="192" y="346" font-size="16" fill="#e6edf3">WAF Block</text>
+    <text x="698" y="346" font-size="16" fill="#3fb950" text-anchor="end" font-weight="700">TRUE</text>
+    <line x1="450" y1="372" x2="450" y2="396" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow13b)"/>
+  </g>
+
+  <text x="450" y="424" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#6b7280" text-anchor="middle">o elemento que a investigação alterou:</text>
+
+  <rect x="170" y="440" width="560" height="90" rx="10" fill="#161616" stroke="#e6edf3" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="450" y="475" font-family="Consolas,monospace" font-size="20" fill="#e6edf3" text-anchor="middle" font-weight="700" letter-spacing="1">CONTEXT</text>
+  <text x="450" y="500" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">unknown source  →  authorized consultancy</text>
+  <line x1="450" y1="530" x2="450" y2="560" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow13b)"/>
+
+  <rect x="120" y="740" width="660" height="150" rx="12" fill="#111318" stroke="#2d3748" stroke-width="1.4"/>
+  <text x="450" y="790" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#e6edf3" text-anchor="middle" font-weight="600">True Event + Legitimate Context</text>
+  <text x="450" y="825" font-family="Consolas,monospace" font-size="22" fill="#3fb950" text-anchor="middle">=</text>
+  <text x="450" y="865" font-family="Segoe UI,Arial,sans-serif" font-size="22" fill="#3fb950" text-anchor="middle" font-weight="700">Contextual False Positive</text>
+
+  <text x="450" y="945" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">evento verdadeiro não significa incidente verdadeiro</text>
+</svg>

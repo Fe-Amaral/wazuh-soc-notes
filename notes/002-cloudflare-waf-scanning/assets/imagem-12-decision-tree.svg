@@ -1,0 +1,93 @@
+<svg viewBox="0 0 1000 1100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowG2" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#8b949e"/>
+    </marker>
+    <marker id="arrowR2" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#f85149"/>
+    </marker>
+    <marker id="arrowA2" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#d29922"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="1100" fill="#0a0e14"/>
+  <text x="500" y="40" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">DECISION TREE</text>
+  <line x1="380" y1="56" x2="620" y2="56" stroke="#21262d" stroke-width="1"/>
+
+  <!-- N1 -->
+  <rect x="220" y="90" width="320" height="60" rx="8" fill="#0d1421" stroke="#58a6ff" stroke-width="1.6"/>
+  <text x="380" y="126" font-family="Consolas,monospace" font-size="14" fill="#e6edf3" text-anchor="middle" font-weight="700">SCANNING DETECTED</text>
+  <line x1="380" y1="150" x2="380" y2="185" stroke="#8b949e" stroke-width="2" marker-end="url(#arrowG2)"/>
+
+  <!-- N1b -->
+  <rect x="220" y="190" width="320" height="60" rx="8" fill="#1f1212" stroke="#f85149" stroke-width="1.6"/>
+  <text x="380" y="226" font-family="Consolas,monospace" font-size="14" fill="#f85149" text-anchor="middle" font-weight="700">WAF ACTION: BLOCK</text>
+  <line x1="380" y1="250" x2="380" y2="285" stroke="#8b949e" stroke-width="2" marker-end="url(#arrowG2)"/>
+
+  <!-- D1: Source Known? -->
+  <polygon points="380,290 520,335 380,380 240,335" fill="#0d1421" stroke="#c9d1d9" stroke-width="1.6"/>
+  <text x="380" y="330" font-family="Consolas,monospace" font-size="12" fill="#e6edf3" text-anchor="middle" font-weight="700">Source</text>
+  <text x="380" y="346" font-family="Consolas,monospace" font-size="12" fill="#e6edf3" text-anchor="middle" font-weight="700">Known?</text>
+  <line x1="380" y1="380" x2="380" y2="415" stroke="#3fb950" stroke-width="2" marker-end="url(#arrowG2)"/>
+  <text x="396" y="404" font-family="Consolas,monospace" font-size="11" fill="#3fb950">yes</text>
+  <line x1="520" y1="335" x2="560" y2="335" stroke="#d29922" stroke-width="1.8" marker-end="url(#arrowA2)"/>
+  <text x="530" y="325" font-family="Consolas,monospace" font-size="11" fill="#d29922">no</text>
+  <rect x="565" y="300" width="360" height="70" rx="8" fill="#1a1608" stroke="#d29922" stroke-width="1.8"/>
+  <text x="745" y="330" font-family="Consolas,monospace" font-size="14" fill="#d29922" text-anchor="middle" font-weight="700">CONTINUE</text>
+  <text x="745" y="352" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#e3c37a" text-anchor="middle">investigation</text>
+
+  <!-- D2: Authorized Assessment? -->
+  <polygon points="380,420 540,465 380,510 220,465" fill="#0d1421" stroke="#c9d1d9" stroke-width="1.6"/>
+  <text x="380" y="460" font-family="Consolas,monospace" font-size="12" fill="#e6edf3" text-anchor="middle" font-weight="700">Authorized</text>
+  <text x="380" y="476" font-family="Consolas,monospace" font-size="12" fill="#e6edf3" text-anchor="middle" font-weight="700">Assessment?</text>
+  <line x1="380" y1="510" x2="380" y2="545" stroke="#3fb950" stroke-width="2" marker-end="url(#arrowG2)"/>
+  <text x="396" y="534" font-family="Consolas,monospace" font-size="11" fill="#3fb950">yes</text>
+  <line x1="540" y1="465" x2="560" y2="465" stroke="#d29922" stroke-width="1.8" marker-end="url(#arrowA2)"/>
+  <text x="548" y="455" font-family="Consolas,monospace" font-size="11" fill="#d29922">no</text>
+  <rect x="565" y="430" width="360" height="70" rx="8" fill="#1a1608" stroke="#d29922" stroke-width="1.8"/>
+  <text x="745" y="460" font-family="Consolas,monospace" font-size="13" fill="#d29922" text-anchor="middle" font-weight="700">CONTINUE</text>
+  <text x="745" y="482" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#e3c37a" text-anchor="middle">security investigation</text>
+
+  <!-- D3: Within Approved Window? -->
+  <polygon points="380,550 570,595 380,640 190,595" fill="#0d1421" stroke="#c9d1d9" stroke-width="1.6"/>
+  <text x="380" y="590" font-family="Consolas,monospace" font-size="11.5" fill="#e6edf3" text-anchor="middle" font-weight="700">Within Approved</text>
+  <text x="380" y="606" font-family="Consolas,monospace" font-size="11.5" fill="#e6edf3" text-anchor="middle" font-weight="700">Window?</text>
+  <line x1="380" y1="640" x2="380" y2="675" stroke="#3fb950" stroke-width="2" marker-end="url(#arrowG2)"/>
+  <text x="396" y="664" font-family="Consolas,monospace" font-size="11" fill="#3fb950">yes</text>
+  <line x1="570" y1="595" x2="590" y2="595" stroke="#f85149" stroke-width="1.8" marker-end="url(#arrowR2)"/>
+  <text x="578" y="585" font-family="Consolas,monospace" font-size="11" fill="#f85149">no</text>
+  <rect x="595" y="560" width="330" height="70" rx="8" fill="#1f1212" stroke="#f85149" stroke-width="2"/>
+  <text x="760" y="592" font-family="Consolas,monospace" font-size="14" fill="#f85149" text-anchor="middle" font-weight="700">ESCALATE</text>
+  <text x="760" y="614" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#f0a7a3" text-anchor="middle">investigation</text>
+
+  <!-- D4: Within Authorized Scope? -->
+  <polygon points="380,680 570,725 380,770 190,725" fill="#0d1421" stroke="#c9d1d9" stroke-width="1.6"/>
+  <text x="380" y="720" font-family="Consolas,monospace" font-size="11.5" fill="#e6edf3" text-anchor="middle" font-weight="700">Within Authorized</text>
+  <text x="380" y="736" font-family="Consolas,monospace" font-size="11.5" fill="#e6edf3" text-anchor="middle" font-weight="700">Scope?</text>
+  <line x1="380" y1="770" x2="380" y2="805" stroke="#3fb950" stroke-width="2" marker-end="url(#arrowG2)"/>
+  <text x="396" y="794" font-family="Consolas,monospace" font-size="11" fill="#3fb950">yes</text>
+  <line x1="570" y1="725" x2="590" y2="725" stroke="#f85149" stroke-width="1.8" marker-end="url(#arrowR2)"/>
+  <text x="578" y="715" font-family="Consolas,monospace" font-size="11" fill="#f85149">no</text>
+  <rect x="595" y="690" width="330" height="70" rx="8" fill="#1f1212" stroke="#f85149" stroke-width="2"/>
+  <text x="760" y="722" font-family="Consolas,monospace" font-size="14" fill="#f85149" text-anchor="middle" font-weight="700">ESCALATE</text>
+  <text x="760" y="744" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#f0a7a3" text-anchor="middle">investigation</text>
+
+  <!-- D5: Unexpected Impact? -->
+  <polygon points="380,810 540,855 380,900 220,855" fill="#0d1421" stroke="#c9d1d9" stroke-width="1.6"/>
+  <text x="380" y="850" font-family="Consolas,monospace" font-size="12" fill="#e6edf3" text-anchor="middle" font-weight="700">Unexpected</text>
+  <text x="380" y="866" font-family="Consolas,monospace" font-size="12" fill="#e6edf3" text-anchor="middle" font-weight="700">Impact?</text>
+  <line x1="380" y1="900" x2="380" y2="935" stroke="#3fb950" stroke-width="2" marker-end="url(#arrowG2)"/>
+  <text x="396" y="924" font-family="Consolas,monospace" font-size="11" fill="#3fb950">no</text>
+  <line x1="540" y1="855" x2="590" y2="855" stroke="#f85149" stroke-width="1.8" marker-end="url(#arrowR2)"/>
+  <text x="548" y="845" font-family="Consolas,monospace" font-size="11" fill="#f85149">yes</text>
+  <rect x="595" y="820" width="330" height="70" rx="8" fill="#1f1212" stroke="#f85149" stroke-width="2"/>
+  <text x="760" y="852" font-family="Consolas,monospace" font-size="14" fill="#f85149" text-anchor="middle" font-weight="700">ESCALATE</text>
+  <text x="760" y="874" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#f0a7a3" text-anchor="middle">investigation</text>
+
+  <!-- Final terminal -->
+  <rect x="180" y="940" width="400" height="90" rx="10" fill="#0f1f14" stroke="#3fb950" stroke-width="2.2"/>
+  <text x="380" y="978" font-family="Consolas,monospace" font-size="17" fill="#3fb950" text-anchor="middle" font-weight="700" letter-spacing="1">CONTEXTUAL FALSE POSITIVE</text>
+  <text x="380" y="1002" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#8b949e" text-anchor="middle">authorized security activity</text>
+
+  <text x="500" y="1070" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">um único indicador suspeito não determina automaticamente um verdadeiro positivo</text>
+</svg>

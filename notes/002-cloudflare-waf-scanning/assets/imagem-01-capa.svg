@@ -1,0 +1,50 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid01b" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#152030" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow01b" cx="75%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#f0883e" stop-opacity="0.13"/>
+      <stop offset="60%" stop-color="#58a6ff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#0a0e14" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0a0e14"/>
+  <rect width="1200" height="630" fill="url(#grid01b)"/>
+  <rect width="1200" height="630" fill="url(#glow01b)"/>
+  <rect x="0" y="0" width="1200" height="630" fill="none" stroke="#21262d" stroke-width="2"/>
+
+  <text x="60" y="54" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="13" fill="#8b949e" letter-spacing="2">SOC · THREAT HUNTING · INCIDENT RESPONSE · WAF · CLOUDFLARE · DETECTION ENGINEERING · WAZUH</text>
+  <line x1="60" y1="70" x2="1140" y2="70" stroke="#21262d" stroke-width="1"/>
+
+  <text x="60" y="150" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="22" fill="#3fb950" letter-spacing="4">WAZUH SOC NOTES #002</text>
+
+  <text x="58" y="228" font-family="Segoe UI,Arial,sans-serif" font-size="39" font-weight="700" fill="#e6edf3">Cloudflare WAF: scanning</text>
+  <text x="58" y="278" font-family="Segoe UI,Arial,sans-serif" font-size="39" font-weight="700" fill="#e6edf3">legítimo gera alerta</text>
+  <text x="58" y="316" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#8b949e">Quando atividade autorizada se parece com reconhecimento</text>
+
+  <rect x="60" y="380" width="184" height="36" rx="18" fill="none" stroke="#d29922" stroke-width="1.5"/>
+  <text x="152" y="403" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="13" fill="#d29922" text-anchor="middle" letter-spacing="1">ACTION: BLOCK</text>
+
+  <rect x="58" y="552" width="620" height="36" rx="6" fill="#0d1421" stroke="#1f2937" stroke-width="1"/>
+  <text x="76" y="576" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="14" fill="#7ee787">waf.action: BLOCK — automated request, public portal</text>
+
+  <g transform="translate(730,150)">
+    <rect x="0" y="0" width="410" height="290" rx="10" fill="#0d1421" stroke="#2d3748" stroke-width="1.5"/>
+    <text x="22" y="34" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="13" fill="#8b949e" letter-spacing="1">REQUEST PATH</text>
+    <line x1="22" y1="46" x2="388" y2="46" stroke="#21262d" stroke-width="1"/>
+
+    <circle cx="60" cy="170" r="30" fill="#111827" stroke="#58a6ff" stroke-width="2"/>
+    <text x="60" y="166" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="10" fill="#58a6ff" text-anchor="middle">SOURCE</text>
+    <text x="60" y="178" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="10" fill="#58a6ff" text-anchor="middle">?</text>
+    <line x1="90" y1="170" x2="140" y2="170" stroke="#3fb950" stroke-width="2.2"/>
+
+    <rect x="145" y="140" width="110" height="60" rx="8" fill="#111827" stroke="#f0883e" stroke-width="2"/>
+    <text x="200" y="166" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="11" fill="#f0883e" text-anchor="middle">CLOUDFLARE</text>
+    <text x="200" y="182" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="11" fill="#f0883e" text-anchor="middle">EDGE</text>
+    <line x1="255" y1="170" x2="300" y2="170" stroke="#3fb950" stroke-width="2.2"/>
+
+    <rect x="305" y="140" width="80" height="60" rx="8" fill="#111827" stroke="#d29922" stroke-width="2" stroke-dasharray="5 4"/>
+    <text x="345" y="170" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="12" fill="#d29922" text-anchor="middle">WAF</text>
+  </g>
+</svg>

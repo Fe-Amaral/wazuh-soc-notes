@@ -1,0 +1,34 @@
+<svg viewBox="0 0 1400 440" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="440" fill="#0a0e14"/>
+  <text x="700" y="42" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">INVESTIGATION FLOW — VISÃO FINAL</text>
+  <line x1="570" y1="58" x2="830" y2="58" stroke="#21262d" stroke-width="1"/>
+
+  <g font-family="Consolas,monospace" fill="#0d1421" stroke-width="1.8">
+    <polygon points="40,140 216,140 236,185 216,230 40,230" stroke="#58a6ff"/>
+    <polygon points="220,140 396,140 416,185 396,230 220,230 200,185" stroke="#d29922"/>
+    <polygon points="400,140 576,140 596,185 576,230 400,230 380,185" stroke="#bc8cff"/>
+    <polygon points="580,140 756,140 776,185 756,230 580,230 560,185" stroke="#56c2d4"/>
+    <polygon points="760,140 936,140 956,185 936,230 760,230 740,185" stroke="#f0883e"/>
+    <polygon points="940,140 1116,140 1136,185 1116,230 940,230 920,185" stroke="#e3b341"/>
+    <polygon points="1120,140 1296,140 1316,185 1296,230 1120,230 1100,185" stroke="#3fb950"/>
+  </g>
+
+  <text x="138" y="178" font-family="Consolas,monospace" font-size="13.5" fill="#58a6ff" text-anchor="middle" font-weight="700">DETECTION</text>
+  <text x="318" y="178" font-family="Consolas,monospace" font-size="13.5" fill="#d29922" text-anchor="middle" font-weight="700">HYPOTHESIS</text>
+  <text x="498" y="178" font-family="Consolas,monospace" font-size="13.5" fill="#bc8cff" text-anchor="middle" font-weight="700">HUNTING</text>
+  <text x="678" y="178" font-family="Consolas,monospace" font-size="13.5" fill="#56c2d4" text-anchor="middle" font-weight="700">CONTEXT</text>
+  <text x="858" y="178" font-family="Consolas,monospace" font-size="13.5" fill="#f0883e" text-anchor="middle" font-weight="700">VALIDATION</text>
+  <text x="1038" y="178" font-family="Consolas,monospace" font-size="13.5" fill="#e3b341" text-anchor="middle" font-weight="700">EVIDENCE</text>
+  <text x="1218" y="178" font-family="Consolas,monospace" font-size="13.5" fill="#3fb950" text-anchor="middle" font-weight="700">DECISION</text>
+
+  <text x="138" y="200" font-family="Segoe UI,Arial,sans-serif" font-size="9.5" fill="#8b949e" text-anchor="middle">WAF alert / BLOCK</text>
+  <text x="318" y="200" font-family="Segoe UI,Arial,sans-serif" font-size="9.5" fill="#8b949e" text-anchor="middle">possible recon.</text>
+  <text x="498" y="200" font-family="Segoe UI,Arial,sans-serif" font-size="9.5" fill="#8b949e" text-anchor="middle">source + behavior</text>
+  <text x="678" y="200" font-family="Segoe UI,Arial,sans-serif" font-size="9.5" fill="#8b949e" text-anchor="middle">known consultancy</text>
+  <text x="858" y="200" font-family="Segoe UI,Arial,sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">authorized + window/scope</text>
+  <text x="1038" y="200" font-family="Segoe UI,Arial,sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">no malicious progression</text>
+  <text x="1218" y="200" font-family="Segoe UI,Arial,sans-serif" font-size="9.5" fill="#c9d1d9" text-anchor="middle" font-weight="600">Contextual FP</text>
+
+  <text x="700" y="300" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#8b949e" text-anchor="middle">esta é a cadeia analítica do SOC — não a cadeia técnica de telemetria</text>
+  <text x="700" y="325" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#6b7280" text-anchor="middle">o alerta é o início — a decisão é resultado da investigação</text>
+</svg>
