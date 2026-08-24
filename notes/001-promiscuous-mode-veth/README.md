@@ -226,7 +226,7 @@ O elemento não possui aplicabilidade técnica relevante ao cenário.
 
 Significa apenas que ele não foi identificado dentro das fontes, período e escopo analisados.
 
-![Evidence Assessment](assets/imagem-03-evidence-assessment.svg)
+![Evidence Assessment — veth identificado versus evidência maliciosa não observada](assets/imagem-03-evidence-assessment.svg)
 
 ---
 
@@ -703,7 +703,7 @@ Nenhum elemento de fraude foi identificado.
 
 **Aplicabilidade: Not Applicable.**
 
-![Aplicabilidade dos frameworks](assets/imagem-08-framework-map.svg)
+![Framework Applicability Map — aderência direta, parcial e não aplicável](assets/imagem-08-framework-map.svg)
 
 ---
 
@@ -991,7 +991,7 @@ Nenhuma dessas camadas isoladamente fornece contexto completo.
 
 O valor surge da correlação.
 
-![Defense-in-Depth](assets/imagem-11-defense-in-depth.svg)
+![Defense-in-Depth — camadas de controle correlacionadas](assets/imagem-11-defense-in-depth.svg)
 
 ---
 
