@@ -108,9 +108,27 @@ O score representa a força/aderência do evento ao modelo ou condição de dete
 
 Ele não deve ser interpretado como probabilidade matemática de comprometimento.
 
+Como a telemetria disponível não permitia confirmar nem afastar tecnicamente a hipótese de comprometimento, o SOC escalou o caso para validação junto ao usuário/proprietário do dispositivo — o próprio fluxo de decisão previsto para eventos envolvendo ativos Mobile/BYOD.
+
+Nessa etapa, o usuário reconheceu a atividade como acesso realizado a partir do seu próprio dispositivo pessoal.
+
+Esse reconhecimento não é telemetria técnica adicional — é uma fonte de evidência diferente, obtida por confirmação direta do usuário/asset owner, e foi tratado como tal:
+
+```text
+User Acknowledgment = Confirmed (via user attestation)
+```
+
+e não como:
+
+```text
+Technical Follow-up Evidence
+```
+
+Com essa confirmação, o caso foi encerrado.
+
 A classificação final adotada para o case foi:
 
-**Suspeito — atividade DNS relacionada a Watched Domain a partir de dispositivo Mobile/Android, requerendo validação adicional.**
+**Falso Positivo — atividade DNS relacionada a Watched Domain a partir de dispositivo Mobile/Android, com acesso reconhecido pelo usuário como legítimo.**
 
 A severidade contextual foi tratada como:
 
@@ -120,15 +138,21 @@ Medium
 
 apesar da criticidade original do alerta.
 
-O comprometimento permaneceu:
+O comprometimento técnico permaneceu:
 
 ```text
-Not Confirmed
+Not Confirmed (nunca demonstrado por telemetria)
+```
+
+mas o caso foi fechado com base em:
+
+```text
+Confirmed User Acknowledgment
 ```
 
 A principal lição do estudo é:
 
-> **severidade ajuda a definir prioridade. Evidências determinam impacto.**
+> **severidade ajuda a definir prioridade. Evidências determinam impacto — e nem toda evidência que fecha um caso é telemetria.**
 
 ---
 
@@ -381,6 +405,7 @@ A análise considerou:
 | Comprometimento do dispositivo | Investigação | Not Confirmed | High |
 | Exfiltração | Fonte analisada | Not Available | Medium |
 | Impacto de segurança | Investigação | Not Confirmed | High |
+| Reconhecimento do usuário sobre a atividade | Validação com usuário / asset owner | Confirmed (user attestation) | High |
 
 A síntese correta era:
 
@@ -388,8 +413,9 @@ A síntese correta era:
 DNS Activity = Confirmed
 Watched Domain = Confirmed
 Critical Alert = Confirmed
-Impact = Not Confirmed
-Compromise = Not Confirmed
+Impact (technical) = Not Confirmed
+Compromise (technical) = Not Confirmed
+User Acknowledgment = Confirmed
 ```
 
 ---
@@ -405,6 +431,14 @@ Exemplo:
 ```text
 DNS activity to Watched Domain
 ```
+
+`Confirmed` também pode ser sustentado por uma fonte não técnica, quando essa fonte é direta e verificável — por exemplo, o reconhecimento do próprio usuário/asset owner sobre uma atividade. Esse tipo de confirmação é registrado separadamente como:
+
+```text
+Confirmed (user attestation)
+```
+
+para não ser confundido com confirmação por telemetria.
 
 ### Supported
 
@@ -525,7 +559,9 @@ Compromise Not Confirmed
         ↓
 Impact Reassessment
         ↓
-SUSPICIOUS / REQUIRES VALIDATION
+Asset / User Validation
+        ↓
+FALSE POSITIVE
 ```
 
 ![Investigation Timeline](assets/imagem-04-investigation-timeline.svg)
@@ -924,8 +960,11 @@ Compromise Not Confirmed
         ↓
 Impact Reassessment
         ↓
-SUSPICIOUS
-REQUIRES VALIDATION
+Escalated for Asset / User Validation
+        ↓
+User Acknowledges Personal Access
+        ↓
+FALSE POSITIVE
 ```
 
 Essa cadeia representa:
@@ -1807,28 +1846,19 @@ Watched Domain Alert?
         ↓
 YES
         ↓
-What Protocol?
-        ↓
-DNS
-        ↓
-Destination Internal?
-        ├── NO
+Event Type / Protocol?
+        ├── DNS
         │    ↓
-        │  Validate Direct Communication
-        │
-        └── YES
-             ↓
-Port 53?
-        ├── NO
+        │  Destination / Resolver Context?
         │    ↓
-        │  Continue Network Investigation
+        │  Port 53?
+        │    ↓
+        │  Resolver Context Supported?
         │
-        └── YES
+        └── DIRECT / OTHER
              ↓
-DNS Resolver Context Supported?
-        ↓
-YES
-        ↓
+           Analyze Connection
+             ↓
 Follow-up Connection Available?
         ├── YES
         │    ↓
@@ -1849,12 +1879,23 @@ Device Context Known?
         ├── NO
         │    ↓
         │  VALIDATE ASSET / BYOD
+        │    ↓
+        │  User Acknowledges Access?
+        │    ├── YES
+        │    │    ↓
+        │    │  FALSE POSITIVE
+        │    │
+        │    └── NO
+        │         ↓
+        │       ESCALATE INVESTIGATION
         │
         └── YES
              ↓
 SUSPICIOUS
 REQUIRES VALIDATION
 ```
+
+Neste case específico, o caminho percorrido foi `Device Context Known? → NO → VALIDATE ASSET / BYOD → User Acknowledges Access? → YES → FALSE POSITIVE`.
 
 ![Decision Tree](assets/imagem-13-decision-tree.svg)
 
@@ -1949,23 +1990,29 @@ Not Confirmed
 ### Impacto
 
 ```text
-Not Confirmed
+Not Confirmed (technical)
+```
+
+### Reconhecimento do usuário
+
+```text
+Confirmed (user attestation)
 ```
 
 ### Classificação final
 
-**Suspeito — atividade DNS relacionada a Watched Domain a partir de dispositivo Mobile/Android, requerendo validação adicional.**
+**Falso Positivo — atividade DNS relacionada a Watched Domain a partir de dispositivo Mobile/Android, com acesso reconhecido pelo usuário como legítimo. Encerrado por confirmação do asset owner, não por telemetria técnica adicional.**
 
 ### Severidade contextual recomendada
 
 ```text
-MEDIUM
+MEDIUM (até a validação do usuário)
 ```
 
 ### Estado
 
 ```text
-REQUIRES VALIDATION
+CLOSED — RESOLVED VIA USER ACKNOWLEDGMENT
 ```
 
 ### Veredito
@@ -1973,8 +2020,9 @@ REQUIRES VALIDATION
 ```text
 SUSPICIOUS DNS ACTIVITY
 WATCHED DOMAIN DETECTED
-COMPROMISE NOT CONFIRMED
-IMPACT NOT CONFIRMED
+COMPROMISE NOT CONFIRMED (technical)
+USER ACKNOWLEDGED PERSONAL ACCESS
+FALSE POSITIVE
 ```
 
 ---
@@ -2064,6 +2112,22 @@ sem elevá-lo artificialmente a:
 CONFIRMED CRITICAL INCIDENT
 ```
 
+nem reduzi-lo prematuramente a falso positivo apenas por causa do contexto de resolvedor DNS interno.
+
+O fechamento do caso não veio de telemetria adicional — as fontes técnicas de follow-up (conexão HTTP/HTTPS, IP resolvido, contexto de endpoint) permaneceram `Not Available` até o fim.
+
+O caso foi encerrado quando, na etapa de validação de ativo prevista para dispositivos Mobile/BYOD, o usuário reconheceu a atividade como acesso realizado a partir do seu próprio dispositivo pessoal.
+
+```text
+Technical Follow-up = Not Available
+        +
+User Acknowledgment = Confirmed
+        ↓
+FALSE POSITIVE
+```
+
+Essa distinção importa: o caso não foi fechado porque a ausência de evidência técnica foi interpretada como prova de benignidade — foi fechado porque uma fonte de evidência diferente, a confirmação direta do usuário, supriu a lacuna que a telemetria não conseguiu preencher.
+
 ![Fluxo final da investigação](assets/imagem-14-investigation-flow-final.svg)
 
 ---
@@ -2143,11 +2207,25 @@ Impact
 
 O case não foi tratado como falso positivo apenas porque o destino era DNS interno.
 
-O estado correto permaneceu:
+Enquanto a telemetria técnica de follow-up permaneceu indisponível, o estado correto era:
 
 ```text
 Suspicious / Requires Validation
 ```
+
+### Reconhecimento do usuário é evidência — de um tipo diferente de telemetria
+
+O caso só foi encerrado quando o usuário confirmou a atividade como acesso pessoal legítimo.
+
+```text
+Confirmed (user attestation)
+        ≠
+Confirmed (telemetry)
+```
+
+Ambas são formas válidas de evidência.
+
+Mas devem ser registradas e comunicadas como fontes distintas, para que o leitor entenda por que o caso fechou sem que a lacuna técnica (`Not Available`) tenha sido preenchida.
 
 ---
 
@@ -2317,11 +2395,13 @@ SOC Investigation
         ↓
 Context Analysis
         ↓
-Compromise Not Confirmed
+Compromise Not Confirmed (technical)
         ↓
-Impact Not Confirmed
+Asset / User Validation
         ↓
-Suspicious / Requires Validation
+User Acknowledged Personal Access
+        ↓
+False Positive
 ```
 
 `Score 100` é apresentado apenas como atributo do evento e não como probabilidade matemática de comprometimento.

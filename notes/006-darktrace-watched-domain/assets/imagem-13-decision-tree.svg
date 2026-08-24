@@ -92,21 +92,43 @@
     <text x="610" y="1088" fill="#e6edf3" text-anchor="middle" font-size="11">Device Context</text>
     <text x="610" y="1104" fill="#e6edf3" text-anchor="middle" font-size="11">Known?</text>
     <!-- NO branch -->
-    <line x1="780" y1="1092" x2="890" y2="1092" stroke="#d29922" stroke-width="1.6" marker-end="url(#arrow13f)"/>
+    <line x1="780" y1="1092" x2="850" y2="1092" stroke="#d29922" stroke-width="1.6" marker-end="url(#arrow13f)"/>
     <text x="806" y="1085" fill="#d29922" font-size="11">NO</text>
-    <rect x="892" y="1056" width="95" height="72" rx="8" fill="#1a1608" stroke="#d29922" stroke-width="1.8"/>
-    <text x="939" y="1084" fill="#d29922" text-anchor="middle" font-weight="700" font-size="10">VALIDATE</text>
-    <text x="939" y="1098" fill="#d29922" text-anchor="middle" font-weight="700" font-size="10">ASSET /</text>
-    <text x="939" y="1112" fill="#d29922" text-anchor="middle" font-weight="700" font-size="10">BYOD</text>
+    <rect x="850" y="1056" width="95" height="72" rx="8" fill="#1a1608" stroke="#d29922" stroke-width="1.8"/>
+    <text x="897" y="1084" fill="#d29922" text-anchor="middle" font-weight="700" font-size="10">VALIDATE</text>
+    <text x="897" y="1098" fill="#d29922" text-anchor="middle" font-weight="700" font-size="10">ASSET /</text>
+    <text x="897" y="1112" fill="#d29922" text-anchor="middle" font-weight="700" font-size="10">BYOD</text>
     <text x="650" y="1147" fill="#3fb950" font-size="11">YES</text>
     <line x1="610" y1="1142" x2="610" y2="1176" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow13f)"/>
 
-    <!-- Final verdict -->
-    <rect x="420" y="1178" width="380" height="80" rx="10" fill="#0d1421" stroke="#e6edf3" stroke-width="2.4"/>
-    <text x="610" y="1213" fill="#e6edf3" text-anchor="middle" font-weight="700" font-size="15">SUSPICIOUS</text>
-    <text x="610" y="1238" fill="#d29922" text-anchor="middle" font-weight="700" font-size="13">REQUIRES VALIDATION</text>
+    <!-- Follow-on: User Acknowledges Access? (added after real case closure) -->
+    <line x1="897" y1="1128" x2="897" y2="1140" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow13f)"/>
+    <polygon points="897,1140 972,1182 897,1224 822,1182" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="897" y="1178" fill="#e6edf3" text-anchor="middle" font-size="8.5">User Acknowledges</text>
+    <text x="897" y="1190" fill="#e6edf3" text-anchor="middle" font-size="8.5">Access?</text>
+
+    <!-- NO: Escalate (compact annotation) -->
+    <line x1="822" y1="1182" x2="700" y2="1182" stroke="#f85149" stroke-width="1.4" stroke-dasharray="3 3" marker-end="url(#arrow13f)"/>
+    <text x="710" y="1176" fill="#f85149" text-anchor="end" font-size="9.5" font-weight="700">NO → Escalate Investigation</text>
+
+    <!-- YES: down to FALSE POSITIVE (this case) -->
+    <text x="920" y="1244" fill="#3fb950" font-size="11">YES</text>
+    <line x1="897" y1="1224" x2="897" y2="1256" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow13f)"/>
+
+    <!-- Final verdict — generic alternate outcome -->
+    <rect x="330" y="1178" width="340" height="80" rx="10" fill="#0d1421" stroke="#e6edf3" stroke-width="2" stroke-dasharray="5 3"/>
+    <text x="500" y="1213" fill="#e6edf3" text-anchor="middle" font-weight="700" font-size="14">SUSPICIOUS</text>
+    <text x="500" y="1238" fill="#d29922" text-anchor="middle" font-weight="700" font-size="12">REQUIRES VALIDATION</text>
+
+    <!-- Final verdict — this case's actual outcome -->
+    <rect x="790" y="1258" width="200" height="72" rx="10" fill="#0f1f14" stroke="#3fb950" stroke-width="2.6"/>
+    <text x="890" y="1290" fill="#3fb950" text-anchor="middle" font-weight="700" font-size="14">FALSE POSITIVE</text>
+    <text x="890" y="1310" fill="#8b949e" text-anchor="middle" font-weight="400" font-size="8.5">user-acknowledged access</text>
   </g>
 
-  <text x="500" y="1310" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">um destino externo não significa automaticamente conexão direta maliciosa</text>
-  <text x="500" y="1334" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#6b7280" text-anchor="middle">score e severidade não abrem caminho direto para "comprometido"</text>
+  <text x="500" y="1268" font-family="Segoe UI,Arial,sans-serif" font-size="9.5" fill="#6b7280" text-anchor="middle" font-style="italic">outcome quando o dispositivo já é conhecido</text>
+  <text x="890" y="1345" font-family="Segoe UI,Arial,sans-serif" font-size="9.5" fill="#6b7280" text-anchor="middle" font-style="italic">outcome real deste case, após validação com o usuário</text>
+
+  <text x="500" y="1400" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">um destino externo não significa automaticamente conexão direta maliciosa</text>
+  <text x="500" y="1424" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#6b7280" text-anchor="middle">score e severidade não abrem caminho direto para "comprometido"</text>
 </svg>

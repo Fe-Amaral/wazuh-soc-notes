@@ -21,7 +21,7 @@ Neste repositório, os mesmos estudos poderão ser aprofundados com análises t�
 | **#003** | Darktrace / Wazuh | Threat Indicator e Quarantine Device | **Contenção Preventiva** | [Ver análise completa](notes/003-darktrace-quarantine-device/README.md) |
 | **#004** | Linux / AF_ALG / Wazuh | CVE-2026-31431 em processo legítimo (`pg_dump`) | **Falso Positivo** | [Ver análise completa](notes/004-cve-2026-31431-af-alg/README.md) |
 | **#005** | Windows / Sysmon / Wazuh | Script `.ps1` criado em Windows Temp (`taskhostw.exe`) | **Falso Positivo** | [Ver análise completa](notes/005-sysmon-eid11-filecreate-vs-execution/README.md) |
-| **#006** | Darktrace / Wazuh | Watched Domain via DNS em dispositivo Mobile/Android | **Suspeito — Requer Validação** | [Ver análise completa](notes/006-darktrace-watched-domain/README.md) |
+| **#006** | Darktrace / Wazuh | Watched Domain via DNS em dispositivo Mobile/Android | **Falso Positivo** | [Ver análise completa](notes/006-darktrace-watched-domain/README.md) |
 
 ---
 
