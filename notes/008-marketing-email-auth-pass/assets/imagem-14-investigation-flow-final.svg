@@ -1,0 +1,62 @@
+<svg viewBox="0 0 1600 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="500" fill="#0a0e14"/>
+  <text x="800" y="46" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">INVESTIGATION FLOW — FINAL</text>
+  <line x1="670" y1="62" x2="930" y2="62" stroke="#21262d" stroke-width="1"/>
+
+  <g font-family="Consolas,monospace" font-weight="700">
+
+    <!-- 1 REPORT -->
+    <polygon points="40,150 206,150 230,195 206,240 40,240" fill="#0d1421" stroke="#f0883e" stroke-width="1.8"/>
+    <text x="115" y="185" font-size="12" fill="#f0883e" text-anchor="middle">REPORT</text>
+    <text x="115" y="205" font-size="9" font-weight="400" fill="#8b949e" text-anchor="middle">User Reports</text>
+    <text x="115" y="217" font-size="9" font-weight="400" fill="#8b949e" text-anchor="middle">Email</text>
+
+    <!-- 2 ARTIFACTS -->
+    <polygon points="230,150 396,150 420,195 396,240 230,240 206,195" fill="#0d1421" stroke="#8b949e" stroke-width="1.8"/>
+    <text x="313" y="185" font-size="11.5" fill="#8b949e" text-anchor="middle">ARTIFACTS</text>
+    <text x="313" y="207" font-size="9" font-weight="400" fill="#8b949e" text-anchor="middle">.eml / Header</text>
+
+    <!-- 3 AUTHENTICATION -->
+    <polygon points="420,150 586,150 610,195 586,240 420,240 396,195" fill="#0d1421" stroke="#3fb950" stroke-width="1.8"/>
+    <text x="503" y="180" font-size="10.5" fill="#3fb950" text-anchor="middle">AUTHENTICATION</text>
+    <text x="503" y="200" font-size="9" font-weight="400" fill="#8b949e" text-anchor="middle">SPF/DKIM/DMARC</text>
+    <text x="503" y="212" font-size="9" font-weight="700" fill="#3fb950" text-anchor="middle">PASS</text>
+
+    <!-- 4 CONTENT -->
+    <polygon points="610,150 776,150 800,195 776,240 610,240 586,195" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="693" y="185" font-size="12" fill="#58a6ff" text-anchor="middle">CONTENT</text>
+    <text x="693" y="205" font-size="9" font-weight="400" fill="#8b949e" text-anchor="middle">Marketing HTML</text>
+
+    <!-- 5 URLS -->
+    <polygon points="800,150 966,150 990,195 966,240 800,240 776,195" fill="#0d1421" stroke="#56c2d4" stroke-width="1.8"/>
+    <text x="883" y="180" font-size="11" fill="#56c2d4" text-anchor="middle">URLS</text>
+    <text x="883" y="198" font-size="7" font-weight="400" fill="#8b949e" text-anchor="middle">Tracking Links = CONFIRMED</text>
+    <text x="883" y="210" font-size="7" font-weight="400" fill="#8b949e" text-anchor="middle">Malicious Redirect = NOT OBSERVED</text>
+
+    <!-- 6 REPUTATION -->
+    <polygon points="990,150 1156,150 1180,195 1156,240 990,240 966,195" fill="#0d1421" stroke="#bc8cff" stroke-width="1.8"/>
+    <text x="1073" y="185" font-size="11.5" fill="#bc8cff" text-anchor="middle">REPUTATION</text>
+    <text x="1073" y="205" font-size="8" font-weight="400" fill="#8b949e" text-anchor="middle">No Current Corroborated</text>
+    <text x="1073" y="216" font-size="8" font-weight="400" fill="#8b949e" text-anchor="middle">Malicious Evidence</text>
+
+    <!-- 7 EVIDENCE -->
+    <polygon points="1180,150 1346,150 1370,195 1346,240 1180,240 1156,195" fill="#1a1608" stroke="#d29922" stroke-width="1.8" stroke-dasharray="5 4"/>
+    <text x="1263" y="180" font-size="11" fill="#d29922" text-anchor="middle">EVIDENCE</text>
+    <text x="1263" y="198" font-size="7" font-weight="400" fill="#8b949e" text-anchor="middle">Phishing / Malware</text>
+    <text x="1263" y="210" font-size="7" font-weight="700" fill="#8b949e" text-anchor="middle">NOT CONFIRMED</text>
+    <text x="1263" y="224" font-size="7" font-weight="400" fill="#8b949e" text-anchor="middle">Credential Harvest = NOT OBSERVED</text>
+
+    <!-- 8 VERDICT -->
+    <polygon points="1370,150 1560,150 1560,240 1370,240 1346,195" fill="#0f1f14" stroke="#3fb950" stroke-width="2.4"/>
+    <text x="1465" y="182" font-size="12" fill="#3fb950" text-anchor="middle">VERDICT</text>
+    <text x="1465" y="204" font-size="8.5" font-weight="400" fill="#8b949e" text-anchor="middle">Legitimate</text>
+    <text x="1465" y="220" font-size="9.5" font-weight="700" fill="#3fb950" text-anchor="middle">Marketing</text>
+  </g>
+
+  <rect x="360" y="290" width="880" height="100" rx="8" fill="#0d1421" stroke="#e6edf3" stroke-width="1.4"/>
+  <text x="800" y="316" font-family="Consolas,monospace" font-size="13" fill="#e6edf3" text-anchor="middle" font-weight="700">TRACKING  ≠  PHISHING</text>
+  <text x="800" y="342" font-family="Consolas,monospace" font-size="13" fill="#e6edf3" text-anchor="middle" font-weight="700">AUTHENTICATION PASS  ≠  AUTOMATIC LEGITIMACY</text>
+  <text x="800" y="368" font-family="Consolas,monospace" font-size="13.5" fill="#3fb950" text-anchor="middle" font-weight="700">VERDICT  =  CORRELATION</text>
+
+  <text x="800" y="440" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">encerra o #008 preservando a taxonomia de evidência, sem overclaim</text>
+</svg>

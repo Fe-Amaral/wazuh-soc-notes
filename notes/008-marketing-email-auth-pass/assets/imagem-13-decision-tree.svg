@@ -1,0 +1,107 @@
+<svg viewBox="0 0 1100 1420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow13h" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="1420" fill="#0a0e14"/>
+  <text x="550" y="46" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">EMAIL ANALYSIS DECISION TREE</text>
+  <line x1="440" y1="62" x2="660" y2="62" stroke="#21262d" stroke-width="1"/>
+
+  <rect x="260" y="76" width="580" height="44" rx="8" fill="#0d1421" stroke="#d29922" stroke-width="1.6"/>
+  <text x="550" y="104" font-family="Consolas,monospace" font-size="13" fill="#d29922" text-anchor="middle" font-weight="700">AUTH PASS  ≠  LEGITIMATE AUTOMATICALLY</text>
+
+  <g font-family="Consolas,monospace" font-size="11">
+    <!-- Q1 -->
+    <polygon points="480,175 610,230 480,285 350,230" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="480" y="226" fill="#e6edf3" text-anchor="middle" font-size="10">AUTHENTICATION</text>
+    <text x="480" y="240" fill="#e6edf3" text-anchor="middle" font-size="10">VALID?</text>
+    <line x1="610" y1="230" x2="750" y2="230" stroke="#d29922" stroke-width="1.6" marker-end="url(#arrow13h)"/>
+    <text x="660" y="223" fill="#d29922" font-size="10.5">NO</text>
+    <rect x="752" y="200" width="300" height="60" rx="8" fill="#1a1608" stroke="#d29922" stroke-width="1.6"/>
+    <text x="902" y="234" fill="#d29922" text-anchor="middle" font-weight="700" font-size="11">Investigate Spoofing /</text>
+    <text x="902" y="250" fill="#d29922" text-anchor="middle" font-weight="700" font-size="11">Misconfiguration</text>
+    <text x="500" y="315" fill="#3fb950" font-size="10">YES</text>
+    <line x1="480" y1="285" x2="480" y2="325" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow13h)"/>
+
+    <!-- Q2 -->
+    <polygon points="480,327 620,382 480,437 340,382" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="480" y="378" fill="#e6edf3" text-anchor="middle" font-size="10">DOMAIN ALIGNMENT</text>
+    <text x="480" y="392" fill="#e6edf3" text-anchor="middle" font-size="10">CONSISTENT?</text>
+    <line x1="620" y1="382" x2="750" y2="382" stroke="#d29922" stroke-width="1.6" marker-end="url(#arrow13h)"/>
+    <text x="660" y="375" fill="#d29922" font-size="10.5">NO</text>
+    <rect x="752" y="352" width="300" height="60" rx="8" fill="#1a1608" stroke="#d29922" stroke-width="1.6"/>
+    <text x="902" y="386" fill="#d29922" text-anchor="middle" font-weight="700" font-size="11">Investigate Identity</text>
+    <text x="902" y="402" fill="#d29922" text-anchor="middle" font-weight="700" font-size="11">Mismatch</text>
+    <text x="500" y="467" fill="#3fb950" font-size="10">YES</text>
+    <line x1="480" y1="437" x2="480" y2="477" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow13h)"/>
+
+    <!-- Q3 -->
+    <polygon points="480,479 610,534 480,589 350,534" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="480" y="530" fill="#e6edf3" text-anchor="middle" font-size="10">CONTENT</text>
+    <text x="480" y="544" fill="#e6edf3" text-anchor="middle" font-size="10">SUSPICIOUS?</text>
+    <line x1="610" y1="534" x2="750" y2="534" stroke="#d29922" stroke-width="1.6" marker-end="url(#arrow13h)"/>
+    <text x="660" y="527" fill="#d29922" font-size="10.5">YES</text>
+    <rect x="752" y="504" width="300" height="60" rx="8" fill="#1a1608" stroke="#d29922" stroke-width="1.6"/>
+    <text x="902" y="538" fill="#d29922" text-anchor="middle" font-weight="700" font-size="11.5">Analyze Intent</text>
+    <text x="500" y="619" fill="#3fb950" font-size="10">NO</text>
+    <line x1="480" y1="589" x2="480" y2="629" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow13h)"/>
+
+    <!-- Q4 -->
+    <polygon points="480,631 630,686 480,741 330,686" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="480" y="682" fill="#e6edf3" text-anchor="middle" font-size="10">URL / ATTACHMENT</text>
+    <text x="480" y="696" fill="#e6edf3" text-anchor="middle" font-size="10">SUSPICIOUS?</text>
+    <line x1="630" y1="686" x2="750" y2="686" stroke="#d29922" stroke-width="1.6" marker-end="url(#arrow13h)"/>
+    <text x="660" y="679" fill="#d29922" font-size="10.5">YES</text>
+    <rect x="752" y="656" width="300" height="60" rx="8" fill="#1a1608" stroke="#d29922" stroke-width="1.6"/>
+    <text x="902" y="682" fill="#d29922" text-anchor="middle" font-weight="700" font-size="10.5">Dynamic / Reputation</text>
+    <text x="902" y="698" fill="#d29922" text-anchor="middle" font-weight="700" font-size="10.5">Analysis</text>
+    <text x="500" y="771" fill="#3fb950" font-size="10">NO</text>
+    <line x1="480" y1="741" x2="480" y2="781" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow13h)"/>
+
+    <!-- Q5 -->
+    <polygon points="480,783 620,838 480,893 340,838" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="480" y="834" fill="#e6edf3" text-anchor="middle" font-size="10">INFRASTRUCTURE</text>
+    <text x="480" y="848" fill="#e6edf3" text-anchor="middle" font-size="10">CONSISTENT?</text>
+    <line x1="620" y1="838" x2="750" y2="838" stroke="#f85149" stroke-width="1.6" marker-end="url(#arrow13h)"/>
+    <text x="660" y="831" fill="#f85149" font-size="10.5">NO</text>
+    <rect x="752" y="808" width="300" height="60" rx="8" fill="#1a1214" stroke="#f85149" stroke-width="1.8"/>
+    <text x="902" y="842" fill="#f85149" text-anchor="middle" font-weight="700" font-size="11.5">Escalate Analysis</text>
+    <text x="500" y="923" fill="#3fb950" font-size="10">YES</text>
+    <line x1="480" y1="893" x2="480" y2="933" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow13h)"/>
+
+    <!-- Q6 -->
+    <polygon points="480,935 620,990 480,1045 340,990" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="480" y="986" fill="#e6edf3" text-anchor="middle" font-size="9.5">CURRENT MALICIOUS</text>
+    <text x="480" y="1000" fill="#e6edf3" text-anchor="middle" font-size="9.5">REPUTATION?</text>
+    <line x1="620" y1="990" x2="750" y2="990" stroke="#d29922" stroke-width="1.6" marker-end="url(#arrow13h)"/>
+    <text x="660" y="983" fill="#d29922" font-size="10.5">YES</text>
+    <rect x="752" y="960" width="300" height="60" rx="8" fill="#1a1608" stroke="#d29922" stroke-width="1.6"/>
+    <text x="902" y="994" fill="#d29922" text-anchor="middle" font-weight="700" font-size="11.5">Correlate Evidence</text>
+    <text x="500" y="1075" fill="#3fb950" font-size="10">NO</text>
+    <line x1="480" y1="1045" x2="480" y2="1085" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow13h)"/>
+
+    <!-- Q7 -->
+    <polygon points="480,1087 630,1142 480,1197 330,1142" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="480" y="1133" fill="#e6edf3" text-anchor="middle" font-size="9.5">MARKETING CONTEXT</text>
+    <text x="480" y="1147" fill="#e6edf3" text-anchor="middle" font-size="9.5">SUPPORTED?</text>
+    <line x1="630" y1="1142" x2="750" y2="1142" stroke="#8b949e" stroke-width="1.6" marker-end="url(#arrow13h)"/>
+    <text x="655" y="1135" fill="#8b949e" font-size="10.5">NO</text>
+    <rect x="752" y="1112" width="300" height="60" rx="8" fill="#15161a" stroke="#8b949e" stroke-width="1.6" stroke-dasharray="4 3"/>
+    <text x="902" y="1146" fill="#8b949e" text-anchor="middle" font-weight="700" font-size="11">CONTINUE VALIDATION</text>
+    <text x="500" y="1227" fill="#3fb950" font-size="10">YES</text>
+    <line x1="480" y1="1197" x2="480" y2="1237" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow13h)"/>
+
+    <!-- Final -->
+    <rect x="330" y="1239" width="300" height="90" rx="10" fill="#0f1f14" stroke="#3fb950" stroke-width="2.4"/>
+    <text x="480" y="1276" fill="#3fb950" text-anchor="middle" font-weight="700" font-size="15">LEGITIMATE</text>
+    <text x="480" y="1300" fill="#8b949e" text-anchor="middle" font-weight="400" font-size="10.5">authenticated marketing</text>
+    <text x="480" y="1314" fill="#8b949e" text-anchor="middle" font-weight="400" font-size="10.5">campaign</text>
+  </g>
+
+  <rect x="650" y="1239" width="180" height="34" rx="6" fill="none" stroke="#3fb950" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <text x="740" y="1261" font-family="Segoe UI,Arial,sans-serif" font-size="9.5" fill="#3fb950" text-anchor="middle" font-style="italic">outcome real deste case</text>
+
+  <text x="550" y="1375" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">SPF PASS → LEGITIMATE não existe como caminho direto</text>
+  <text x="550" y="1399" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#6b7280" text-anchor="middle">o veredito é resultado da correlação completa das evidências</text>
+</svg>

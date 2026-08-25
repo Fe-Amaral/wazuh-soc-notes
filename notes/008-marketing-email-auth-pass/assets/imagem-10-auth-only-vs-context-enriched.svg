@@ -1,0 +1,65 @@
+<svg viewBox="0 0 1200 680" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow10h" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="680" fill="#0a0e14"/>
+  <text x="600" y="50" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">AUTHENTICATION-ONLY VS CONTEXT-ENRICHED ANALYSIS</text>
+  <line x1="380" y1="66" x2="820" y2="66" stroke="#21262d" stroke-width="1"/>
+
+  <g>
+    <text x="270" y="110" font-family="Consolas,monospace" font-size="14" fill="#d29922" text-anchor="middle" font-weight="700" letter-spacing="1">BASIC</text>
+    <rect x="90" y="130" width="150" height="56" rx="8" fill="#111827" stroke="#56c2d4" stroke-width="1.8"/>
+    <text x="165" y="163" font-family="Consolas,monospace" font-size="13" fill="#56c2d4" text-anchor="middle" font-weight="700">SPF</text>
+    <line x1="240" y1="158" x2="270" y2="158" stroke="#4b5563" stroke-width="2" marker-end="url(#arrow10h)"/>
+    <rect x="272" y="130" width="150" height="56" rx="8" fill="#111827" stroke="#56c2d4" stroke-width="1.8"/>
+    <text x="347" y="163" font-family="Consolas,monospace" font-size="13" fill="#56c2d4" text-anchor="middle" font-weight="700">DKIM</text>
+    <line x1="422" y1="158" x2="452" y2="158" stroke="#4b5563" stroke-width="2" marker-end="url(#arrow10h)"/>
+    <rect x="454" y="130" width="150" height="56" rx="8" fill="#111827" stroke="#56c2d4" stroke-width="1.8"/>
+    <text x="529" y="163" font-family="Consolas,monospace" font-size="13" fill="#56c2d4" text-anchor="middle" font-weight="700">DMARC</text>
+    <line x1="604" y1="158" x2="634" y2="158" stroke="#4b5563" stroke-width="2" marker-end="url(#arrow10h)"/>
+    <rect x="636" y="130" width="220" height="56" rx="8" fill="#111827" stroke="#8b949e" stroke-width="1.8"/>
+    <text x="746" y="163" font-family="Consolas,monospace" font-size="12.5" fill="#e6edf3" text-anchor="middle">Authentication Result</text>
+  </g>
+
+  <line x1="60" y1="220" x2="1140" y2="220" stroke="#21262d" stroke-width="1"/>
+
+  <g>
+    <text x="600" y="266" font-family="Consolas,monospace" font-size="14" fill="#3fb950" text-anchor="middle" font-weight="700" letter-spacing="1">CONTEXT-ENRICHED</text>
+
+    <g font-family="Consolas,monospace" font-size="11" fill="#e6edf3">
+      <rect x="60" y="290" width="180" height="38" rx="18" fill="#0d1421" stroke="#58a6ff" stroke-width="1.4"/>
+      <text x="150" y="314" text-anchor="middle">AUTHENTICATION</text>
+      <rect x="255" y="290" width="120" height="38" rx="18" fill="#0d1421" stroke="#58a6ff" stroke-width="1.4"/>
+      <text x="315" y="314" text-anchor="middle">HEADER</text>
+      <rect x="390" y="290" width="110" height="38" rx="18" fill="#0d1421" stroke="#58a6ff" stroke-width="1.4"/>
+      <text x="445" y="314" text-anchor="middle">BODY</text>
+      <rect x="515" y="290" width="100" height="38" rx="18" fill="#0d1421" stroke="#58a6ff" stroke-width="1.4"/>
+      <text x="565" y="314" text-anchor="middle">URL</text>
+      <rect x="630" y="290" width="180" height="38" rx="18" fill="#0d1421" stroke="#58a6ff" stroke-width="1.4"/>
+      <text x="720" y="314" text-anchor="middle">INFRASTRUCTURE</text>
+      <rect x="825" y="290" width="160" height="38" rx="18" fill="#0d1421" stroke="#58a6ff" stroke-width="1.4"/>
+      <text x="905" y="314" text-anchor="middle">REPUTATION</text>
+
+      <rect x="60" y="340" width="220" height="38" rx="18" fill="#0d1421" stroke="#56c2d4" stroke-width="1.4"/>
+      <text x="170" y="364" text-anchor="middle">HISTORICAL CAMPAIGN</text>
+      <rect x="295" y="340" width="180" height="38" rx="18" fill="#0d1421" stroke="#56c2d4" stroke-width="1.4"/>
+      <text x="385" y="364" text-anchor="middle">USER CONTEXT</text>
+    </g>
+
+    <line x1="150" y1="328" x2="920" y2="450" stroke="#2d3748" stroke-width="1"/>
+    <line x1="315" y1="328" x2="920" y2="450" stroke="#2d3748" stroke-width="1"/>
+    <line x1="445" y1="328" x2="920" y2="450" stroke="#2d3748" stroke-width="1"/>
+    <line x1="565" y1="328" x2="920" y2="450" stroke="#2d3748" stroke-width="1"/>
+    <line x1="720" y1="328" x2="920" y2="450" stroke="#2d3748" stroke-width="1"/>
+    <line x1="905" y1="328" x2="920" y2="450" stroke="#2d3748" stroke-width="1"/>
+    <line x1="170" y1="378" x2="920" y2="450" stroke="#2d3748" stroke-width="1"/>
+    <line x1="385" y1="378" x2="920" y2="450" stroke="#2d3748" stroke-width="1"/>
+
+    <rect x="820" y="424" width="290" height="60" rx="10" fill="#0f1f14" stroke="#3fb950" stroke-width="2.2"/>
+    <text x="965" y="460" font-family="Consolas,monospace" font-size="14" fill="#3fb950" text-anchor="middle" font-weight="700">Contextual Verdict</text>
+  </g>
+
+  <text x="600" y="570" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">nunca parar na autenticação — correlacionar até o contexto</text>
+</svg>

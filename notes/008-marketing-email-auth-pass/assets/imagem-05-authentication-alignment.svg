@@ -1,0 +1,62 @@
+<svg viewBox="0 0 1100 660" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow05h" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="660" fill="#0a0e14"/>
+  <text x="550" y="46" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">AUTHENTICATION ALIGNMENT</text>
+  <line x1="440" y1="62" x2="660" y2="62" stroke="#21262d" stroke-width="1"/>
+
+  <g font-family="Consolas,monospace" font-size="13">
+    <!-- FROM -->
+    <rect x="60" y="100" width="180" height="46" rx="8" fill="#0d1421" stroke="#e6edf3" stroke-width="1.8"/>
+    <text x="150" y="128" fill="#e6edf3" text-anchor="middle" font-weight="700">FROM</text>
+    <line x1="240" y1="123" x2="330" y2="123" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow05h)"/>
+    <rect x="332" y="100" width="200" height="46" rx="8" fill="#0f1f14" stroke="#3fb950" stroke-width="1.8"/>
+    <text x="432" y="122" fill="#e6edf3" text-anchor="middle" font-size="11.5">DKIM →</text>
+    <text x="432" y="138" fill="#3fb950" text-anchor="middle" font-weight="700" font-size="12">PASS</text>
+
+    <line x1="150" y1="146" x2="150" y2="196" stroke="#4b5563" stroke-width="1.6"/>
+    <line x1="150" y1="196" x2="330" y2="196" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow05h)"/>
+    <rect x="332" y="173" width="200" height="46" rx="8" fill="#0f1f14" stroke="#3fb950" stroke-width="1.8"/>
+    <text x="432" y="195" fill="#e6edf3" text-anchor="middle" font-size="11.5">DMARC →</text>
+    <text x="432" y="211" fill="#3fb950" text-anchor="middle" font-weight="700" font-size="12">PASS</text>
+
+    <!-- RETURN-PATH -->
+    <rect x="60" y="256" width="180" height="46" rx="8" fill="#0d1421" stroke="#e6edf3" stroke-width="1.8"/>
+    <text x="150" y="284" fill="#e6edf3" text-anchor="middle" font-weight="700" font-size="11.5">RETURN-PATH</text>
+    <line x1="240" y1="279" x2="330" y2="279" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow05h)"/>
+    <rect x="332" y="256" width="200" height="46" rx="8" fill="#0f1f14" stroke="#3fb950" stroke-width="1.8"/>
+    <text x="432" y="278" fill="#e6edf3" text-anchor="middle" font-size="11.5">SPF →</text>
+    <text x="432" y="294" fill="#3fb950" text-anchor="middle" font-weight="700" font-size="12">PASS</text>
+
+    <!-- SMTP ORIGIN -->
+    <rect x="60" y="342" width="180" height="46" rx="8" fill="#0d1421" stroke="#56c2d4" stroke-width="1.8"/>
+    <text x="150" y="370" fill="#56c2d4" text-anchor="middle" font-weight="700" font-size="11.5">SMTP ORIGIN</text>
+    <line x1="240" y1="365" x2="330" y2="365" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow05h)"/>
+    <rect x="332" y="342" width="200" height="46" rx="8" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="432" y="370" fill="#58a6ff" text-anchor="middle" font-weight="700" font-size="12">CONSISTENT</text>
+  </g>
+
+  <g font-family="Consolas,monospace" font-size="12.5">
+    <rect x="620" y="100" width="420" height="288" rx="10" fill="#0f1f14" stroke="#3fb950" stroke-width="1.8"/>
+    <text x="830" y="130" fill="#3fb950" text-anchor="middle" font-weight="700" letter-spacing="1">COMPOSITE RESULT</text>
+    <line x1="650" y1="146" x2="1010" y2="146" stroke="#1f3a24"/>
+    <text x="830" y="178" fill="#3fb950" text-anchor="middle" font-weight="700">AUTHENTICATION ALIGNMENT CONFIRMED</text>
+    <text x="830" y="202" fill="#8b949e" text-anchor="middle" font-size="11">From / Return-Path / DKIM domains</text>
+    <text x="830" y="220" fill="#e6edf3" text-anchor="middle" font-size="11.5" font-weight="700">CONSISTENT</text>
+    <text x="830" y="252" fill="#e6edf3" text-anchor="middle">SPF = PASS</text>
+    <text x="830" y="276" fill="#e6edf3" text-anchor="middle">DKIM = PASS</text>
+    <text x="830" y="300" fill="#e6edf3" text-anchor="middle">DMARC = PASS</text>
+    <text x="830" y="330" fill="#8b949e" text-anchor="middle" font-size="11">SMTP Origin</text>
+    <text x="830" y="348" fill="#58a6ff" text-anchor="middle" font-size="11.5" font-weight="700">CONSISTENT</text>
+  </g>
+
+  <rect x="200" y="460" width="700" height="130" rx="10" fill="#0d1421" stroke="#e6edf3" stroke-width="1.6"/>
+  <text x="550" y="500" font-family="Consolas,monospace" font-size="14.5" fill="#3fb950" text-anchor="middle" font-weight="700">AUTHENTICATION = STRONG EVIDENCE</text>
+  <text x="550" y="528" font-family="Consolas,monospace" font-size="13" fill="#8b949e" text-anchor="middle">≠</text>
+  <text x="550" y="556" font-family="Consolas,monospace" font-size="14.5" fill="#d29922" text-anchor="middle" font-weight="700">AUTHENTICATION = FINAL VERDICT</text>
+
+  <text x="550" y="630" font-family="Segoe UI,Arial,sans-serif" font-size="12.5" fill="#8b949e" text-anchor="middle">o valor probatório exato de SPF, DKIM e DMARC</text>
+</svg>

@@ -1,0 +1,50 @@
+<svg viewBox="0 0 1200 660" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow07h" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="660" fill="#0a0e14"/>
+  <text x="600" y="46" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">REPUTATION CORRELATION</text>
+  <line x1="490" y1="62" x2="710" y2="62" stroke="#21262d" stroke-width="1"/>
+
+  <g font-family="Consolas,monospace" font-size="12" fill="#e6edf3">
+    <rect x="40" y="90" width="150" height="46" rx="18" fill="#0d1421" stroke="#56c2d4" stroke-width="1.4"/>
+    <text x="115" y="118" text-anchor="middle">DOMAIN</text>
+    <rect x="204" y="90" width="130" height="46" rx="18" fill="#0d1421" stroke="#56c2d4" stroke-width="1.4"/>
+    <text x="269" y="118" text-anchor="middle">IP</text>
+    <rect x="348" y="90" width="130" height="46" rx="18" fill="#0d1421" stroke="#56c2d4" stroke-width="1.4"/>
+    <text x="413" y="118" text-anchor="middle">URL</text>
+    <rect x="492" y="90" width="130" height="46" rx="18" fill="#0d1421" stroke="#56c2d4" stroke-width="1.4"/>
+    <text x="557" y="118" text-anchor="middle">DNS</text>
+    <rect x="636" y="90" width="140" height="46" rx="18" fill="#0d1421" stroke="#56c2d4" stroke-width="1.4"/>
+    <text x="706" y="118" text-anchor="middle">WHOIS</text>
+    <rect x="790" y="90" width="190" height="46" rx="18" fill="#0d1421" stroke="#56c2d4" stroke-width="1.4"/>
+    <text x="885" y="118" text-anchor="middle">THREAT INTEL</text>
+    <rect x="994" y="90" width="196" height="46" rx="18" fill="#0d1421" stroke="#56c2d4" stroke-width="1.4"/>
+    <text x="1092" y="118" text-anchor="middle">SAFE BROWSING</text>
+  </g>
+
+  <line x1="115" y1="136" x2="600" y2="186" stroke="#2d3748" stroke-width="1"/>
+  <line x1="269" y1="136" x2="600" y2="186" stroke="#2d3748" stroke-width="1"/>
+  <line x1="413" y1="136" x2="600" y2="186" stroke="#2d3748" stroke-width="1"/>
+  <line x1="557" y1="136" x2="600" y2="186" stroke="#2d3748" stroke-width="1"/>
+  <line x1="706" y1="136" x2="600" y2="186" stroke="#2d3748" stroke-width="1"/>
+  <line x1="885" y1="136" x2="600" y2="186" stroke="#2d3748" stroke-width="1"/>
+  <line x1="1092" y1="136" x2="600" y2="186" stroke="#2d3748" stroke-width="1"/>
+
+  <rect x="480" y="190" width="240" height="50" rx="8" fill="#0d1421" stroke="#bc8cff" stroke-width="1.8"/>
+  <text x="600" y="221" font-family="Consolas,monospace" font-size="13" fill="#bc8cff" text-anchor="middle" font-weight="700">CORRELATION</text>
+  <line x1="600" y1="240" x2="600" y2="266" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow07h)"/>
+
+  <rect x="330" y="270" width="540" height="70" rx="10" fill="#0f1f14" stroke="#3fb950" stroke-width="2"/>
+  <text x="600" y="300" font-family="Consolas,monospace" font-size="13" fill="#3fb950" text-anchor="middle" font-weight="700">NO CURRENT CORROBORATED</text>
+  <text x="600" y="322" font-family="Consolas,monospace" font-size="13" fill="#3fb950" text-anchor="middle" font-weight="700">MALICIOUS EVIDENCE</text>
+
+  <rect x="290" y="390" width="620" height="90" rx="10" fill="#0d1421" stroke="#d29922" stroke-width="1.6"/>
+  <text x="600" y="424" font-family="Consolas,monospace" font-size="13.5" fill="#e6edf3" text-anchor="middle" font-weight="700">ONE HISTORICAL SIGNAL</text>
+  <text x="600" y="448" font-family="Consolas,monospace" font-size="12.5" fill="#8b949e" text-anchor="middle">≠</text>
+  <text x="600" y="468" font-family="Consolas,monospace" font-size="13.5" fill="#d29922" text-anchor="middle" font-weight="700">CURRENT CAMPAIGN VERDICT</text>
+
+  <text x="600" y="560" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">o objetivo não é contar "clean" — é achar evidência atual e corroborada</text>
+</svg>

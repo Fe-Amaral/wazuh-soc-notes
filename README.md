@@ -23,6 +23,7 @@ Neste repositório, os mesmos estudos poderão ser aprofundados com análises t�
 | **#005** | Windows / Sysmon / Wazuh | Script `.ps1` criado em Windows Temp (`taskhostw.exe`) | **Falso Positivo** | [Ver análise completa](notes/005-sysmon-eid11-filecreate-vs-execution/README.md) |
 | **#006** | Darktrace / Wazuh | Watched Domain via DNS em dispositivo Mobile/Android | **Falso Positivo** | [Ver análise completa](notes/006-darktrace-watched-domain/README.md) |
 | **#007** | FortiGate / Wazuh | Tráfego AnyDesk bloqueado pelo Application Control | **Contenção Preventiva** | [Ver análise completa](notes/007-fortigate-anydesk-blocked/README.md) |
+| **#008** | Microsoft 365 / Email Security | E-mail promocional reportado como suspeito — SPF/DKIM/DMARC PASS | **Falso Positivo** | [Ver análise completa](notes/008-marketing-email-auth-pass/README.md) |
 
 ---
 

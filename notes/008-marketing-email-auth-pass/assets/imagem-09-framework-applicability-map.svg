@@ -1,0 +1,81 @@
+<svg viewBox="0 0 1200 780" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="780" fill="#0a0e14"/>
+  <text x="600" y="46" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">FRAMEWORK &amp; METHODOLOGY MAP</text>
+  <line x1="410" y1="62" x2="790" y2="62" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Row 1: Technique / adversarial chain -->
+  <g transform="translate(60,90)">
+    <rect width="1080" height="100" rx="10" fill="#1a1608" stroke="#d29922" stroke-width="1.8"/>
+    <rect width="10" height="100" fill="#d29922"/>
+    <text x="34" y="30" font-family="Consolas,monospace" font-size="13.5" fill="#d29922" font-weight="700" letter-spacing="1">TÉCNICA / CADEIA ADVERSARIAL</text>
+    <g font-family="Consolas,monospace" font-size="12.5" fill="#e6edf3">
+      <rect x="34" y="42" width="380" height="42" rx="8" fill="#0a0e14" stroke="#d29922" stroke-width="1.3"/>
+      <text x="224" y="60" text-anchor="middle" font-weight="700">MITRE ATT&amp;CK</text>
+      <text x="224" y="76" text-anchor="middle" font-size="10" fill="#8b949e">T1566 (hipótese, não confirmada)</text>
+
+      <rect x="430" y="42" width="420" height="42" rx="8" fill="none" stroke="#4b5563" stroke-width="1.2" stroke-dasharray="3 3"/>
+      <text x="640" y="60" text-anchor="middle" font-size="11" fill="#8b949e">MITRE Attack Flow</text>
+      <text x="640" y="76" text-anchor="middle" font-size="9.5" fill="#6b7280">not applicable — ver Investigation Flow (Seção 22)</text>
+    </g>
+  </g>
+
+  <!-- Row 2: Governance -->
+  <g transform="translate(60,204)">
+    <rect width="1080" height="310" rx="10" fill="#0f1f14" stroke="#3fb950" stroke-width="1.8"/>
+    <rect width="10" height="310" fill="#3fb950"/>
+    <text x="34" y="30" font-family="Consolas,monospace" font-size="13.5" fill="#3fb950" font-weight="700" letter-spacing="1">GOVERNANÇA / METODOLOGIA / MELHORIA CONTÍNUA</text>
+
+    <g font-family="Consolas,monospace" font-size="12.5" fill="#e6edf3">
+      <rect x="34" y="42" width="200" height="38" rx="19" fill="#0a0e14" stroke="#3fb950" stroke-width="1.2"/>
+      <text x="134" y="66" text-anchor="middle">NIST CSF</text>
+      <rect x="246" y="42" width="240" height="38" rx="19" fill="#0a0e14" stroke="#3fb950" stroke-width="1.2"/>
+      <text x="366" y="66" text-anchor="middle">NIST SP 800-61</text>
+      <rect x="498" y="42" width="240" height="38" rx="19" fill="#0a0e14" stroke="#3fb950" stroke-width="1.2"/>
+      <text x="618" y="66" text-anchor="middle">ISO/IEC 27035</text>
+      <rect x="750" y="42" width="240" height="38" rx="19" fill="#0a0e14" stroke="#3fb950" stroke-width="1.2"/>
+      <text x="870" y="66" text-anchor="middle">ISO/IEC 27001</text>
+    </g>
+
+    <g font-family="Consolas,monospace" font-size="12" fill="#e6edf3">
+      <rect x="34" y="96" width="1010" height="138" rx="8" fill="#0a0e14" stroke="#3fb950" stroke-width="1.3"/>
+      <text x="54" y="120" font-weight="700" fill="#3fb950">CIS CONTROLS</text>
+      <text x="54" y="144" font-size="11.5">CIS 8  — Audit Log Management</text>
+      <text x="54" y="164" font-size="11.5">CIS 9  — Email and Web Browser Protections</text>
+      <text x="54" y="184" font-size="11.5">CIS 14 — Security Awareness and Skills Training</text>
+      <text x="54" y="204" font-size="11.5">CIS 17 — Incident Response Management</text>
+      <text x="620" y="144" font-size="11.5" fill="#8b949e">ISO 27035: Plan&amp;Prepare · Detect&amp;Report ·</text>
+      <text x="620" y="164" font-size="11.5" fill="#8b949e">Assess&amp;Decide · Respond · Lessons Learned</text>
+      <text x="620" y="184" font-size="11.5" fill="#8b949e">ISO 27001: Anexo A 5.24–5.28</text>
+    </g>
+
+    <rect x="34" y="248" width="490" height="42" rx="8" fill="#0a0e14" stroke="#3fb950" stroke-width="1.3"/>
+    <text x="279" y="266" font-family="Consolas,monospace" font-size="12.5" fill="#e6edf3" text-anchor="middle" font-weight="700">SOC-CMM</text>
+    <text x="279" y="282" font-family="Consolas,monospace" font-size="10" fill="#8b949e" text-anchor="middle">Triage &amp; Enrichment Process</text>
+
+    <rect x="556" y="248" width="490" height="42" rx="8" fill="#0a0e14" stroke="#3fb950" stroke-width="1.3"/>
+    <text x="801" y="266" font-family="Consolas,monospace" font-size="12" fill="#e6edf3" text-anchor="middle" font-weight="700">SANS PICERL</text>
+    <text x="801" y="282" font-family="Consolas,monospace" font-size="9.5" fill="#8b949e" text-anchor="middle">Identification + Lessons Learned</text>
+  </g>
+
+  <!-- Row 3: Analytical methodology -->
+  <g transform="translate(60,530)">
+    <rect width="1080" height="110" rx="10" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <rect width="10" height="110" fill="#58a6ff"/>
+    <text x="34" y="30" font-family="Consolas,monospace" font-size="13.5" fill="#58a6ff" font-weight="700" letter-spacing="1">METODOLOGIA ANALÍTICA APLICADA</text>
+    <g font-family="Consolas,monospace" font-size="12.5" fill="#e6edf3">
+      <rect x="34" y="42" width="360" height="52" rx="8" fill="#0a0e14" stroke="#58a6ff" stroke-width="1.3"/>
+      <text x="214" y="62" text-anchor="middle" font-weight="700" font-size="11.5">ACH — Competing Hypotheses</text>
+      <text x="214" y="80" text-anchor="middle" font-size="10" fill="#8b949e">5 cenários concorrentes (A–E)</text>
+
+      <rect x="404" y="42" width="270" height="52" rx="8" fill="#0a0e14" stroke="#58a6ff" stroke-width="1.3"/>
+      <text x="539" y="62" text-anchor="middle" font-weight="700">Método Científico</text>
+      <text x="539" y="80" text-anchor="middle" font-size="10.5" fill="#8b949e">Hipótese → Evidência → Teste → Conclusão</text>
+
+      <rect x="704" y="42" width="342" height="52" rx="8" fill="#0a0e14" stroke="#58a6ff" stroke-width="1.3"/>
+      <text x="875" y="62" text-anchor="middle" font-weight="700">OODA Loop</text>
+      <text x="875" y="80" text-anchor="middle" font-size="10" fill="#8b949e">Observe → Orient → Decide → Act</text>
+    </g>
+  </g>
+
+  <text x="600" y="680" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">FRAMEWORK  ≠  FORCED MAPPING</text>
+</svg>
