@@ -4,6 +4,8 @@
 
 ![Wazuh SOC Notes #006: Darktrace Watched Domain, severidade não é impacto](assets/imagem-01-capa.svg)
 
+🔗 [Publicado no LinkedIn](https://www.linkedin.com/posts/felipe-r-amaral_wazuh-soc-blueteam-activity-7486464356151652352-sQyq)
+
 ---
 
 ## Executive Summary

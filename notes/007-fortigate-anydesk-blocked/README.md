@@ -4,6 +4,8 @@
 
 ![Wazuh SOC Notes #007: AnyDesk bloqueado pelo FortiGate](assets/imagem-01-capa.svg)
 
+🔗 [Publicado no LinkedIn](https://www.linkedin.com/posts/felipe-r-amaral_wazuh-soc-ir-activity-7487965912239620097-GSoc)
+
 ---
 
 ## Executive Summary

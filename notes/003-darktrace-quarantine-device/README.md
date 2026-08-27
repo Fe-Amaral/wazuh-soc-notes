@@ -4,6 +4,8 @@
 
 ![Wazuh SOC Notes #003: Darktrace Threat Indicator e Quarantine Device](assets/imagem-01-capa.svg)
 
+🔗 [Publicado no LinkedIn](https://www.linkedin.com/posts/felipe-r-amaral_wazuh-darktrace-soc-activity-7475601599474614272-CmhO)
+
 ---
 
 ## Executive Summary

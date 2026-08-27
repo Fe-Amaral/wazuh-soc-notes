@@ -4,6 +4,8 @@
 
 ![Wazuh SOC Notes #001: Interfaces veth em modo promíscuo](assets/imagem-01-capa.svg)
 
+🔗 [Publicado no LinkedIn](https://www.linkedin.com/posts/felipe-r-amaral_wazuh-soc-incidentresponse-activity-7471061144879763456-1tnr)
+
 ---
 
 ## Executive Summary

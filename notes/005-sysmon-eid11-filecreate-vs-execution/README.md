@@ -4,6 +4,8 @@
 
 ![Wazuh SOC Notes #005: Sysmon Event ID 11, FileCreate não é FileExecuted](assets/imagem-01-capa.svg)
 
+🔗 [Publicado no LinkedIn](https://www.linkedin.com/posts/felipe-r-amaral_wazuh-sysmon-soc-activity-7485689917495205889-Q0cu)
+
 ---
 
 ## Executive Summary

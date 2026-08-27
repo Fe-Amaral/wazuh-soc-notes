@@ -4,6 +4,8 @@
 
 ![Wazuh SOC Notes #002: Cloudflare WAF, scanning autorizado e atividade adversarial](assets/imagem-01-capa.svg)
 
+🔗 [Publicado no LinkedIn](https://www.linkedin.com/posts/felipe-r-amaral_waf-soc-incidentresponse-activity-7472371298900492288-hep8)
+
 ---
 
 ## Executive Summary
