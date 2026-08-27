@@ -1133,7 +1133,7 @@ Attack Flow = Not Applicable
 
 # 23. Framework Mapping
 
-Um framework só entra nesta lista quando há um número, técnica ou controle real e específico que se aplique a este case — não como referência genérica.
+Um framework só entra nesta lista quando há um número, técnica ou controle real e específico que se aplique a este case, não como referência genérica.
 
 ### MITRE ATT&CK
 
@@ -1167,7 +1167,7 @@ Ciclo de 5 fases (Plan & Prepare / Detection & Reporting / Assessment & Decision
 
 **Aplicabilidade: direta.**
 
-Identification (Seções 8–19) e Lessons Learned (Seções 30 e 32) mapeados diretamente na estrutura deste note. Containment/Eradication não se aplicam — nenhuma ameaça real foi confirmada.
+Identification (Seções 8–19) e Lessons Learned (Seções 30 e 32) mapeados diretamente na estrutura deste note. Containment/Eradication não se aplicam, pois nenhuma ameaça real foi confirmada.
 
 ### ISO/IEC 27001
 
@@ -2042,7 +2042,7 @@ Did Not Happen
 
 O veredito foi produzido através da correlação das evidências técnicas disponíveis.
 
-As investigações, decisões técnicas e veredictos apresentados neste estudo refletem experiência prática real do autor. Ferramentas de Inteligência Artificial foram utilizadas como apoio para formatação, diagramação e publicação do conteúdo — não para a condução da investigação em si.
+As investigações, decisões técnicas e veredictos apresentados neste estudo refletem experiência prática real do autor. Ferramentas de Inteligência Artificial foram utilizadas como apoio para formatação, diagramação e publicação do conteúdo, não para a condução da investigação em si.
 
 O objetivo desta publicação é compartilhar metodologia de:
 

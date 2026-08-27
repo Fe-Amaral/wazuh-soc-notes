@@ -866,7 +866,7 @@ Deve ser aumentar o contexto disponível para sua classificação.
 
 ## 18. Framework Mapping
 
-Um framework só entra nesta lista quando há um número, técnica ou controle real e específico que se aplique a este case — não como referência genérica.
+Um framework só entra nesta lista quando há um número, técnica ou controle real e específico que se aplique a este case, não como referência genérica.
 
 ### MITRE ATT&CK
 
@@ -936,7 +936,7 @@ Prática de Incident Management e prática de Continual Improvement.
 
 **Aplicabilidade: operacional (não classifica evidência do case).**
 
-O pipeline de Detection Engineering (Seção 24) poderia ser gerenciado como backlog Scrum/Kanban — cada nova hipótese de detecção como item de sprint. Não é usado para classificar nenhum fato técnico deste alerta.
+O pipeline de Detection Engineering (Seção 24) poderia ser gerenciado como backlog Scrum/Kanban: cada nova hipótese de detecção como item de sprint. Não é usado para classificar nenhum fato técnico deste alerta.
 
 ### CIS Controls
 
@@ -1564,7 +1564,7 @@ O fluxo considera elementos como:
 
 A presença de um único indicador suspeito não deve determinar automaticamente um verdadeiro positivo.
 
-Quando a suspeita aumenta — origem desconhecida, fora da janela aprovada, fora do escopo autorizado ou impacto inesperado —, o comportamento adequado é:
+Quando a suspeita aumenta — origem desconhecida, fora da janela aprovada, fora do escopo autorizado ou impacto inesperado — o comportamento adequado é:
 
 > **Escalar a investigação e buscar validação adicional.**
 
@@ -1972,7 +1972,7 @@ DECISION
 
 Este estudo foi sanitizado para preservar integralmente a confidencialidade do ambiente originalmente analisado.
 
-As investigações, decisões técnicas e veredictos apresentados neste estudo refletem experiência prática real do autor. Ferramentas de Inteligência Artificial foram utilizadas como apoio para formatação, diagramação e publicação do conteúdo — não para a condução da investigação em si.
+As investigações, decisões técnicas e veredictos apresentados neste estudo refletem experiência prática real do autor. Ferramentas de Inteligência Artificial foram utilizadas como apoio para formatação, diagramação e publicação do conteúdo, não para a condução da investigação em si.
 
 Nomes e valores relacionados aos seguintes elementos foram removidos, generalizados ou substituídos:
 

@@ -1148,7 +1148,7 @@ Higher Detection Confidence
 
 ## 19. Framework Mapping
 
-Um framework só entra nesta lista quando há um número, técnica ou controle real e específico que se aplique a este case — não como referência genérica.
+Um framework só entra nesta lista quando há um número, técnica ou controle real e específico que se aplique a este case, não como referência genérica.
 
 ### MITRE ATT&CK
 
@@ -1188,7 +1188,7 @@ Ciclo de 5 fases (Plan & Prepare / Detection & Reporting / Assessment & Decision
 
 **Aplicabilidade: direta.**
 
-Identification (Seções 1–10) e Lessons Learned (Seção 34) mapeados diretamente. Containment/Eradication não se aplicam — execução maliciosa não foi confirmada.
+Identification (Seções 1–10) e Lessons Learned (Seção 34) mapeados diretamente. Containment/Eradication não se aplicam, pois execução maliciosa não foi confirmada.
 
 ### ISO/IEC 27001
 
@@ -1212,7 +1212,7 @@ Prática de Incident Management e prática de Continual Improvement.
 
 **Aplicabilidade: operacional (não classifica evidência do case).**
 
-O pipeline de Detection Engineering (Seção 25) poderia ser gerenciado como backlog Scrum/Kanban — cada nova hipótese de detecção como item de sprint. Não é usado para classificar nenhum fato técnico deste alerta.
+O pipeline de Detection Engineering (Seção 25) poderia ser gerenciado como backlog Scrum/Kanban: cada nova hipótese de detecção como item de sprint. Não é usado para classificar nenhum fato técnico deste alerta.
 
 ### CIS Controls
 
@@ -2306,7 +2306,7 @@ https://www.soc-cmm.com/
 
 Este estudo foi sanitizado para preservar integralmente a confidencialidade do ambiente originalmente analisado.
 
-As investigações, decisões técnicas e veredictos apresentados neste estudo refletem experiência prática real do autor. Ferramentas de Inteligência Artificial foram utilizadas como apoio para formatação, diagramação e publicação do conteúdo — não para a condução da investigação em si.
+As investigações, decisões técnicas e veredictos apresentados neste estudo refletem experiência prática real do autor. Ferramentas de Inteligência Artificial foram utilizadas como apoio para formatação, diagramação e publicação do conteúdo, não para a condução da investigação em si.
 
 Não são publicados valores reais relacionados a:
 

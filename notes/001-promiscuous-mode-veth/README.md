@@ -659,7 +659,7 @@ Isso reforça uma característica importante deste estudo:
 
 ## 18. Framework Mapping
 
-Um framework só entra nesta lista quando há um número, técnica ou controle real e específico que se aplique a este case — não como referência genérica.
+Um framework só entra nesta lista quando há um número, técnica ou controle real e específico que se aplique a este case, não como referência genérica.
 
 ### MITRE ATT&CK
 
@@ -695,7 +695,7 @@ Ciclo de 5 fases (Plan & Prepare / Detection & Reporting / Assessment & Decision
 
 **Aplicabilidade: direta.**
 
-Identification (Seções 1–10) e Lessons Learned (Seção 33) mapeados diretamente. Containment/Eradication não se aplicam — não houve ameaça real a conter.
+Identification (Seções 1–10) e Lessons Learned (Seção 33) mapeados diretamente. Containment/Eradication não se aplicam, pois não houve ameaça real a conter.
 
 ### ISO/IEC 27001
 
@@ -719,7 +719,7 @@ Prática de Incident Management e prática de Continual Improvement.
 
 **Aplicabilidade: operacional (não classifica evidência do case).**
 
-O pipeline de Detection Engineering (Seção 24) poderia ser gerenciado como backlog Scrum/Kanban — cada nova hipótese de detecção como item de sprint. Não é usado para classificar nenhum fato técnico deste alerta.
+O pipeline de Detection Engineering (Seção 24) poderia ser gerenciado como backlog Scrum/Kanban: cada nova hipótese de detecção como item de sprint. Não é usado para classificar nenhum fato técnico deste alerta.
 
 ### CIS Controls
 
@@ -1429,7 +1429,7 @@ A decisão é resultado da investigação.
 
 Este estudo foi sanitizado para preservar a confidencialidade do ambiente originalmente analisado.
 
-As investigações, decisões técnicas e veredictos apresentados neste estudo refletem experiência prática real do autor. Ferramentas de Inteligência Artificial foram utilizadas como apoio para formatação, diagramação e publicação do conteúdo — não para a condução da investigação em si.
+As investigações, decisões técnicas e veredictos apresentados neste estudo refletem experiência prática real do autor. Ferramentas de Inteligência Artificial foram utilizadas como apoio para formatação, diagramação e publicação do conteúdo, não para a condução da investigação em si.
 
 Nomes de organizações, clientes, usuários, hostnames, endereços IP, identificadores de interfaces, identificadores de incidentes, timestamps específicos e demais informações operacionais foram removidos, generalizados ou substituídos.
 

@@ -152,7 +152,7 @@ Confirmed User Acknowledgment
 
 A principal lição do estudo é:
 
-> **severidade ajuda a definir prioridade. Evidências determinam impacto — e nem toda evidência que fecha um caso é telemetria.**
+> **severidade ajuda a definir prioridade. Evidências determinam impacto, e nem toda evidência que fecha um caso é telemetria.**
 
 ---
 
@@ -432,7 +432,7 @@ Exemplo:
 DNS activity to Watched Domain
 ```
 
-`Confirmed` também pode ser sustentado por uma fonte não técnica, quando essa fonte é direta e verificável — por exemplo, o reconhecimento do próprio usuário/asset owner sobre uma atividade. Esse tipo de confirmação é registrado separadamente como:
+`Confirmed` também pode ser sustentado por uma fonte não técnica, quando essa fonte é direta e verificável, por exemplo, o reconhecimento do próprio usuário/asset owner sobre uma atividade. Esse tipo de confirmação é registrado separadamente como:
 
 ```text
 Confirmed (user attestation)
@@ -1185,7 +1185,7 @@ As demais etapas precisavam de enriquecimento.
 
 ## 19. Framework Mapping
 
-Um framework só entra nesta lista quando há um número, técnica ou controle real e específico que se aplique a este case — não como referência genérica.
+Um framework só entra nesta lista quando há um número, técnica ou controle real e específico que se aplique a este case, não como referência genérica.
 
 ### MITRE ATT&CK
 
@@ -1225,7 +1225,7 @@ Ciclo de 5 fases (Plan & Prepare / Detection & Reporting / Assessment & Decision
 
 **Aplicabilidade: direta.**
 
-Identification e Lessons Learned mapeados diretamente. O fechamento via reconhecimento do usuário (Seção 32) equivale ao encerramento do ciclo — Containment/Eradication não se aplicam, pois não houve ameaça a conter.
+Identification e Lessons Learned mapeados diretamente. O fechamento via reconhecimento do usuário (Seção 32) equivale ao encerramento do ciclo. Containment/Eradication não se aplicam, pois não houve ameaça a conter.
 
 ### ISO/IEC 27001
 
@@ -1249,7 +1249,7 @@ Prática de Incident Management e prática de Continual Improvement.
 
 **Aplicabilidade: operacional (não classifica evidência do case).**
 
-O pipeline de Detection Engineering (Seção 25) poderia ser gerenciado como backlog Scrum/Kanban — cada nova hipótese de detecção como item de sprint. Não é usado para classificar nenhum fato técnico deste alerta.
+O pipeline de Detection Engineering (Seção 25) poderia ser gerenciado como backlog Scrum/Kanban: cada nova hipótese de detecção como item de sprint. Não é usado para classificar nenhum fato técnico deste alerta.
 
 ### CIS Controls
 
@@ -2374,7 +2374,7 @@ https://www.soc-cmm.com/
 
 Este estudo foi sanitizado para preservar integralmente a confidencialidade do ambiente originalmente analisado.
 
-As investigações, decisões técnicas e veredictos apresentados neste estudo refletem experiência prática real do autor. Ferramentas de Inteligência Artificial foram utilizadas como apoio para formatação, diagramação e publicação do conteúdo — não para a condução da investigação em si.
+As investigações, decisões técnicas e veredictos apresentados neste estudo refletem experiência prática real do autor. Ferramentas de Inteligência Artificial foram utilizadas como apoio para formatação, diagramação e publicação do conteúdo, não para a condução da investigação em si.
 
 Não são publicados valores reais relacionados a:
 

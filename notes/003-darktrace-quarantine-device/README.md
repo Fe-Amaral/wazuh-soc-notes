@@ -986,7 +986,7 @@ A qualidade do veredito depende da correlação.
 
 ## 18. Framework Mapping
 
-Um framework só entra nesta lista quando há um número, técnica ou controle real e específico que se aplique a este case — não como referência genérica.
+Um framework só entra nesta lista quando há um número, técnica ou controle real e específico que se aplique a este case, não como referência genérica.
 
 ### MITRE D3FEND
 
@@ -1004,7 +1004,7 @@ A ideia defensiva consiste em restringir a capacidade de determinado host intera
 
 **Aplicabilidade: lente analítica, sem cadeia confirmada.**
 
-Estruturam a pergunta "houve progressão adversarial?" feita na Seção 15 (Attack Chain Assessment). Nenhum estágio foi confirmado — nem mesmo uma técnica MITRE ATT&CK específica (ver Seção 16).
+Estruturam a pergunta "houve progressão adversarial?" feita na Seção 15 (Attack Chain Assessment). Nenhum estágio foi confirmado, nem mesmo uma técnica MITRE ATT&CK específica (ver Seção 16).
 
 ### NIST CSF
 
@@ -1052,7 +1052,7 @@ Prática de Incident Management e prática de Continual Improvement.
 
 **Aplicabilidade: operacional (não classifica evidência do case).**
 
-O pipeline de Detection Engineering (Seção 24) poderia ser gerenciado como backlog Scrum/Kanban — cada nova hipótese de detecção como item de sprint. Não é usado para classificar nenhum fato técnico deste alerta.
+O pipeline de Detection Engineering (Seção 24) poderia ser gerenciado como backlog Scrum/Kanban: cada nova hipótese de detecção como item de sprint. Não é usado para classificar nenhum fato técnico deste alerta.
 
 ### CIS Controls
 
@@ -2183,7 +2183,7 @@ DECISION
 
 Este estudo foi sanitizado para preservar integralmente a confidencialidade do ambiente originalmente analisado.
 
-As investigações, decisões técnicas e veredictos apresentados neste estudo refletem experiência prática real do autor. Ferramentas de Inteligência Artificial foram utilizadas como apoio para formatação, diagramação e publicação do conteúdo — não para a condução da investigação em si.
+As investigações, decisões técnicas e veredictos apresentados neste estudo refletem experiência prática real do autor. Ferramentas de Inteligência Artificial foram utilizadas como apoio para formatação, diagramação e publicação do conteúdo, não para a condução da investigação em si.
 
 Não são publicados valores reais relacionados a:
 
