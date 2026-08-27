@@ -1,8 +1,8 @@
-# Wazuh SOC Notes #001 — Interfaces `veth` em modo promíscuo: quando um alerta de sniffing exige contexto
+# Wazuh SOC Notes #001: Interfaces `veth` em modo promíscuo, quando um alerta de sniffing exige contexto
 
 > **SOC | Threat Hunting | Incident Response | Detection Engineering | Linux | Wazuh**
 
-![Wazuh SOC Notes #001 — Interfaces veth em modo promíscuo](assets/imagem-01-capa.svg)
+![Wazuh SOC Notes #001: Interfaces veth em modo promíscuo](assets/imagem-01-capa.svg)
 
 ---
 
@@ -22,7 +22,7 @@ A correlação dos eventos não identificou evidências complementares suficient
 
 Diante do conjunto de evidências analisado, o evento foi classificado como:
 
-**Falso Positivo — comportamento legítimo associado a interfaces virtuais.**
+**Falso Positivo: comportamento legítimo associado a interfaces virtuais.**
 
 ---
 
@@ -93,7 +93,7 @@ há evidências de que essa capacidade esteja sendo utilizada
 
 Essa diferença é essencial para evitar conclusões baseadas apenas na severidade ou descrição inicial de uma regra.
 
-![Hipótese inicial — Promiscuous Mode e possível Network Sniffing](assets/imagem-02-hipotese-inicial.svg)
+![Hipótese inicial: Promiscuous Mode e possível Network Sniffing](assets/imagem-02-hipotese-inicial.svg)
 
 ---
 
@@ -120,39 +120,39 @@ A investigação foi estruturada para responder às seguintes perguntas:
 
 ## 4. 5W1H
 
-### What — O que aconteceu?
+### What: O que aconteceu?
 
 O Wazuh identificou interfaces de rede entrando em modo promíscuo em um sistema Linux monitorado.
 
 Os eventos estavam associados a interfaces Ethernet virtuais identificadas pelo prefixo `veth`.
 
-### Who — Quem ou o que esteve envolvido?
+### Who: Quem ou o que esteve envolvido?
 
 Um ativo Linux monitorado pelo Wazuh e interfaces Ethernet virtuais.
 
 Dentro das evidências analisadas, não foi identificado usuário, processo ou ferramenta maliciosa diretamente associado ao comportamento.
 
-### When — Quando ocorreu?
+### When: Quando ocorreu?
 
 Os eventos foram observados dentro da janela temporal analisada durante o Threat Hunting.
 
 Os timestamps específicos foram removidos da versão pública para preservar a sanitização do caso.
 
-### Where — Onde ocorreu?
+### Where: Onde ocorreu?
 
 Em interfaces Ethernet virtuais de um sistema Linux monitorado.
 
-### Why — Por que era relevante?
+### Why: Por que era relevante?
 
 Interfaces operando em modo promíscuo podem ser utilizadas para captura passiva de tráfego.
 
 Esse comportamento possui relação com a técnica:
 
-**MITRE ATT&CK T1040 — Network Sniffing.**
+**MITRE ATT&CK T1040: Network Sniffing.**
 
 Por isso, o evento exigia validação antes de qualquer classificação.
 
-### How — Como foi analisado?
+### How: Como foi analisado?
 
 Foram realizadas consultas no Threat Hunting do Wazuh utilizando:
 
@@ -226,7 +226,7 @@ O elemento não possui aplicabilidade técnica relevante ao cenário.
 
 Significa apenas que ele não foi identificado dentro das fontes, período e escopo analisados.
 
-![Evidence Assessment — veth identificado versus evidência maliciosa não observada](assets/imagem-03-evidence-assessment.svg)
+![Evidence Assessment: veth identificado versus evidência maliciosa não observada](assets/imagem-03-evidence-assessment.svg)
 
 ---
 
@@ -444,7 +444,7 @@ Por isso, uma interface `veth` entrando em modo promíscuo possui um contexto di
 
 A investigação precisa diferenciar dois cenários.
 
-### Cenário A — Contexto potencialmente legítimo
+### Cenário A: Contexto potencialmente legítimo
 
 ```text
 Promiscuous Mode
@@ -462,7 +462,7 @@ No Sniffing Tool
 No Capture Artifact
 ```
 
-### Cenário B — Contexto potencialmente suspeito
+### Cenário B: Contexto potencialmente suspeito
 
 ```text
 Promiscuous Mode
@@ -612,11 +612,11 @@ A tabela evita um erro comum:
 
 ## 16. MITRE ATT&CK Mapping
 
-### T1040 — Network Sniffing
+### T1040: Network Sniffing
 
 O principal mapeamento considerado durante a investigação foi:
 
-**MITRE ATT&CK T1040 — Network Sniffing**
+**MITRE ATT&CK T1040: Network Sniffing**
 
 A técnica descreve situações nas quais adversários podem capturar tráfego de rede para obter informações transmitidas entre sistemas.
 
@@ -726,10 +726,10 @@ O pipeline de Detection Engineering (Seção 24) poderia ser gerenciado como bac
 **Aplicabilidade: direta.**
 
 ```text
-CIS Control 4  — Secure Configuration of Enterprise Assets and Software
-CIS Control 8  — Audit Log Management
-CIS Control 13 — Network Monitoring and Defense
-CIS Control 17 — Incident Response Management
+CIS Control 4 : Secure Configuration of Enterprise Assets and Software
+CIS Control 8 : Audit Log Management
+CIS Control 13: Network Monitoring and Defense
+CIS Control 17: Incident Response Management
 ```
 
 ### SOC-CMM
@@ -741,7 +741,7 @@ Detection Quality e False Positive Management.
 ### Metodologia analítica aplicada
 
 ```text
-ACH — Analysis of Competing Hypotheses
+ACH: Analysis of Competing Hypotheses
 ```
 
 As seções 2 e 12 avaliam explicitamente múltiplas hipóteses concorrentes e as refutam por evidência, em vez de apenas confirmar a primeira.
@@ -758,7 +758,7 @@ OODA Loop
 
 Observe (telemetria) → Orient (hipótese/evidência) → Decide (veredito) → Act (recomendações).
 
-![Framework Applicability Map — MITRE ATT&CK, NIST, ISO, COBIT, ITIL e CIS Controls](assets/imagem-08-framework-map.svg)
+![Framework Applicability Map: MITRE ATT&CK, NIST, ISO, COBIT, ITIL e CIS Controls](assets/imagem-08-framework-map.svg)
 
 ---
 
@@ -1046,7 +1046,7 @@ Nenhuma dessas camadas isoladamente fornece contexto completo.
 
 O valor surge da correlação.
 
-![Defense-in-Depth — camadas de controle correlacionadas](assets/imagem-11-defense-in-depth.svg)
+![Defense-in-Depth: camadas de controle correlacionadas](assets/imagem-11-defense-in-depth.svg)
 
 ---
 
@@ -1340,7 +1340,7 @@ Uma investigação encerrada como falso positivo pode produzir melhorias em:
 
 ---
 
-## 35. Investigation Flow — visão final
+## 35. Investigation Flow: visão final
 
 A visão final consolida o processo investigativo desde a detecção inicial até a decisão técnica.
 
@@ -1379,16 +1379,16 @@ A decisão é resultado da investigação.
 ### MITRE ATT&CK
 
 - [MITRE ATT&CK](https://attack.mitre.org/)
-- [T1040 — Network Sniffing](https://attack.mitre.org/techniques/T1040/)
-- [DET0314 — Detection Strategy](https://attack.mitre.org/detectionstrategies/DET0314/)
+- [T1040: Network Sniffing](https://attack.mitre.org/techniques/T1040/)
+- [DET0314: Detection Strategy](https://attack.mitre.org/detectionstrategies/DET0314/)
 
 ### Linux Virtual Ethernet
 
-- [Linux `veth(4)` — Virtual Ethernet Device](https://man7.org/linux/man-pages/man4/veth.4.html)
+- [Linux `veth(4)`: Virtual Ethernet Device](https://man7.org/linux/man-pages/man4/veth.4.html)
 
 ### Docker Networking
 
-- [Docker — Bridge Network Driver](https://docs.docker.com/engine/network/drivers/bridge/)
+- [Docker: Bridge Network Driver](https://docs.docker.com/engine/network/drivers/bridge/)
 
 ### MITRE D3FEND
 

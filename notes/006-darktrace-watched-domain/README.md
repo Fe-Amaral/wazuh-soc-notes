@@ -1,8 +1,8 @@
-# Wazuh SOC Notes #006 — Darktrace Watched Domain: severidade não é impacto
+# Wazuh SOC Notes #006: Darktrace Watched Domain, severidade não é impacto
 
 > **SOC | Threat Hunting | Incident Response | Network Detection & Response | DNS | Darktrace | Wazuh | Detection Engineering**
 
-![Wazuh SOC Notes #006 — Darktrace Watched Domain: severidade não é impacto](assets/imagem-01-capa.svg)
+![Wazuh SOC Notes #006: Darktrace Watched Domain, severidade não é impacto](assets/imagem-01-capa.svg)
 
 ---
 
@@ -128,7 +128,7 @@ Com essa confirmação, o caso foi encerrado.
 
 A classificação final adotada para o case foi:
 
-**Falso Positivo — atividade DNS relacionada a Watched Domain a partir de dispositivo Mobile/Android, com acesso reconhecido pelo usuário como legítimo.**
+**Falso Positivo: atividade DNS relacionada a Watched Domain a partir de dispositivo Mobile/Android, com acesso reconhecido pelo usuário como legítimo.**
 
 A severidade contextual foi tratada como:
 
@@ -285,7 +285,7 @@ Watched Domain Detection
 Compromise Confirmed
 ```
 
-![Hipótese inicial — Watched Domain não é comprometimento confirmado](assets/imagem-02-hipotese-inicial.svg)
+![Hipótese inicial: Watched Domain não é comprometimento confirmado](assets/imagem-02-hipotese-inicial.svg)
 
 ---
 
@@ -324,23 +324,23 @@ A investigação foi estruturada para responder:
 
 ## 4. 5W1H
 
-### What — O que aconteceu?
+### What: O que aconteceu?
 
 Foi observada atividade DNS de um dispositivo Mobile/Android relacionada a um domínio classificado como Watched Domain pelo Darktrace.
 
-### Who — Quem ou o que esteve envolvido?
+### Who: Quem ou o que esteve envolvido?
 
 Um dispositivo Mobile/Android conectado ao ambiente monitorado.
 
 O hostname, endereço IP e MAC Address reais não são publicados.
 
-### When — Quando ocorreu?
+### When: Quando ocorreu?
 
 O evento ocorreu dentro da janela analisada pelo SOC.
 
 O timestamp exato foi removido.
 
-### Where — Onde ocorreu?
+### Where: Onde ocorreu?
 
 Em uma rede monitorada pelo Darktrace e integrada ao Wazuh.
 
@@ -352,7 +352,7 @@ O destino observado estava em endereço interno utilizando a porta:
 
 Esse comportamento era consistente com a utilização de um resolvedor DNS interno.
 
-### Why — Por que era relevante?
+### Why: Por que era relevante?
 
 O domínio consultado estava associado ao modelo:
 
@@ -364,7 +364,7 @@ e o evento recebeu score elevado e classificação crítica.
 
 Isso justificava investigação prioritária.
 
-### How — Como foi analisado?
+### How: Como foi analisado?
 
 A análise considerou:
 
@@ -514,7 +514,7 @@ Not Confirmed
 Did Not Happen
 ```
 
-![Evidence Assessment — a taxonomia de evidência do #006](assets/imagem-03-evidence-assessment.svg)
+![Evidence Assessment: a taxonomia de evidência do #006](assets/imagem-03-evidence-assessment.svg)
 
 ---
 
@@ -1083,14 +1083,14 @@ Not Observed
 
 ## 17. MITRE ATT&CK Mapping
 
-### T1071.004 — Application Layer Protocol: DNS
+### T1071.004: Application Layer Protocol: DNS
 
 DNS pode ser utilizado por adversários para comunicação através de protocolos de camada de aplicação.
 
 Por isso, durante a hipótese inicial, poderia ser considerado:
 
 ```text
-T1071.004 — DNS
+T1071.004: DNS
 ```
 
 Entretanto:
@@ -1192,7 +1192,7 @@ Um framework só entra nesta lista quando há um número, técnica ou controle r
 **Aplicabilidade: hipótese de investigação (não confirmada).**
 
 ```text
-T1071.004 — Application Layer Protocol: DNS
+T1071.004: Application Layer Protocol: DNS
 ```
 
 DNS malicioso/C2 não foi confirmado; a técnica permanece hipótese.
@@ -1256,11 +1256,11 @@ O pipeline de Detection Engineering (Seção 25) poderia ser gerenciado como bac
 **Aplicabilidade: direta.**
 
 ```text
-CIS 1  — Inventory and Control of Enterprise Assets
-CIS 8  — Audit Log Management
-CIS 10 — Malware Defenses
-CIS 13 — Network Monitoring and Defense
-CIS 17 — Incident Response Management
+CIS 1 : Inventory and Control of Enterprise Assets
+CIS 8 : Audit Log Management
+CIS 10: Malware Defenses
+CIS 13: Network Monitoring and Defense
+CIS 17: Incident Response Management
 ```
 
 ### SOC-CMM
@@ -1272,7 +1272,7 @@ Asset Context e Alert Triage.
 ### Metodologia analítica aplicada
 
 ```text
-ACH — Analysis of Competing Hypotheses
+ACH: Analysis of Competing Hypotheses
 ```
 
 A Seção 13 avalia cenários concorrentes (C2 via DNS vs. resolução de resolvedor interno) e os refuta por evidência.
@@ -1790,7 +1790,7 @@ SOC
 → What does the complete evidence support?
 ```
 
-![Defense-in-Depth — um evento não é o contexto completo](assets/imagem-12-defense-in-depth.svg)
+![Defense-in-Depth: um evento não é o contexto completo](assets/imagem-12-defense-in-depth.svg)
 
 ---
 
@@ -2039,7 +2039,7 @@ Confirmed (user attestation)
 
 ### Classificação final
 
-**Falso Positivo — atividade DNS relacionada a Watched Domain a partir de dispositivo Mobile/Android, com acesso reconhecido pelo usuário como legítimo. Encerrado por confirmação do asset owner, não por telemetria técnica adicional.**
+**Falso Positivo: atividade DNS relacionada a Watched Domain a partir de dispositivo Mobile/Android, com acesso reconhecido pelo usuário como legítimo. Encerrado por confirmação do asset owner, não por telemetria técnica adicional.**
 
 ### Severidade contextual recomendada
 
@@ -2050,7 +2050,7 @@ MEDIUM (até a validação do usuário)
 ### Estado
 
 ```text
-CLOSED — RESOLVED VIA USER ACKNOWLEDGMENT
+CLOSED: RESOLVED VIA USER ACKNOWLEDGMENT
 ```
 
 ### Veredito
@@ -2251,7 +2251,7 @@ Enquanto a telemetria técnica de follow-up permaneceu indisponível, o estado c
 Suspicious / Requires Validation
 ```
 
-### Reconhecimento do usuário é evidência — de um tipo diferente de telemetria
+### Reconhecimento do usuário é evidência: de um tipo diferente de telemetria
 
 O caso só foi encerrado quando o usuário confirmou a atividade como acesso pessoal legítimo.
 

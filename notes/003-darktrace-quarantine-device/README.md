@@ -1,8 +1,8 @@
-# Wazuh SOC Notes #003 — Darktrace Threat Indicator e Quarantine Device: contenção não é conclusão
+# Wazuh SOC Notes #003: Darktrace Threat Indicator e Quarantine Device, contenção não é conclusão
 
 > **SOC | Threat Hunting | Incident Response | Network Detection & Response | Darktrace | Wazuh | Detection Engineering**
 
-![Wazuh SOC Notes #003 — Darktrace Threat Indicator e Quarantine Device](assets/imagem-01-capa.svg)
+![Wazuh SOC Notes #003: Darktrace Threat Indicator e Quarantine Device](assets/imagem-01-capa.svg)
 
 ---
 
@@ -58,7 +58,7 @@ Dentro das fontes e do escopo analisados, não havia evidência suficiente para 
 
 Diante disso, a classificação técnica adotada foi:
 
-**Contenção preventiva aplicada — comprometimento não confirmado.**
+**Contenção preventiva aplicada: comprometimento não confirmado.**
 
 O caso demonstra uma diferença fundamental para operações SOC:
 
@@ -206,7 +206,7 @@ Preventive Defensive Action?
 
 A telemetria inicial não era suficiente para responder isoladamente.
 
-![Hipótese inicial — quarentena confirma ação, não confirma comprometimento](assets/imagem-02-hipotese-inicial.svg)
+![Hipótese inicial: quarentena confirma ação, não confirma comprometimento](assets/imagem-02-hipotese-inicial.svg)
 
 ---
 
@@ -245,29 +245,29 @@ A investigação foi estruturada para responder:
 
 ## 4. 5W1H
 
-### What — O que aconteceu?
+### What: O que aconteceu?
 
 O Darktrace registrou um Threat Indicator relacionado a atividade envolvendo domínio suspeito e uma ação de quarentena associada a um dispositivo monitorado.
 
-### Who — Quem ou o que esteve envolvido?
+### Who: Quem ou o que esteve envolvido?
 
 Um dispositivo monitorado.
 
 Identificadores reais do ativo foram removidos.
 
-### When — Quando ocorreu?
+### When: Quando ocorreu?
 
 O evento ocorreu dentro da janela analisada pelo SOC.
 
 O timestamp exato não é publicado.
 
-### Where — Onde ocorreu?
+### Where: Onde ocorreu?
 
 Em um ambiente monitorado pelo Darktrace e cuja telemetria era encaminhada para análise no Wazuh.
 
 A infraestrutura original não é identificada.
 
-### Why — Por que era relevante?
+### Why: Por que era relevante?
 
 Porque a telemetria combinava:
 
@@ -281,7 +281,7 @@ Quarantine Device
 
 Isso justificava avaliar a possibilidade de comprometimento ou comunicação maliciosa.
 
-### How — Como foi analisado?
+### How: Como foi analisado?
 
 Foram considerados:
 
@@ -406,7 +406,7 @@ em:
 Compromise = Confirmed
 ```
 
-![Evidence Assessment — containment confirmed versus compromise not confirmed](assets/imagem-03-evidence-assessment.svg)
+![Evidence Assessment: containment confirmed versus compromise not confirmed](assets/imagem-03-evidence-assessment.svg)
 
 ---
 
@@ -697,7 +697,7 @@ Compromise Confirmed
 
 A investigação precisa diferenciar:
 
-### Cenário A — contenção preventiva
+### Cenário A: contenção preventiva
 
 ```text
 Threat Indicator
@@ -713,7 +713,7 @@ Compromise Not Confirmed
 Preventive Containment
 ```
 
-### Cenário B — comprometimento confirmado
+### Cenário B: comprometimento confirmado
 
 ```text
 Threat Indicator
@@ -995,7 +995,7 @@ Um framework só entra nesta lista quando há um número, técnica ou controle r
 A ação de quarentena possui relação direta com o mecanismo defensivo:
 
 ```text
-D3-NI — Network Isolation
+D3-NI: Network Isolation
 ```
 
 A ideia defensiva consiste em restringir a capacidade de determinado host interagir com recursos de rede não necessários.
@@ -1059,11 +1059,11 @@ O pipeline de Detection Engineering (Seção 24) poderia ser gerenciado como bac
 **Aplicabilidade: direta.**
 
 ```text
-CIS 1  — Inventory and Control of Enterprise Assets
-CIS 6  — Access Control Management
-CIS 8  — Audit Log Management
-CIS 13 — Network Monitoring and Defense
-CIS 17 — Incident Response Management
+CIS 1 : Inventory and Control of Enterprise Assets
+CIS 6 : Access Control Management
+CIS 8 : Audit Log Management
+CIS 13: Network Monitoring and Defense
+CIS 17: Incident Response Management
 ```
 
 ### SOC-CMM
@@ -1075,7 +1075,7 @@ Detection Management e Asset Context.
 ### Metodologia analítica aplicada
 
 ```text
-ACH — Analysis of Competing Hypotheses
+ACH: Analysis of Competing Hypotheses
 ```
 
 A Seção 13 avalia cenários concorrentes (falso positivo vs. comprometimento real) e os refuta por evidência disponível.
@@ -1849,7 +1849,7 @@ Not Confirmed
 
 ### Classificação final
 
-**Contenção preventiva aplicada — comprometimento não confirmado.**
+**Contenção preventiva aplicada: comprometimento não confirmado.**
 
 A telemetria é suficiente para concluir:
 
@@ -2072,7 +2072,7 @@ Resolved
 
 ---
 
-## 35. Investigation Flow — visão final
+## 35. Investigation Flow: visão final
 
 ```text
 Suspicious Domain Activity
@@ -2146,7 +2146,7 @@ DECISION
 ### MITRE D3FEND
 
 - [MITRE D3FEND](https://d3fend.mitre.org/)
-- [MITRE D3FEND — Network Isolation](https://d3fend.mitre.org/technique/d3f:NetworkIsolation/)
+- [MITRE D3FEND: Network Isolation](https://d3fend.mitre.org/technique/d3f:NetworkIsolation/)
 
 ### MITRE Attack Flow
 

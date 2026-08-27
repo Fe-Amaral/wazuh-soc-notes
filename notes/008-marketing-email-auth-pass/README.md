@@ -1,4 +1,4 @@
-# Wazuh SOC Notes #008 — E-mail promocional reportado como suspeito: autenticação aprovada não é veredito automático
+# Wazuh SOC Notes #008: E-mail promocional reportado como suspeito, autenticação aprovada não é veredito automático
 
 **SOC | Email Security | Phishing Analysis | Threat Hunting | Incident Response | Detection Engineering | Microsoft 365 | SPF | DKIM | DMARC**
 
@@ -87,7 +87,7 @@ O resultado consolidado demonstrou que o comportamento observado era compatível
 
 ### Classificação final
 
-**Legítimo — comunicação promocional autenticada, sem evidências suficientes de phishing ou atividade maliciosa.**
+**Legítimo: comunicação promocional autenticada, sem evidências suficientes de phishing ou atividade maliciosa.**
 
 ### Estado das evidências
 
@@ -211,7 +211,7 @@ Possible Phishing?
 
 As possibilidades consideradas incluíam:
 
-### Hipótese A — campanha legítima
+### Hipótese A: campanha legítima
 
 ```text
 Authorized Marketing Infrastructure
@@ -223,7 +223,7 @@ Expected Commercial Content
 Legitimate Tracking
 ```
 
-### Hipótese B — spoofing
+### Hipótese B: spoofing
 
 ```text
 Brand Identity
@@ -233,7 +233,7 @@ Forged Sender
 Authentication Failure
 ```
 
-### Hipótese C — phishing
+### Hipótese C: phishing
 
 ```text
 Brand Identity
@@ -243,7 +243,7 @@ Malicious CTA
 Credential Harvesting
 ```
 
-### Hipótese D — malicious redirect
+### Hipótese D: malicious redirect
 
 ```text
 Tracking Link
@@ -253,7 +253,7 @@ Redirect Chain
 Malicious Destination
 ```
 
-### Hipótese E — campanha legítima porém indesejada
+### Hipótese E: campanha legítima porém indesejada
 
 ```text
 Authentic Marketing
@@ -333,11 +333,11 @@ O escopo buscou responder:
 
 # 4. 5W1H
 
-## What — O que ocorreu?
+## What: O que ocorreu?
 
 Um usuário recebeu e reportou como suspeita uma mensagem promocional externa.
 
-## Who — Quem esteve envolvido?
+## Who: Quem esteve envolvido?
 
 ```text
 External Marketing Sender
@@ -347,17 +347,17 @@ Corporate Recipient
 
 Identidades reais foram removidas.
 
-## When — Quando ocorreu?
+## When: Quando ocorreu?
 
 A mensagem foi recebida dentro da janela analisada.
 
 Timestamps específicos foram sanitizados.
 
-## Where — Onde ocorreu?
+## Where: Onde ocorreu?
 
 A mensagem foi enviada por infraestrutura externa de automação de marketing e recebida através do Microsoft 365.
 
-## Why — Por que foi analisada?
+## Why: Por que foi analisada?
 
 Porque a mensagem continha:
 
@@ -370,7 +370,7 @@ Remote Content
 
 e foi reportada pelo destinatário como potencialmente suspeita.
 
-## How — Como ocorreu?
+## How: Como ocorreu?
 
 A entrega ocorreu através de infraestrutura SMTP autenticada utilizando controles como:
 
@@ -1055,7 +1055,7 @@ Verdict
 Uma hipótese inicial de phishing poderia lembrar:
 
 ```text
-T1566 — Phishing
+T1566: Phishing
 ```
 
 Entretanto, o case não apresentou evidência suficiente para sustentar comportamento adversarial.
@@ -1140,7 +1140,7 @@ Um framework só entra nesta lista quando há um número, técnica ou controle r
 **Aplicabilidade: hipótese de investigação (não confirmada).**
 
 ```text
-T1566 — Phishing
+T1566: Phishing
 ```
 
 Phishing foi hipótese inicial de investigação (Seção 2, Hipótese C); a análise completa não sustentou comportamento adversarial (Seção 21). A técnica permanece hipótese, não confirmação.
@@ -1180,10 +1180,10 @@ Anexo A 5.24–5.28 — controles de gestão de incidente de segurança da infor
 **Aplicabilidade: direta.**
 
 ```text
-CIS 8  — Audit Log Management
-CIS 9  — Email and Web Browser Protections
-CIS 14 — Security Awareness and Skills Training Program
-CIS 17 — Incident Response Management
+CIS 8 : Audit Log Management
+CIS 9 : Email and Web Browser Protections
+CIS 14: Security Awareness and Skills Training Program
+CIS 17: Incident Response Management
 ```
 
 ### SOC-CMM
@@ -1195,7 +1195,7 @@ Maturidade do processo de triagem e enriquecimento de e-mail reportado por usuá
 ### Metodologia analítica aplicada
 
 ```text
-ACH — Analysis of Competing Hypotheses
+ACH: Analysis of Competing Hypotheses
 ```
 
 A Seção 2 avalia cinco cenários concorrentes (A: legítima, B: spoofing, C: phishing, D: malicious redirect, E: legítima porém indesejada) e os testa contra a evidência disponível.
@@ -1681,25 +1681,25 @@ não deve existir como caminho direto.
 ### SPF
 
 ```text
-Confirmed — PASS
+Confirmed: PASS
 ```
 
 ### DKIM
 
 ```text
-Confirmed — PASS
+Confirmed: PASS
 ```
 
 ### DMARC
 
 ```text
-Confirmed — PASS
+Confirmed: PASS
 ```
 
 ### Composite Authentication
 
 ```text
-Confirmed — PASS
+Confirmed: PASS
 ```
 
 ### Sender Alignment
@@ -1711,7 +1711,7 @@ Confirmed
 ### SMTP Chain
 
 ```text
-Confirmed — Consistent
+Confirmed: Consistent
 ```
 
 ### Marketing Content
@@ -1800,7 +1800,7 @@ Not Confirmed
 
 ## Classificação final
 
-**Legítimo — comunicação promocional autenticada e coerente com campanha de marketing, sem evidências suficientes de phishing, malware, spoofing ou comprometimento.**
+**Legítimo: comunicação promocional autenticada e coerente com campanha de marketing, sem evidências suficientes de phishing, malware, spoofing ou comprometimento.**
 
 Não foi necessária contenção de segurança.
 
@@ -1814,7 +1814,7 @@ e não como incidente de segurança.
 
 ---
 
-# 35. Investigation Flow — visão final
+# 35. Investigation Flow: visão final
 
 ```text
 USER REPORT

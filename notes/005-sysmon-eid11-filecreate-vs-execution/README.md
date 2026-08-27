@@ -1,8 +1,8 @@
-# Wazuh SOC Notes #005 — Sysmon Event ID 11: criação de um script em Windows Temp não confirma execução maliciosa
+# Wazuh SOC Notes #005: Sysmon Event ID 11, criação de um script em Windows Temp não confirma execução maliciosa
 
 > **SOC | Threat Hunting | Incident Response | Detection Engineering | Sysmon | Windows | PowerShell | Wazuh**
 
-![Wazuh SOC Notes #005 — Sysmon Event ID 11: FileCreate não é FileExecuted](assets/imagem-01-capa.svg)
+![Wazuh SOC Notes #005: Sysmon Event ID 11, FileCreate não é FileExecuted](assets/imagem-01-capa.svg)
 
 ---
 
@@ -25,7 +25,7 @@ Scripting file created under Windows Temp or User folder
 A telemetria de origem era:
 
 ```text
-Sysmon Event ID 11 — FileCreate
+Sysmon Event ID 11: FileCreate
 ```
 
 O arquivo observado foi sanitizado como:
@@ -78,7 +78,7 @@ por determinado processo.
 Para concluir execução, seriam necessárias outras fontes de telemetria, como:
 
 ```text
-Sysmon Event ID 1 — Process Creation
+Sysmon Event ID 1: Process Creation
 PowerShell Operational Logs
 Script Block Logging
 Process Command Line
@@ -101,7 +101,7 @@ A correlação indicou que o comportamento era compatível com uma rotina legít
 
 Diante das evidências analisadas, o caso foi classificado como:
 
-**Falso Positivo — criação de arquivo compatível com atividade legítima do Windows, sem evidências complementares suficientes de execução maliciosa.**
+**Falso Positivo: criação de arquivo compatível com atividade legítima do Windows, sem evidências complementares suficientes de execução maliciosa.**
 
 A principal lição deste estudo é:
 
@@ -234,7 +234,7 @@ e não:
 PowerShell Execution
 ```
 
-![Hipótese inicial — criação de arquivo não confirma execução](assets/imagem-02-hipotese-inicial.svg)
+![Hipótese inicial: criação de arquivo não confirma execução](assets/imagem-02-hipotese-inicial.svg)
 
 ---
 
@@ -273,7 +273,7 @@ A investigação foi estruturada para responder:
 
 ## 4. 5W1H
 
-### What — O que aconteceu?
+### What: O que aconteceu?
 
 Um processo do Windows criou um arquivo PowerShell em um diretório temporário:
 
@@ -283,7 +283,7 @@ C:\Windows\Temp\SDIAG_<GUID>\CL_Utility.ps1
 
 O Sysmon registrou a criação através do Event ID 11.
 
-### Who — Quem ou o que esteve envolvido?
+### Who: Quem ou o que esteve envolvido?
 
 O processo criador foi:
 
@@ -299,13 +299,13 @@ C:\Windows\System32\
 
 Usuário, hostname e demais identificadores reais foram removidos.
 
-### When — Quando ocorreu?
+### When: Quando ocorreu?
 
 O evento ocorreu dentro da janela analisada pelo SOC.
 
 O timestamp específico não é publicado.
 
-### Where — Onde ocorreu?
+### Where: Onde ocorreu?
 
 Em um host Windows monitorado pelo Wazuh.
 
@@ -315,7 +315,7 @@ O arquivo foi criado sob:
 C:\Windows\Temp\
 ```
 
-### Why — Por que era relevante?
+### Why: Por que era relevante?
 
 Diretórios temporários são frequentemente utilizados para armazenar scripts e payloads durante diferentes estágios de ataques.
 
@@ -323,7 +323,7 @@ Além disso, arquivos `.ps1` podem ser executados pelo PowerShell.
 
 Por isso, a criação justificava investigação.
 
-### How — Como foi analisado?
+### How: Como foi analisado?
 
 A análise utilizou:
 
@@ -453,7 +453,7 @@ A afirmação tecnicamente correta é:
 Execution Not Confirmed
 ```
 
-![Evidence Assessment — o limite probatório do Event ID 11](assets/imagem-03-evidence-assessment.svg)
+![Evidence Assessment: o limite probatório do Event ID 11](assets/imagem-03-evidence-assessment.svg)
 
 ---
 
@@ -1034,7 +1034,7 @@ PowerShell Execution
 
 ## 17. MITRE ATT&CK Mapping
 
-### T1059.001 — PowerShell
+### T1059.001: PowerShell
 
 A extensão:
 
@@ -1045,7 +1045,7 @@ A extensão:
 pode levantar uma hipótese relacionada à:
 
 ```text
-T1059.001 — PowerShell
+T1059.001: PowerShell
 ```
 
 Entretanto, a técnica descreve **execução** através de PowerShell.
@@ -1155,7 +1155,7 @@ Um framework só entra nesta lista quando há um número, técnica ou controle r
 **Aplicabilidade: hipótese de investigação (não confirmada).**
 
 ```text
-T1059.001 — PowerShell
+T1059.001: PowerShell
 ```
 
 Execução PowerShell não foi confirmada; a técnica permanece hipótese.
@@ -1219,13 +1219,13 @@ O pipeline de Detection Engineering (Seção 25) poderia ser gerenciado como bac
 **Aplicabilidade: direta.**
 
 ```text
-CIS 1  — Inventory and Control of Enterprise Assets
-CIS 2  — Inventory and Control of Software Assets
-CIS 4  — Secure Configuration of Enterprise Assets and Software
-CIS 8  — Audit Log Management
-CIS 10 — Malware Defenses
-CIS 13 — Network Monitoring and Defense
-CIS 17 — Incident Response Management
+CIS 1 : Inventory and Control of Enterprise Assets
+CIS 2 : Inventory and Control of Software Assets
+CIS 4 : Secure Configuration of Enterprise Assets and Software
+CIS 8 : Audit Log Management
+CIS 10: Malware Defenses
+CIS 13: Network Monitoring and Defense
+CIS 17: Incident Response Management
 ```
 
 ### SOC-CMM
@@ -1237,7 +1237,7 @@ Detection Quality e Telemetry Coverage.
 ### Metodologia analítica aplicada
 
 ```text
-ACH — Analysis of Competing Hypotheses
+ACH: Analysis of Competing Hypotheses
 ```
 
 A Seção 13 avalia cenários concorrentes (execução maliciosa vs. rotina de diagnóstico do Windows) e os refuta por evidência.
@@ -1474,7 +1474,7 @@ Ou seja:
 
 Uma configuração futura pode correlacionar Sysmon Event IDs adicionais.
 
-### Event ID 1 — Process Create
+### Event ID 1: Process Create
 
 Responder:
 
@@ -1485,7 +1485,7 @@ What was the command line?
 Who was the parent?
 ```
 
-### Event ID 3 — Network Connect
+### Event ID 3: Network Connect
 
 Responder:
 
@@ -1493,7 +1493,7 @@ Responder:
 Did the process establish a network connection?
 ```
 
-### Event ID 7 — Image Load
+### Event ID 7: Image Load
 
 Responder:
 
@@ -1501,7 +1501,7 @@ Responder:
 Which modules were loaded?
 ```
 
-### Event IDs 12, 13 e 14 — Registry
+### Event IDs 12, 13 e 14: Registry
 
 Responder:
 
@@ -1509,7 +1509,7 @@ Responder:
 Was persistence or configuration modification performed?
 ```
 
-### Event ID 15 — FileCreateStreamHash
+### Event ID 15: FileCreateStreamHash
 
 Responder:
 
@@ -1517,7 +1517,7 @@ Responder:
 Was an alternate data stream created?
 ```
 
-### Event ID 22 — DNS Query
+### Event ID 22: DNS Query
 
 Responder:
 
@@ -1781,7 +1781,7 @@ SOC
 → What does the complete evidence support?
 ```
 
-![Defense-in-Depth — um evento não é o contexto completo](assets/imagem-12-defense-in-depth.svg)
+![Defense-in-Depth: um evento não é o contexto completo](assets/imagem-12-defense-in-depth.svg)
 
 ---
 
@@ -2010,7 +2010,7 @@ Not Observed
 
 ### Classificação final
 
-**Falso Positivo — criação de script compatível com rotina legítima de diagnóstico/suporte do Windows, sem evidências complementares suficientes de execução ou atividade maliciosa.**
+**Falso Positivo: criação de script compatível com rotina legítima de diagnóstico/suporte do Windows, sem evidências complementares suficientes de execução ou atividade maliciosa.**
 
 ### Veredito
 

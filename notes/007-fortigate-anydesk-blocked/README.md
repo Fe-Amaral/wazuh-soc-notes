@@ -1,8 +1,8 @@
-# Wazuh SOC Notes #007 — AnyDesk bloqueado pelo FortiGate: detecção de acesso remoto não é sessão remota confirmada
+# Wazuh SOC Notes #007: AnyDesk bloqueado pelo FortiGate, detecção de acesso remoto não é sessão remota confirmada
 
 > **SOC | Threat Hunting | Incident Response | Detection Engineering | FortiGate | AnyDesk | Remote Access | Wazuh**
 
-![Wazuh SOC Notes #007 — AnyDesk bloqueado pelo FortiGate](assets/imagem-01-capa.svg)
+![Wazuh SOC Notes #007: AnyDesk bloqueado pelo FortiGate](assets/imagem-01-capa.svg)
 
 ---
 
@@ -111,7 +111,7 @@ Como ação corretiva, foi definida a criação de uma **GPO (Group Policy Objec
 
 ### Classificação final
 
-**Contenção Preventiva — tráfego AnyDesk não autorizado, identificado e bloqueado corretamente pelo FortiGate Application Control; comprometimento não confirmado. Ação corretiva definida: GPO para impedir a instalação do AnyDesk.**
+**Contenção Preventiva: tráfego AnyDesk não autorizado, identificado e bloqueado corretamente pelo FortiGate Application Control; comprometimento não confirmado. Ação corretiva definida: GPO para impedir a instalação do AnyDesk.**
 
 ### Estado analítico
 
@@ -268,7 +268,7 @@ Authorized AnyDesk Use Confirmed
 
 A investigação precisava preservar as duas possibilidades.
 
-![Hipótese inicial — tecnologia identificada não é veredito](assets/imagem-02-hipotese-inicial.svg)
+![Hipótese inicial: tecnologia identificada não é veredito](assets/imagem-02-hipotese-inicial.svg)
 
 ---
 
@@ -311,7 +311,7 @@ A investigação foi estruturada para responder:
 
 ## 4. 5W1H
 
-### What — O que ocorreu?
+### What: O que ocorreu?
 
 Foi identificado tráfego de saída classificado pelo FortiGate como pertencente ao AnyDesk.
 
@@ -321,7 +321,7 @@ A ação aplicada pelo controle foi:
 BLOCK
 ```
 
-### Who — Quem ou o que esteve envolvido?
+### Who: Quem ou o que esteve envolvido?
 
 Um ativo interno iniciou as tentativas de comunicação.
 
@@ -334,13 +334,13 @@ Source Device = Confirmed
 Responsible User = Not Available
 ```
 
-### When — Quando ocorreu?
+### When: Quando ocorreu?
 
 A atividade ocorreu dentro da janela analisada e apresentou recorrência em momentos distintos.
 
 Timestamps específicos foram removidos da publicação.
 
-### Where — Onde ocorreu?
+### Where: Onde ocorreu?
 
 No tráfego de saída de um ativo interno em direção a infraestrutura associada ao serviço remoto.
 
@@ -353,7 +353,7 @@ Foram observadas portas como:
 
 Endereços IP e hostnames reais foram sanitizados.
 
-### Why — Por que era relevante?
+### Why: Por que era relevante?
 
 Softwares de acesso remoto podem ser utilizados tanto para suporte legítimo quanto para controle não autorizado de endpoints.
 
@@ -369,7 +369,7 @@ Endpoint Telemetry
 Historical Context
 ```
 
-### How — Como foi detectado?
+### How: Como foi detectado?
 
 O FortiGate Application Control classificou o tráfego como AnyDesk e aplicou `block`.
 
@@ -513,7 +513,7 @@ Compromise
 
 Elemento sem aderência técnica ao caso.
 
-![Evidence Assessment — o limite probatório exato da fonte disponível](assets/imagem-03-evidence-assessment.svg)
+![Evidence Assessment: o limite probatório exato da fonte disponível](assets/imagem-03-evidence-assessment.svg)
 
 ---
 
@@ -875,7 +875,7 @@ Os demais estados precisavam de outras evidências.
 
 A recorrência identificada permite considerar diferentes hipóteses.
 
-### Cenário A — aplicação autorizada tentando alcançar o serviço
+### Cenário A: aplicação autorizada tentando alcançar o serviço
 
 ```text
 Approved Software
@@ -889,7 +889,7 @@ Support Context
 Legitimate Activity
 ```
 
-### Cenário B — software não homologado
+### Cenário B: software não homologado
 
 ```text
 AnyDesk
@@ -901,7 +901,7 @@ No Authorization
 Unauthorized Software / Policy Violation
 ```
 
-### Cenário C — componente residual ou persistente
+### Cenário C: componente residual ou persistente
 
 ```text
 Previous Installation
@@ -911,7 +911,7 @@ Background Service
 Automatic Connection Retry
 ```
 
-### Cenário D — utilização adversarial
+### Cenário D: utilização adversarial
 
 ```text
 Compromised Endpoint
@@ -1104,7 +1104,7 @@ Full Attack Chain Assumed
 
 ## 17. MITRE ATT&CK Mapping
 
-### T1219.002 — Remote Desktop Software
+### T1219.002: Remote Desktop Software
 
 O comportamento possui relação técnica com:
 
@@ -1223,7 +1223,7 @@ Um framework só entra nesta lista quando há um número, técnica ou controle r
 **Aplicabilidade: hipótese de investigação (não confirmada).**
 
 ```text
-T1219.002 — Remote Desktop Software
+T1219.002: Remote Desktop Software
 ```
 
 Uso adversarial não foi confirmado; a técnica permanece hipótese.
@@ -1233,7 +1233,7 @@ Uso adversarial não foi confirmado; a técnica permanece hipótese.
 **Aplicabilidade: direta.**
 
 ```text
-D3-NTF — Network Traffic Filtering
+D3-NTF: Network Traffic Filtering
 ```
 
 O Application Control aplicou uma ação de bloqueio real sobre o tráfego — uma técnica defensiva efetivamente empregada, não apenas hipotética.
@@ -1248,11 +1248,11 @@ Estruturam a pergunta "houve progressão adversarial?" feita na Seção 16 (Atta
 
 **Aplicabilidade: direta.**
 
-Diferente da maioria das notes desta série, este case teve uma ação confirmada e não autorizada — há um evento real a classificar:
+Diferente da maioria das notes desta série, este case teve uma ação confirmada e não autorizada, há um evento real a classificar:
 
 ```text
 Actor: Internal (não identificado)
-Action: Misuse — Unapproved Software
+Action: Misuse (Unapproved Software)
 Asset: User Device
 Attribute: Confidentiality (potencial, não confirmada)
 ```
@@ -1320,12 +1320,12 @@ O pipeline de Detection Engineering (Seção 25) poderia ser gerenciado como bac
 **Aplicabilidade: direta.**
 
 ```text
-CIS 1  — Inventory and Control of Enterprise Assets
-CIS 2  — Inventory and Control of Software Assets
-CIS 8  — Audit Log Management
-CIS 12 — Network Infrastructure Management
-CIS 13 — Network Monitoring and Defense
-CIS 17 — Incident Response Management
+CIS 1 : Inventory and Control of Enterprise Assets
+CIS 2 : Inventory and Control of Software Assets
+CIS 8 : Audit Log Management
+CIS 12: Network Infrastructure Management
+CIS 13: Network Monitoring and Defense
+CIS 17: Incident Response Management
 ```
 
 ### SOC-CMM
@@ -1337,7 +1337,7 @@ Detection Quality e Asset Context.
 ### Metodologia analítica aplicada
 
 ```text
-ACH — Analysis of Competing Hypotheses
+ACH: Analysis of Competing Hypotheses
 ```
 
 A Seção 13 avalia quatro cenários concorrentes (A: autorizado, B: não homologado, C: residual, D: adversarial) e os refuta por evidência disponível.
@@ -2242,7 +2242,7 @@ Not Confirmed
 
 ### Classificação final
 
-**Contenção Preventiva — tráfego AnyDesk não autorizado, identificado e bloqueado corretamente pelo FortiGate Application Control; comprometimento não confirmado. Ação corretiva definida: GPO para impedir a instalação do AnyDesk no ambiente.**
+**Contenção Preventiva: tráfego AnyDesk não autorizado, identificado e bloqueado corretamente pelo FortiGate Application Control; comprometimento não confirmado. Ação corretiva definida: GPO para impedir a instalação do AnyDesk no ambiente.**
 
 ### Estado final
 
@@ -2274,7 +2274,7 @@ Defensive Action Sustained, Compromise Not Established
 
 Existem dois erros simétricos.
 
-### Erro 1 — assumir benignidade porque AnyDesk é legítimo
+### Erro 1: assumir benignidade porque AnyDesk é legítimo
 
 ```text
 Legitimate Software
@@ -2282,7 +2282,7 @@ Legitimate Software
 Legitimate Use
 ```
 
-### Erro 2 — assumir comprometimento porque AnyDesk pode ser abusado
+### Erro 2: assumir comprometimento porque AnyDesk pode ser abusado
 
 ```text
 Tool Used by Threat Actors
@@ -2462,7 +2462,7 @@ Foi criar uma GPO para impedir a instalação do AnyDesk, endereçando a causa (
 
 ---
 
-## 35. Investigation Flow — visão final
+## 35. Investigation Flow: visão final
 
 ```text
 Internal Device

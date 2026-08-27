@@ -1,8 +1,8 @@
-# Wazuh SOC Notes #002 — Cloudflare WAF: quando um scanning autorizado se parece com atividade adversarial
+# Wazuh SOC Notes #002: Cloudflare WAF, quando um scanning autorizado se parece com atividade adversarial
 
 > **SOC | Threat Hunting | Incident Response | Detection Engineering | WAF | Cloudflare | Wazuh**
 
-![Wazuh SOC Notes #002 — Cloudflare WAF, scanning autorizado e atividade adversarial](assets/imagem-01-capa.svg)
+![Wazuh SOC Notes #002: Cloudflare WAF, scanning autorizado e atividade adversarial](assets/imagem-01-capa.svg)
 
 ---
 
@@ -54,7 +54,7 @@ Dentro das fontes e do escopo analisados, também não foram identificadas evid�
 
 Diante do conjunto de evidências e da validação contextual, o evento foi classificado como:
 
-**Falso Positivo contextual — atividade autorizada de scanning realizada por consultoria contratada, bloqueada pelo WAF e sem impacto de segurança identificado.**
+**Falso Positivo contextual: atividade autorizada de scanning realizada por consultoria contratada, bloqueada pelo WAF e sem impacto de segurança identificado.**
 
 ---
 
@@ -162,7 +162,7 @@ Authorized?
 
 A telemetria, isoladamente, não respondia essa pergunta.
 
-![Hipótese inicial — scanning confirmado, intenção ainda por determinar](assets/imagem-02-hipotese-inicial.svg)
+![Hipótese inicial: scanning confirmado, intenção ainda por determinar](assets/imagem-02-hipotese-inicial.svg)
 
 ---
 
@@ -195,7 +195,7 @@ A investigação foi estruturada para responder:
 
 ## 4. 5W1H
 
-### What — O que aconteceu?
+### What: O que aconteceu?
 
 Foi identificada uma atividade automatizada de scanning direcionada a um portal público protegido pelo Cloudflare WAF.
 
@@ -205,29 +205,29 @@ O controle de segurança aplicou:
 BLOCK
 ```
 
-### Who — Quem esteve envolvido?
+### Who: Quem esteve envolvido?
 
 A atividade foi posteriormente relacionada a uma **consultoria especializada contratada pela organização para execução de avaliação de segurança autorizada**.
 
 Nenhum nome de empresa, fornecedor ou profissional é publicado.
 
-### When — Quando ocorreu?
+### When: Quando ocorreu?
 
 A atividade ocorreu dentro da janela analisada pelo SOC.
 
 Os timestamps específicos foram removidos da versão pública.
 
-### Where — Onde ocorreu?
+### Where: Onde ocorreu?
 
 Contra um portal público protegido pelo Cloudflare.
 
 Domínio, endereço IP, hostname, URL e path real foram sanitizados.
 
-### Why — Por que ocorreu?
+### Why: Por que ocorreu?
 
 A atividade fazia parte de um **security assessment autorizado** conduzido por uma consultoria contratada.
 
-### How — Como foi identificado?
+### How: Como foi identificado?
 
 O scanner realizou requisições contra a aplicação.
 
@@ -302,7 +302,7 @@ Outro ponto importante neste caso:
 
 > **Uma atividade verdadeira pode possuir uma interpretação inicial de risco que posteriormente não se confirma.**
 
-![Evidence Assessment — atividade confirmada versus evidência maliciosa](assets/imagem-03-evidence-assessment.svg)
+![Evidence Assessment: atividade confirmada versus evidência maliciosa](assets/imagem-03-evidence-assessment.svg)
 
 ---
 
@@ -582,7 +582,7 @@ Source
 Operational Context
 ```
 
-![Arquitetura da requisição — Cloudflare Edge e WAF](assets/imagem-05-waf-request-path.svg)
+![Arquitetura da requisição: Cloudflare Edge e WAF](assets/imagem-05-waf-request-path.svg)
 
 ---
 
@@ -590,7 +590,7 @@ Operational Context
 
 A análise precisou diferenciar dois cenários.
 
-### Cenário A — possível atividade adversarial
+### Cenário A: possível atividade adversarial
 
 ```text
 Unknown External Source
@@ -606,7 +606,7 @@ No Known Authorization
 Potential Reconnaissance
 ```
 
-### Cenário B — atividade legítima confirmada
+### Cenário B: atividade legítima confirmada
 
 ```text
 External Source
@@ -782,11 +782,11 @@ Esse exercício evita um erro comum:
 
 ## 16. MITRE ATT&CK Mapping
 
-### T1595 — Active Scanning
+### T1595: Active Scanning
 
 Durante a hipótese inicial, o comportamento apresentava similaridade técnica com:
 
-**MITRE ATT&CK T1595 — Active Scanning**
+**MITRE ATT&CK T1595: Active Scanning**
 
 Scanning pode ser utilizado por adversários para obter informações sobre sistemas expostos e identificar possíveis superfícies de ataque.
 
@@ -879,7 +879,7 @@ T1595 — Active Scanning foi utilizado como hipótese comportamental durante a 
 **Aplicabilidade: direta.**
 
 ```text
-D3-NTF — Network Traffic Filtering
+D3-NTF: Network Traffic Filtering
 ```
 
 O WAF aplicou uma ação de bloqueio real sobre o tráfego — uma técnica defensiva efetivamente empregada, não apenas hipotética.
@@ -943,11 +943,11 @@ O pipeline de Detection Engineering (Seção 24) poderia ser gerenciado como bac
 **Aplicabilidade: direta.**
 
 ```text
-CIS 8  — Audit Log Management
-CIS 13 — Network Monitoring and Defense
-CIS 15 — Service Provider Management
-CIS 16 — Application Software Security
-CIS 17 — Incident Response Management
+CIS 8 : Audit Log Management
+CIS 13: Network Monitoring and Defense
+CIS 15: Service Provider Management
+CIS 16: Application Software Security
+CIS 17: Incident Response Management
 ```
 
 ### SOC-CMM
@@ -959,7 +959,7 @@ Detection Quality e Third-Party Context.
 ### Metodologia analítica aplicada
 
 ```text
-ACH — Analysis of Competing Hypotheses
+ACH: Analysis of Competing Hypotheses
 ```
 
 A investigação avaliou hipóteses concorrentes (scanner legítimo autorizado vs. reconhecimento adversarial) e refutou uma por evidência de contexto.
@@ -1313,7 +1313,7 @@ para:
 Evidence-Based Contextual Risk
 ```
 
-![Detection Engineering — prioridade por contexto de origem](assets/imagem-10-detection-engineering-pipeline.svg)
+![Detection Engineering: prioridade por contexto de origem](assets/imagem-10-detection-engineering-pipeline.svg)
 
 ---
 
@@ -1443,7 +1443,7 @@ Isso é importante.
 
 Um teste autorizado não significa que os controles defensivos devam deixar de funcionar.
 
-![Defense pipeline — controles ao longo do caminho da requisição](assets/imagem-11-defense-pipeline.svg)
+![Defense pipeline: controles ao longo do caminho da requisição](assets/imagem-11-defense-pipeline.svg)
 
 ---
 
@@ -1854,7 +1854,7 @@ Pular essas etapas aumenta o risco de classificações incorretas.
 
 ---
 
-## 35. Investigation Flow — visão final
+## 35. Investigation Flow: visão final
 
 ```text
 Cloudflare WAF
@@ -1931,7 +1931,7 @@ DECISION
 ### MITRE ATT&CK
 
 - [MITRE ATT&CK](https://attack.mitre.org/)
-- [MITRE ATT&CK — T1595 Active Scanning](https://attack.mitre.org/techniques/T1595/)
+- [MITRE ATT&CK: T1595 Active Scanning](https://attack.mitre.org/techniques/T1595/)
 
 ### MITRE D3FEND
 
