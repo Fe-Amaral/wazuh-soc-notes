@@ -1,0 +1,62 @@
+<svg viewBox="0 0 1000 760" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow08i" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="760" fill="#0a0e14"/>
+  <text x="500" y="46" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">LATERAL MOVEMENT EVIDENCE CHAIN</text>
+  <line x1="370" y1="62" x2="630" y2="62" stroke="#21262d" stroke-width="1"/>
+
+  <text x="240" y="106" font-family="Consolas,monospace" font-size="13" fill="#f85149" text-anchor="middle" font-weight="700" letter-spacing="0.5">EXPECTED</text>
+  <text x="760" y="106" font-family="Consolas,monospace" font-size="13" fill="#3fb950" text-anchor="middle" font-weight="700" letter-spacing="0.5">#009</text>
+
+  <g font-family="Consolas,monospace" font-size="12" font-weight="700">
+    <rect x="140" y="130" width="200" height="46" rx="6" fill="#1a1214" stroke="#f85149" stroke-width="1.6"/>
+    <text x="240" y="159" fill="#e6edf3" text-anchor="middle">HOST A</text>
+    <line x1="240" y1="176" x2="240" y2="200" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow08i)"/>
+
+    <rect x="140" y="202" width="200" height="46" rx="6" fill="#1a1214" stroke="#f85149" stroke-width="1.6"/>
+    <text x="240" y="231" fill="#e6edf3" text-anchor="middle" font-size="11">REMOTE AUTH</text>
+    <line x1="240" y1="248" x2="240" y2="272" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow08i)"/>
+
+    <rect x="140" y="274" width="200" height="46" rx="6" fill="#1a1214" stroke="#f85149" stroke-width="1.6"/>
+    <text x="240" y="303" fill="#e6edf3" text-anchor="middle">SMB/445</text>
+    <line x1="240" y1="320" x2="240" y2="344" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow08i)"/>
+
+    <rect x="140" y="346" width="200" height="46" rx="6" fill="#1a1214" stroke="#f85149" stroke-width="1.6"/>
+    <text x="240" y="375" fill="#e6edf3" text-anchor="middle">ADMIN SHARE</text>
+    <line x1="240" y1="392" x2="240" y2="416" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow08i)"/>
+
+    <rect x="140" y="418" width="200" height="46" rx="6" fill="#1a1214" stroke="#f85149" stroke-width="1.8"/>
+    <text x="240" y="447" fill="#e6edf3" text-anchor="middle">HOST B</text>
+  </g>
+
+  <g font-family="Consolas,monospace" font-size="12" font-weight="700">
+    <rect x="660" y="130" width="200" height="46" rx="6" fill="#0f1f14" stroke="#3fb950" stroke-width="1.6"/>
+    <text x="760" y="159" fill="#e6edf3" text-anchor="middle">HOST A</text>
+    <line x1="760" y1="176" x2="760" y2="200" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow08i)"/>
+
+    <rect x="660" y="202" width="200" height="46" rx="6" fill="#0f1f14" stroke="#3fb950" stroke-width="1.6"/>
+    <text x="760" y="231" fill="#e6edf3" text-anchor="middle">mmc.exe</text>
+    <line x1="760" y1="248" x2="760" y2="272" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow08i)"/>
+
+    <rect x="660" y="274" width="200" height="46" rx="6" fill="#0f1f14" stroke="#3fb950" stroke-width="1.6"/>
+    <text x="760" y="303" fill="#e6edf3" text-anchor="middle">::1</text>
+    <line x1="760" y1="320" x2="760" y2="344" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow08i)"/>
+
+    <rect x="660" y="346" width="200" height="46" rx="6" fill="#0f1f14" stroke="#3fb950" stroke-width="1.6"/>
+    <text x="760" y="368" fill="#e6edf3" text-anchor="middle" font-size="11">TCP/135</text>
+    <text x="760" y="384" fill="#bc8cff" text-anchor="middle" font-size="9" font-weight="400">RPC Context — Supported</text>
+    <line x1="760" y1="392" x2="760" y2="416" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow08i)"/>
+
+    <rect x="660" y="418" width="200" height="46" rx="6" fill="#0f1f14" stroke="#3fb950" stroke-width="1.8"/>
+    <text x="760" y="447" fill="#e6edf3" text-anchor="middle">HOST A</text>
+  </g>
+
+  <rect x="250" y="500" width="500" height="70" rx="8" fill="#0d1421" stroke="#e6edf3" stroke-width="1.6"/>
+  <text x="500" y="532" font-family="Consolas,monospace" font-size="14" fill="#e6edf3" text-anchor="middle" font-weight="700">LATERAL MOVEMENT</text>
+  <text x="500" y="554" font-family="Consolas,monospace" font-size="14" fill="#d29922" text-anchor="middle" font-weight="700">NOT CONFIRMED</text>
+
+  <text x="500" y="630" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">por que o evento isolado não fecha movimentação lateral</text>
+</svg>

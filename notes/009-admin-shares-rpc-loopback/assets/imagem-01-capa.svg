@@ -1,0 +1,59 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid01i" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#152030" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow01i" cx="75%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#d29922" stop-opacity="0.11"/>
+      <stop offset="60%" stop-color="#58a6ff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#0a0e14" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0a0e14"/>
+  <rect width="1200" height="630" fill="url(#grid01i)"/>
+  <rect width="1200" height="630" fill="url(#glow01i)"/>
+  <rect x="0" y="0" width="1200" height="630" fill="none" stroke="#21262d" stroke-width="2"/>
+
+  <text x="60" y="54" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="12.5" fill="#8b949e" letter-spacing="1.6">SOC · THREAT HUNTING · INCIDENT RESPONSE · WINDOWS · RPC · SMB · WAZUH</text>
+  <line x1="60" y1="70" x2="1140" y2="70" stroke="#21262d" stroke-width="1"/>
+
+  <text x="60" y="150" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="22" fill="#3fb950" letter-spacing="4">WAZUH SOC NOTES #009</text>
+
+  <text x="58" y="208" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="700" fill="#e6edf3">Administrative Shares ≠</text>
+  <text x="58" y="240" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="700" fill="#e6edf3">Lateral Movement</text>
+  <text x="58" y="272" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#8b949e">investigando RPC, SMB e ausência</text>
+  <text x="58" y="298" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#8b949e">de evidência</text>
+
+  <rect x="58" y="552" width="600" height="36" rx="6" fill="#0d1421" stroke="#1f2937" stroke-width="1"/>
+  <text x="76" y="576" font-family="Consolas,'SF Mono',Monaco,monospace" font-size="12.5" fill="#7ee787">image=mmc.exe dst=::1 transport=tcp dstport=135 rpc_context=supported smb445=not_observed</text>
+
+  <g transform="translate(720,110)" font-family="Consolas,monospace">
+    <rect x="0" y="0" width="420" height="360" rx="10" fill="#0d1421" stroke="#2d3748" stroke-width="1.5"/>
+
+    <rect x="20" y="18" width="380" height="46" rx="6" fill="#1a1608" stroke="#d29922" stroke-width="1.4"/>
+    <text x="210" y="47" font-size="12.5" fill="#d29922" text-anchor="middle" font-weight="700">WAZUH ALERT — ADMIN SHARES</text>
+    <line x1="210" y1="64" x2="210" y2="84" stroke="#4b5563" stroke-width="1.6"/>
+
+    <rect x="20" y="86" width="380" height="46" rx="6" fill="#111827" stroke="#58a6ff" stroke-width="1.4"/>
+    <text x="210" y="115" font-size="12" fill="#e6edf3" text-anchor="middle">SYSMON EID 3 — mmc.exe</text>
+    <line x1="210" y1="132" x2="210" y2="152" stroke="#4b5563" stroke-width="1.6"/>
+
+    <rect x="20" y="154" width="380" height="46" rx="6" fill="#111827" stroke="#56c2d4" stroke-width="1.4"/>
+    <text x="210" y="177" font-size="12" fill="#56c2d4" text-anchor="middle" font-weight="700">::1 → ::1 :135</text>
+    <text x="210" y="192" font-size="9.5" fill="#7ee787" text-anchor="middle">RPC CONTEXT — SUPPORTED</text>
+    <line x1="210" y1="200" x2="210" y2="220" stroke="#4b5563" stroke-width="1.6"/>
+
+    <rect x="20" y="222" width="380" height="46" rx="6" fill="#15161a" stroke="#8b949e" stroke-width="1.4" stroke-dasharray="4 3"/>
+    <text x="210" y="251" font-size="12" fill="#8b949e" text-anchor="middle" font-weight="700">SMB/445 — NOT OBSERVED</text>
+    <line x1="210" y1="268" x2="210" y2="288" stroke="#4b5563" stroke-width="1.6"/>
+
+    <rect x="20" y="290" width="380" height="50" rx="6" fill="#0f1f14" stroke="#3fb950" stroke-width="1.8"/>
+    <text x="210" y="313" font-size="12.5" fill="#3fb950" text-anchor="middle" font-weight="700">LATERAL MOVEMENT</text>
+    <text x="210" y="330" font-size="11" fill="#8b949e" text-anchor="middle">NOT CONFIRMED</text>
+  </g>
+
+  <rect x="720" y="490" width="420" height="66" rx="8" fill="#0d1421" stroke="#d29922" stroke-width="1.6"/>
+  <text x="930" y="516" font-family="Consolas,monospace" font-size="14" fill="#e6edf3" text-anchor="middle" font-weight="700">TCP/135</text>
+  <text x="930" y="533" font-family="Consolas,monospace" font-size="12" fill="#8b949e" text-anchor="middle">≠</text>
+  <text x="930" y="549" font-family="Consolas,monospace" font-size="14" fill="#f0883e" text-anchor="middle" font-weight="700">SMB</text>
+</svg>

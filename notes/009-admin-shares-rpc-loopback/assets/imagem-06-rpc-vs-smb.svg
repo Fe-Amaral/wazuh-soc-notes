@@ -1,0 +1,34 @@
+<svg viewBox="0 0 1100 640" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1100" height="640" fill="#0a0e14"/>
+  <text x="550" y="46" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">RPC/135 VS SMB/445</text>
+  <line x1="420" y1="62" x2="680" y2="62" stroke="#21262d" stroke-width="1"/>
+
+  <g font-family="Consolas,monospace">
+    <rect x="90" y="100" width="400" height="300" rx="10" fill="#0d1421" stroke="#56c2d4" stroke-width="1.8"/>
+    <text x="290" y="136" font-size="16" fill="#56c2d4" text-anchor="middle" font-weight="700">RPC</text>
+    <line x1="120" y1="152" x2="460" y2="152" stroke="#1c3a44"/>
+    <text x="290" y="184" font-size="13.5" fill="#e6edf3" text-anchor="middle" font-weight="700">TCP/135</text>
+    <text x="290" y="216" font-size="12.5" fill="#e6edf3" text-anchor="middle">Endpoint Mapper</text>
+    <text x="290" y="248" font-size="12.5" fill="#e6edf3" text-anchor="middle">RPC Services</text>
+    <text x="290" y="280" font-size="12.5" fill="#e6edf3" text-anchor="middle">Management Operations</text>
+    <text x="290" y="320" font-size="12.5" fill="#e6edf3" text-anchor="middle">Endpoint Discovery</text>
+    <text x="290" y="360" font-size="12.5" fill="#e6edf3" text-anchor="middle">Windows Admin Operations</text>
+
+    <rect x="610" y="100" width="400" height="300" rx="10" fill="#0d1421" stroke="#f0883e" stroke-width="1.8"/>
+    <text x="810" y="136" font-size="16" fill="#f0883e" text-anchor="middle" font-weight="700">SMB</text>
+    <line x1="640" y1="152" x2="980" y2="152" stroke="#3a2f22"/>
+    <text x="810" y="184" font-size="13.5" fill="#e6edf3" text-anchor="middle" font-weight="700">TCP/445</text>
+    <text x="810" y="216" font-size="12.5" fill="#e6edf3" text-anchor="middle">File Sharing</text>
+    <text x="810" y="248" font-size="12.5" fill="#e6edf3" text-anchor="middle">Named Pipes</text>
+    <text x="810" y="280" font-size="12.5" fill="#e6edf3" text-anchor="middle">C$ / ADMIN$ / IPC$</text>
+    <text x="810" y="320" font-size="12.5" fill="#e6edf3" text-anchor="middle">Windows Shares</text>
+    <text x="810" y="360" font-size="12.5" fill="#e6edf3" text-anchor="middle">Remote File Operations</text>
+  </g>
+
+  <rect x="330" y="424" width="440" height="66" rx="8" fill="#0d1421" stroke="#8b949e" stroke-width="1.6"/>
+  <text x="550" y="450" font-family="Consolas,monospace" font-size="12" fill="#e6edf3" text-anchor="middle">RELATED IN SOME WINDOWS WORKFLOWS</text>
+  <text x="550" y="470" font-family="Consolas,monospace" font-size="12" fill="#8b949e" text-anchor="middle">≠</text>
+  <text x="550" y="486" font-family="Consolas,monospace" font-size="12" fill="#e6edf3" text-anchor="middle">SAME PROTOCOL</text>
+
+  <text x="550" y="560" font-family="Consolas,monospace" font-size="16" fill="#f85149" text-anchor="middle" font-weight="700">TCP/135  ≠  SMB/445</text>
+</svg>

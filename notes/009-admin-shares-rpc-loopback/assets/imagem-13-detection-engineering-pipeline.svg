@@ -1,0 +1,86 @@
+<svg viewBox="0 0 1500 820" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow13i" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="1500" height="820" fill="#0a0e14"/>
+  <text x="750" y="46" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">DETECTION ENGINEERING PIPELINE</text>
+  <line x1="600" y1="62" x2="900" y2="62" stroke="#21262d" stroke-width="1"/>
+
+  <g font-family="Consolas,monospace" font-size="11.5" font-weight="700">
+    <rect x="60" y="100" width="150" height="56" rx="7" fill="#0d1421" stroke="#58a6ff" stroke-width="1.6"/>
+    <text x="135" y="133" text-anchor="middle" fill="#e6edf3">PROCESS</text>
+    <line x1="210" y1="128" x2="234" y2="128" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow13i)"/>
+
+    <rect x="236" y="100" width="150" height="56" rx="7" fill="#0d1421" stroke="#56c2d4" stroke-width="1.6"/>
+    <text x="311" y="133" text-anchor="middle" fill="#e6edf3">NETWORK</text>
+    <line x1="386" y1="128" x2="410" y2="128" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow13i)"/>
+
+    <rect x="412" y="100" width="150" height="56" rx="7" fill="#0d1421" stroke="#56c2d4" stroke-width="1.6"/>
+    <text x="487" y="133" text-anchor="middle" fill="#e6edf3" font-size="10.5">REMOTE / LOCAL</text>
+    <line x1="562" y1="128" x2="586" y2="128" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow13i)"/>
+
+    <rect x="588" y="100" width="150" height="56" rx="7" fill="#0d1421" stroke="#bc8cff" stroke-width="1.6"/>
+    <text x="663" y="133" text-anchor="middle" fill="#e6edf3" font-size="10.5">PROTOCOL / PORT</text>
+    <line x1="738" y1="128" x2="762" y2="128" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow13i)"/>
+
+    <rect x="764" y="100" width="150" height="56" rx="7" fill="#0d1421" stroke="#bc8cff" stroke-width="1.6"/>
+    <text x="839" y="133" text-anchor="middle" fill="#e6edf3" font-size="10.5">AUTHENTICATION</text>
+    <line x1="914" y1="128" x2="938" y2="128" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow13i)"/>
+
+    <rect x="940" y="100" width="150" height="56" rx="7" fill="#0d1421" stroke="#f0883e" stroke-width="1.6"/>
+    <text x="1015" y="133" text-anchor="middle" fill="#e6edf3" font-size="10.5">SHARE ACCESS</text>
+    <line x1="1090" y1="128" x2="1114" y2="128" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow13i)"/>
+
+    <rect x="1116" y="100" width="150" height="56" rx="7" fill="#0d1421" stroke="#f0883e" stroke-width="1.6"/>
+    <text x="1191" y="133" text-anchor="middle" fill="#e6edf3" font-size="10.5">REMOTE ACTION</text>
+    <line x1="1266" y1="128" x2="1290" y2="128" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow13i)"/>
+
+    <rect x="1292" y="100" width="150" height="56" rx="7" fill="#1a1608" stroke="#d29922" stroke-width="1.6"/>
+    <text x="1367" y="133" text-anchor="middle" fill="#e6edf3" font-size="10.5">CORRELATION</text>
+  </g>
+
+  <line x1="1367" y1="156" x2="1367" y2="182" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow13i)"/>
+  <rect x="1230" y="184" width="230" height="56" rx="7" fill="#0f1f14" stroke="#3fb950" stroke-width="2"/>
+  <text x="1345" y="217" font-family="Consolas,monospace" font-size="12.5" fill="#3fb950" text-anchor="middle" font-weight="700">VERDICT</text>
+
+  <g font-family="Consolas,monospace" font-size="12">
+    <rect x="60" y="280" width="1380" height="360" rx="10" fill="#0d1421" stroke="#e6edf3" stroke-width="1.6"/>
+    <text x="750" y="312" text-anchor="middle" fill="#e6edf3" font-weight="700" letter-spacing="1">#009 — VALORES OBSERVADOS EM CADA ESTÁGIO</text>
+    <line x1="100" y1="326" x2="1400" y2="326" stroke="#21262d"/>
+
+    <text x="100" y="360" fill="#8b949e" font-size="12.5">PROCESS</text>
+    <text x="100" y="382" fill="#e6edf3" font-size="12.5">mmc.exe = CONFIRMED</text>
+
+    <text x="420" y="360" fill="#8b949e" font-size="12.5">NETWORK</text>
+    <text x="420" y="382" fill="#e6edf3" font-size="12.5">::1 → ::1 = CONFIRMED</text>
+
+    <text x="740" y="360" fill="#8b949e" font-size="12.5">REMOTE / LOCAL</text>
+    <text x="740" y="382" fill="#e6edf3" font-size="12.5">LOCAL = CONFIRMED</text>
+
+    <text x="1060" y="360" fill="#8b949e" font-size="12.5">PROTOCOL / PORT</text>
+    <text x="1060" y="382" fill="#e6edf3" font-size="12.5">TCP/135 = CONFIRMED</text>
+
+    <text x="100" y="424" fill="#8b949e" font-size="12.5">RPC CONTEXT</text>
+    <text x="100" y="446" fill="#e6edf3" font-size="12.5">SUPPORTED</text>
+
+    <text x="420" y="424" fill="#8b949e" font-size="12.5">SMB/445</text>
+    <text x="420" y="446" fill="#e6edf3" font-size="12.5">NOT OBSERVED</text>
+
+    <text x="740" y="424" fill="#8b949e" font-size="12.5">SHARE ACCESS</text>
+    <text x="740" y="446" fill="#e6edf3" font-size="12.5">NOT CONFIRMED</text>
+
+    <text x="1060" y="424" fill="#8b949e" font-size="12.5">LATERAL MOVEMENT</text>
+    <text x="1060" y="446" fill="#e6edf3" font-size="12.5">NOT CONFIRMED</text>
+
+    <rect x="380" y="480" width="740" height="70" rx="8" fill="#0f1f14" stroke="#3fb950" stroke-width="2"/>
+    <text x="750" y="510" text-anchor="middle" fill="#3fb950" font-weight="700" font-size="13.5">VERDICT: STRONG FP INDICATION</text>
+    <text x="750" y="530" text-anchor="middle" fill="#8b949e" font-size="11.5">WITH TELEMETRY LIMITATION</text>
+
+    <text x="750" y="596" text-anchor="middle" fill="#8b949e" font-size="11.5">contexto adicional → CONTEXTUAL ENRICHMENT / CONTEXTUAL SEVERITY</text>
+    <text x="750" y="618" text-anchor="middle" fill="#6b7280" font-size="10.5">evidência ausente não é critério automático de supressão</text>
+  </g>
+
+  <text x="750" y="700" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">representar onde a evidência realmente termina</text>
+</svg>

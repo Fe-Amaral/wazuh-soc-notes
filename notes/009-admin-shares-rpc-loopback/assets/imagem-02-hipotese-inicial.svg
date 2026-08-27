@@ -1,0 +1,53 @@
+<svg viewBox="0 0 1100 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow02i" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="900" fill="#0a0e14"/>
+  <text x="550" y="50" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">HIPÓTESE INICIAL</text>
+  <line x1="440" y1="66" x2="660" y2="66" stroke="#21262d" stroke-width="1"/>
+
+  <g font-family="Consolas,monospace">
+    <rect x="380" y="90" width="340" height="60" rx="8" fill="#0d1421" stroke="#d29922" stroke-width="1.8"/>
+    <text x="550" y="115" font-size="13" fill="#d29922" text-anchor="middle" font-weight="700">ALERT</text>
+    <text x="550" y="136" font-size="11.5" fill="#e6edf3" text-anchor="middle">Possible Admin Share Access</text>
+    <line x1="550" y1="150" x2="550" y2="180" stroke="#4b5563" stroke-width="2" marker-end="url(#arrow02i)"/>
+
+    <rect x="340" y="182" width="420" height="60" rx="8" fill="#0d1421" stroke="#f0883e" stroke-width="1.8"/>
+    <text x="550" y="207" font-size="13" fill="#f0883e" text-anchor="middle" font-weight="700">INITIAL HYPOTHESIS</text>
+    <text x="550" y="228" font-size="11.5" fill="#e6edf3" text-anchor="middle">Possible Lateral Movement?</text>
+    <line x1="550" y1="242" x2="550" y2="272" stroke="#4b5563" stroke-width="2" marker-end="url(#arrow02i)"/>
+
+    <rect x="420" y="274" width="260" height="52" rx="8" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="550" y="306" font-size="13" fill="#58a6ff" text-anchor="middle" font-weight="700">CHECK EVIDENCE</text>
+  </g>
+
+  <text x="290" y="400" font-family="Consolas,monospace" font-size="13" fill="#f85149" text-anchor="middle" font-weight="700" letter-spacing="0.5">EXPECTED FOR ADMIN SHARE ACTIVITY</text>
+  <text x="810" y="400" font-family="Consolas,monospace" font-size="13" fill="#3fb950" text-anchor="middle" font-weight="700" letter-spacing="0.5">OBSERVED EVENT (#009)</text>
+
+  <g font-family="Consolas,monospace" font-size="13">
+    <rect x="60" y="420" width="460" height="220" rx="10" fill="#1a1214" stroke="#f85149" stroke-width="1.8"/>
+    <line x1="90" y1="450" x2="490" y2="450" stroke="#3a1f1f"/>
+    <text x="100" y="484" fill="#e6edf3">Remote Host</text>
+    <text x="100" y="518" fill="#e6edf3">SMB / TCP 445</text>
+    <text x="100" y="552" fill="#e6edf3">Share Access (C$ / ADMIN$ / IPC$)</text>
+    <text x="100" y="586" fill="#e6edf3">Remote Authentication</text>
+    <text x="100" y="620" fill="#e6edf3">Remote Resource Interaction</text>
+
+    <rect x="580" y="420" width="460" height="220" rx="10" fill="#0f1f14" stroke="#3fb950" stroke-width="1.8"/>
+    <line x1="610" y1="450" x2="1010" y2="450" stroke="#1f3a24"/>
+    <text x="620" y="484" fill="#e6edf3">mmc.exe (System32)</text>
+    <text x="620" y="518" fill="#e6edf3">Loopback ::1</text>
+    <text x="620" y="552" fill="#e6edf3">TCP/135</text>
+    <text x="620" y="586" fill="#8b949e">SMB/445 = not observed</text>
+  </g>
+
+  <rect x="425" y="654" width="250" height="34" rx="17" fill="#0d1421" stroke="#bc8cff" stroke-width="1.4"/>
+  <text x="550" y="676" font-family="Consolas,monospace" font-size="11.5" fill="#bc8cff" text-anchor="middle" font-weight="700">RPC CONTEXT — SUPPORTED</text>
+
+  <rect x="270" y="700" width="560" height="70" rx="8" fill="#0d1421" stroke="#e6edf3" stroke-width="1.6"/>
+  <text x="550" y="742" font-family="Consolas,monospace" font-size="15" fill="#e6edf3" text-anchor="middle" font-weight="700">HYPOTHESIS REQUIRES EVIDENCE</text>
+
+  <text x="550" y="820" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">a descrição do alerta inicia a investigação, mas não define o evento real</text>
+</svg>

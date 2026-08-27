@@ -24,6 +24,7 @@ Neste repositório, os mesmos estudos poderão ser aprofundados com análises t�
 | **#006** | Darktrace / Wazuh | Watched Domain via DNS em dispositivo Mobile/Android | **Falso Positivo** | [Ver análise completa](notes/006-darktrace-watched-domain/README.md) |
 | **#007** | FortiGate / Wazuh | Tráfego AnyDesk bloqueado pelo Application Control | **Contenção Preventiva** | [Ver análise completa](notes/007-fortigate-anydesk-blocked/README.md) |
 | **#008** | Microsoft 365 / Email Security | E-mail promocional reportado como suspeito, SPF/DKIM/DMARC PASS | **Falso Positivo** | [Ver análise completa](notes/008-marketing-email-auth-pass/README.md) |
+| **#009** | Windows / Sysmon / Wazuh | RPC local via `mmc.exe` em loopback (`::1:135`) mapeado como possível Admin Share Access | **Falso Positivo** | [Ver análise completa](notes/009-admin-shares-rpc-loopback/README.md) |
 
 ---
 

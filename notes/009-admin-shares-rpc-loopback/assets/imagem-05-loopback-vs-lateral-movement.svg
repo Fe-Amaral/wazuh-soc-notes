@@ -1,0 +1,46 @@
+<svg viewBox="0 0 1100 680" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow05i" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="680" fill="#0a0e14"/>
+  <text x="550" y="46" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">LOOPBACK VS LATERAL MOVEMENT</text>
+  <line x1="410" y1="62" x2="690" y2="62" stroke="#21262d" stroke-width="1"/>
+
+  <text x="270" y="106" font-family="Consolas,monospace" font-size="13.5" fill="#3fb950" text-anchor="middle" font-weight="700" letter-spacing="1">OBSERVED (#009)</text>
+  <g font-family="Consolas,monospace">
+    <rect x="90" y="130" width="360" height="280" rx="10" fill="#0f1f14" stroke="#3fb950" stroke-width="1.8"/>
+    <text x="270" y="164" font-size="13" fill="#e6edf3" text-anchor="middle" font-weight="700">HOST A</text>
+    <rect x="130" y="190" width="280" height="46" rx="6" fill="#111827" stroke="#58a6ff" stroke-width="1.4"/>
+    <text x="270" y="219" font-size="12" fill="#e6edf3" text-anchor="middle">mmc.exe</text>
+    <line x1="270" y1="236" x2="270" y2="256" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow05i)"/>
+    <rect x="130" y="258" width="280" height="46" rx="6" fill="#111827" stroke="#56c2d4" stroke-width="1.4"/>
+    <text x="270" y="287" font-size="12" fill="#56c2d4" text-anchor="middle" font-weight="700">::1 → ::1 :135</text>
+    <line x1="270" y1="304" x2="270" y2="324" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow05i)"/>
+    <rect x="130" y="326" width="280" height="46" rx="6" fill="#111827" stroke="#3fb950" stroke-width="1.4"/>
+    <text x="270" y="355" font-size="12" fill="#e6edf3" text-anchor="middle">TCP — Confirmed</text>
+  </g>
+
+  <rect x="145" y="420" width="250" height="34" rx="17" fill="#0d1421" stroke="#bc8cff" stroke-width="1.4"/>
+  <text x="270" y="442" font-family="Consolas,monospace" font-size="11" fill="#bc8cff" text-anchor="middle" font-weight="700">RPC CONTEXT — SUPPORTED</text>
+
+  <text x="810" y="106" font-family="Consolas,monospace" font-size="13.5" fill="#f85149" text-anchor="middle" font-weight="700" letter-spacing="1">EXPECTED FOR REMOTE MOVEMENT</text>
+  <g font-family="Consolas,monospace">
+    <rect x="650" y="130" width="140" height="60" rx="8" fill="#1a1214" stroke="#f85149" stroke-width="1.8"/>
+    <text x="720" y="166" font-size="13" fill="#e6edf3" text-anchor="middle" font-weight="700">HOST A</text>
+    <line x1="720" y1="190" x2="720" y2="230" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow05i)"/>
+    <text x="740" y="215" font-size="10.5" fill="#8b949e">Network</text>
+    <rect x="650" y="232" width="140" height="60" rx="8" fill="#1a1214" stroke="#f85149" stroke-width="1.8"/>
+    <text x="720" y="268" font-size="13" fill="#e6edf3" text-anchor="middle" font-weight="700">HOST B</text>
+
+    <rect x="960" y="130" width="60" height="162" fill="none"/>
+  </g>
+
+  <rect x="270" y="480" width="560" height="70" rx="8" fill="#0d1421" stroke="#e6edf3" stroke-width="1.6"/>
+  <text x="550" y="510" font-family="Consolas,monospace" font-size="14.5" fill="#e6edf3" text-anchor="middle" font-weight="700">LOOPBACK</text>
+  <text x="550" y="530" font-family="Consolas,monospace" font-size="13" fill="#8b949e" text-anchor="middle">≠</text>
+  <text x="550" y="548" font-family="Consolas,monospace" font-size="14.5" fill="#f0883e" text-anchor="middle" font-weight="700">REMOTE HOST INTERACTION</text>
+
+  <text x="550" y="620" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">o endereço de destino é decisivo pra interpretação do alerta</text>
+</svg>

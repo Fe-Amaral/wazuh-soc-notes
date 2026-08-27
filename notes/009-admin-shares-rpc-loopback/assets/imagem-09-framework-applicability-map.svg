@@ -1,0 +1,56 @@
+<svg viewBox="0 0 1100 680" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1100" height="680" fill="#0a0e14"/>
+  <text x="550" y="46" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">FRAMEWORK &amp; METHODOLOGY MAP</text>
+  <line x1="380" y1="62" x2="720" y2="62" stroke="#21262d" stroke-width="1"/>
+
+  <!-- DIRECT -->
+  <text x="70" y="106" font-family="Consolas,monospace" font-size="13" fill="#3fb950" font-weight="700" letter-spacing="1">DIRECT</text>
+  <g font-family="Consolas,monospace" font-size="13" fill="#e6edf3">
+    <rect x="70" y="122" width="460" height="46" rx="8" fill="#0f1f14" stroke="#3fb950" stroke-width="1.6"/>
+    <text x="300" y="150" text-anchor="middle" font-weight="700">NIST CSF</text>
+    <rect x="70" y="180" width="460" height="46" rx="8" fill="#0f1f14" stroke="#3fb950" stroke-width="1.6"/>
+    <text x="300" y="208" text-anchor="middle" font-weight="700">NIST SP 800-61</text>
+  </g>
+
+  <!-- SUPPORTING / PARTIAL -->
+  <text x="70" y="264" font-family="Consolas,monospace" font-size="13" fill="#d29922" font-weight="700" letter-spacing="1">SUPPORTING / PARTIAL</text>
+  <g font-family="Consolas,monospace" font-size="12.5" fill="#e6edf3">
+    <rect x="70" y="280" width="460" height="58" rx="8" fill="#1a1608" stroke="#d29922" stroke-width="1.6"/>
+    <text x="300" y="302" text-anchor="middle" font-weight="700" font-size="12">MITRE ATT&amp;CK T1021.002</text>
+    <text x="300" y="322" text-anchor="middle" font-size="10.5" fill="#8b949e">HYPOTHESIS / NOT CONFIRMED</text>
+
+    <rect x="70" y="346" width="460" height="46" rx="8" fill="#1a1608" stroke="#d29922" stroke-width="1.6"/>
+    <text x="300" y="374" text-anchor="middle" font-weight="700">CIS Controls</text>
+
+    <rect x="70" y="400" width="460" height="46" rx="8" fill="#1a1608" stroke="#d29922" stroke-width="1.6"/>
+    <text x="300" y="422" text-anchor="middle" font-weight="700" font-size="12">Sigma</text>
+    <text x="300" y="438" text-anchor="middle" font-size="10" fill="#8b949e" font-weight="400">Partial — lógica conceitual (Seção 28)</text>
+
+    <rect x="70" y="454" width="460" height="46" rx="8" fill="#1a1608" stroke="#d29922" stroke-width="1.6"/>
+    <text x="300" y="482" text-anchor="middle" font-weight="700">SOC-CMM</text>
+  </g>
+
+  <!-- NOT APPLICABLE -->
+  <text x="620" y="106" font-family="Consolas,monospace" font-size="13" fill="#6b7280" font-weight="700" letter-spacing="1">NOT APPLICABLE</text>
+  <g font-family="Consolas,monospace" font-size="12" fill="#8b949e">
+    <rect x="620" y="122" width="410" height="58" rx="8" fill="none" stroke="#4b5563" stroke-width="1.2" stroke-dasharray="4 3"/>
+    <text x="825" y="145" text-anchor="middle" font-size="12">MITRE Attack Flow</text>
+    <text x="825" y="163" text-anchor="middle" font-size="9.5">Confirmed adversary flow = Not Applicable</text>
+
+    <rect x="620" y="190" width="410" height="46" rx="8" fill="none" stroke="#4b5563" stroke-width="1.2" stroke-dasharray="4 3"/>
+    <text x="825" y="218" text-anchor="middle" font-size="12">MITRE Engage</text>
+
+    <rect x="620" y="246" width="410" height="46" rx="8" fill="none" stroke="#4b5563" stroke-width="1.2" stroke-dasharray="4 3"/>
+    <text x="825" y="274" text-anchor="middle" font-size="12">MITRE Fight Fraud</text>
+  </g>
+
+  <rect x="620" y="310" width="410" height="60" rx="8" fill="#0d1421" stroke="#58a6ff" stroke-width="1.6"/>
+  <text x="825" y="336" font-family="Consolas,monospace" font-size="11.5" fill="#58a6ff" text-anchor="middle" font-weight="700">Investigation Flow</text>
+  <text x="825" y="356" font-family="Consolas,monospace" font-size="10.5" fill="#8b949e" text-anchor="middle">Applicable — fluxo real deste note (Seção 21)</text>
+
+  <rect x="220" y="560" width="660" height="66" rx="8" fill="#0d1421" stroke="#e6edf3" stroke-width="1.6"/>
+  <text x="550" y="584" font-family="Consolas,monospace" font-size="14" fill="#e6edf3" text-anchor="middle" font-weight="700">ATT&amp;CK MAPPING  ≠</text>
+  <text x="550" y="608" font-family="Consolas,monospace" font-size="14" fill="#f0883e" text-anchor="middle" font-weight="700">TECHNIQUE CONFIRMATION</text>
+
+  <text x="550" y="662" font-family="Segoe UI,Arial,sans-serif" font-size="12.5" fill="#8b949e" text-anchor="middle">apenas o que participa materialmente do case entra no mapa</text>
+</svg>
