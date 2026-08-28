@@ -125,13 +125,31 @@ Not Available
 
 A conclusão técnica foi que o evento observado era **muito mais compatível com comunicação RPC local de um componente legítimo do Windows do que com acesso confirmado a Administrative Shares**.
 
+Como a telemetria disponível não permitia confirmar nem afastar tecnicamente essa hipótese de forma definitiva, o caso foi escalado para validação junto ao usuário responsável pela atividade, o fluxo previsto justamente para preencher esse tipo de lacuna quando a telemetria técnica se esgota.
+
+O usuário confirmou, via chamado formal, que estava realizando atividade administrativa reconhecida no servidor de destino, e que a utilização do Microsoft Management Console (`mmc.exe`) é esperada para esse usuário.
+
+Esse reconhecimento não é telemetria técnica adicional, é uma fonte de evidência diferente, obtida por confirmação direta do usuário responsável, e foi tratada como tal:
+
+```text
+User Attestation = Confirmed (via user attestation)
+```
+
+e não como:
+
+```text
+Technical Follow-up Evidence
+```
+
+Com essa confirmação, o caso foi encerrado.
+
 ### Classificação final
 
-**Forte indício de Falso Positivo: comunicação RPC local associada ao `mmc.exe`, sem evidência no evento analisado de SMB/445, destino remoto ou acesso confirmado a Windows Administrative Shares.**
+**Falso Positivo: comunicação RPC local associada ao `mmc.exe`, confirmada como atividade administrativa reconhecida pelo usuário responsável. Encerrado por atestação do usuário, não por telemetria técnica adicional.**
 
 A classificação preserva uma limitação material:
 
-> o console/snap-in responsável pelo comportamento e o contexto completo de execução do `mmc.exe` não estavam disponíveis na evidência original.
+> o console/snap-in responsável pelo comportamento e o contexto completo de execução do `mmc.exe` não estavam disponíveis na evidência técnica original. Essa lacuna não foi preenchida por telemetria adicional, apenas suprida operacionalmente pela confirmação do usuário responsável.
 
 ### Principal aprendizado
 
@@ -151,6 +169,10 @@ Lateral Movement
 MITRE Mapping
         ≠
 Confirmed Technique
+
+Confirmed (user attestation)
+        ≠
+Confirmed (telemetry)
 ```
 
 ---
@@ -416,6 +438,7 @@ ingerido e correlacionado pelo Wazuh.
 | Processo pai | Evidência original | Not Available |
 | MMC console/snap-in | Evidência original | Not Available |
 | Process tree completa | Evidência original | Not Available |
+| Reconhecimento do usuário sobre a atividade | Validação com usuário responsável | Confirmed (user attestation) |
 
 O primeiro resultado importante foi:
 
@@ -444,6 +467,14 @@ Source ::1
 Destination ::1
 Destination Port 135
 ```
+
+`Confirmed` também pode ser sustentado por uma fonte não técnica, quando essa fonte é direta e verificável, por exemplo, o reconhecimento do próprio usuário responsável sobre uma atividade. Esse tipo de confirmação é registrado separadamente como:
+
+```text
+Confirmed (user attestation)
+```
+
+para não ser confundido com confirmação por telemetria.
 
 ## Supported
 
@@ -2140,9 +2171,15 @@ Not Confirmed
 Not Confirmed
 ```
 
+### Reconhecimento do usuário
+
+```text
+Confirmed (user attestation)
+```
+
 ## Classificação final
 
-**Forte indício de Falso Positivo: comunicação RPC local associada ao `mmc.exe`, sem evidência no evento analisado de SMB/445, destino remoto ou acesso confirmado a Windows Administrative Shares.**
+**Falso Positivo: comunicação RPC local associada ao `mmc.exe`, confirmada como atividade administrativa reconhecida pelo usuário responsável. Encerrado por atestação do usuário, não por telemetria técnica adicional.**
 
 A limitação material permanece:
 
@@ -2158,7 +2195,7 @@ Not Available
 Portanto, a conclusão não deve ser escrita como:
 
 ```text
-Confirmed Legitimate Administrative Action
+Confirmed Legitimate Administrative Action (technical)
 ```
 
 O correto é:
@@ -2168,8 +2205,17 @@ Local RPC Context = Supported
 
 Lateral Movement = Not Confirmed
 
+User Attestation = Confirmed (user attestation)
+
 Strong False Positive Indication
-with Telemetry Limitation
+Closed via User Attestation
+with Technical Telemetry Limitation
+```
+
+### Estado
+
+```text
+CLOSED: RESOLVED VIA USER ATTESTATION
 ```
 
 ---
@@ -2223,6 +2269,20 @@ FINAL ASSESSMENT
 STRONG FALSE POSITIVE INDICATION
 WITH TELEMETRY LIMITATION
 ```
+
+O fechamento do caso não veio de telemetria adicional, as fontes técnicas de contexto (Command Line, Parent Process, MMC Snap-in) permaneceram `Not Available` até o fim.
+
+O caso foi encerrado quando, na etapa de validação prevista para esse tipo de lacuna, o usuário responsável confirmou a atividade como administração reconhecida e esperada no servidor de destino.
+
+```text
+Technical Follow-up = Not Available
+        +
+User Attestation = Confirmed
+        ↓
+FALSE POSITIVE
+```
+
+Essa distinção importa: o caso não foi fechado porque a ausência de evidência técnica foi interpretada como prova de benignidade, foi fechado porque uma fonte de evidência diferente, a confirmação direta do usuário responsável, supriu a lacuna que a telemetria não conseguiu preencher.
 
 ![Detection Engineering Pipeline](assets/imagem-13-detection-engineering-pipeline.svg)
 
@@ -2513,6 +2573,20 @@ Not Confirmed
 Nenhuma ausência de telemetria foi convertida em ausência de comportamento.
 
 Nenhuma técnica MITRE foi tratada como confirmada apenas porque estava associada à detecção.
+
+O fechamento do caso veio de uma fonte de evidência diferente da telemetria técnica: a confirmação direta do usuário responsável pela atividade, via chamado formal, de que a utilização do `mmc.exe` observada era administração reconhecida e esperada. Essa confirmação foi registrada explicitamente como:
+
+```text
+Confirmed (user attestation)
+```
+
+e não como:
+
+```text
+Confirmed (technical telemetry)
+```
+
+para que a distinção entre as duas fontes de evidência não fosse perdida. As lacunas técnicas (Command Line, Parent Process, MMC Snap-in) permanecem `Not Available` e não foram preenchidas pela atestação, apenas deixaram de ser bloqueantes para o encerramento operacional do caso.
 
 As investigações, decisões técnicas e veredictos apresentados neste estudo refletem experiência prática real do autor. Ferramentas de Inteligência Artificial foram utilizadas como apoio para formatação, diagramação e publicação do conteúdo, não para a condução da investigação em si.
 
