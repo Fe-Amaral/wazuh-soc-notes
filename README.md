@@ -25,6 +25,7 @@ Neste repositório, os mesmos estudos poderão ser aprofundados com análises t�
 | **#007** | FortiGate / Wazuh | Tráfego AnyDesk bloqueado pelo Application Control | **Contenção Preventiva** | [Ver análise completa](notes/007-fortigate-anydesk-blocked/README.md) |
 | **#008** | Microsoft 365 / Email Security | E-mail promocional reportado como suspeito, SPF/DKIM/DMARC PASS | **Falso Positivo** | [Ver análise completa](notes/008-marketing-email-auth-pass/README.md) |
 | **#009** | Windows / Sysmon / Wazuh | RPC local via `mmc.exe` em loopback (`::1:135`) mapeado como possível Admin Share Access | **Falso Positivo** | [Ver análise completa](notes/009-admin-shares-rpc-loopback/README.md) |
+| **#010** | Windows / Wazuh | Logon Type 10 (RDP) com origem loopback `::1` e hipótese de reverse tunnel | **Suspeito** | [Ver análise completa](notes/010-rdp-loopback-reverse-tunnel/README.md) |
 
 ---
 

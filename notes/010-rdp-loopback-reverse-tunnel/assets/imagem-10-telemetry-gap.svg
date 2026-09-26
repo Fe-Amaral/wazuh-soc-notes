@@ -1,0 +1,52 @@
+<svg viewBox="0 0 1000 860" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow10j" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="860" fill="#0a0e14"/>
+  <text x="500" y="46" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">TELEMETRY GAP</text>
+  <line x1="410" y1="62" x2="590" y2="62" stroke="#21262d" stroke-width="1"/>
+
+  <g font-family="Consolas,monospace" font-size="13" font-weight="700" text-anchor="middle">
+    <rect x="300" y="90" width="400" height="58" rx="8" fill="#0f1f14" stroke="#3fb950" stroke-width="1.8"/>
+    <text x="500" y="116" fill="#e6edf3">4624</text>
+    <text x="500" y="136" fill="#3fb950" font-size="11">CONFIRMED</text>
+    <line x1="500" y1="148" x2="500" y2="170" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow10j)"/>
+
+    <rect x="300" y="172" width="400" height="58" rx="8" fill="#0f1f14" stroke="#3fb950" stroke-width="1.8"/>
+    <text x="500" y="198" fill="#e6edf3">TYPE 10</text>
+    <text x="500" y="218" fill="#3fb950" font-size="11">CONFIRMED</text>
+    <line x1="500" y1="230" x2="500" y2="252" stroke="#4b5563" stroke-width="1.8" marker-end="url(#arrow10j)"/>
+
+    <rect x="300" y="254" width="400" height="58" rx="8" fill="#0f1f14" stroke="#3fb950" stroke-width="1.8"/>
+    <text x="500" y="280" fill="#e6edf3">::1</text>
+    <text x="500" y="300" fill="#3fb950" font-size="11">CONFIRMED</text>
+  </g>
+
+  <line x1="500" y1="312" x2="500" y2="346" stroke="#8b949e" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <text x="530" y="334" font-family="Consolas,monospace" font-size="10.5" fill="#8b949e">cadeia interrompida</text>
+
+  <g font-family="Consolas,monospace" font-size="13" font-weight="700" text-anchor="middle">
+    <rect x="300" y="348" width="400" height="58" rx="8" fill="#15161a" stroke="#8b949e" stroke-width="1.8" stroke-dasharray="6 4"/>
+    <text x="500" y="374" fill="#e6edf3">ORIGINAL REMOTE SOURCE</text>
+    <text x="500" y="394" fill="#8b949e" font-size="11">NOT AVAILABLE</text>
+    <line x1="500" y1="406" x2="500" y2="428" stroke="#4b5563" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#arrow10j)"/>
+
+    <rect x="300" y="430" width="400" height="58" rx="8" fill="#15161a" stroke="#8b949e" stroke-width="1.8" stroke-dasharray="6 4"/>
+    <text x="500" y="456" fill="#e6edf3">TUNNEL PROCESS</text>
+    <text x="500" y="476" fill="#8b949e" font-size="11">NOT AVAILABLE</text>
+    <line x1="500" y1="488" x2="500" y2="510" stroke="#4b5563" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#arrow10j)"/>
+
+    <rect x="300" y="512" width="400" height="58" rx="8" fill="#1a1608" stroke="#d29922" stroke-width="1.8" stroke-dasharray="6 4"/>
+    <text x="500" y="538" fill="#e6edf3">REVERSE TUNNEL</text>
+    <text x="500" y="558" fill="#d29922" font-size="11">NOT CONFIRMED</text>
+  </g>
+
+  <rect x="250" y="640" width="500" height="70" rx="8" fill="#0d1421" stroke="#e6edf3" stroke-width="1.6"/>
+  <text x="500" y="670" font-family="Consolas,monospace" font-size="14" fill="#e6edf3" text-anchor="middle" font-weight="700">NOT AVAILABLE</text>
+  <text x="500" y="688" font-family="Consolas,monospace" font-size="13" fill="#8b949e" text-anchor="middle">≠</text>
+  <text x="500" y="704" font-family="Consolas,monospace" font-size="14" fill="#f0883e" text-anchor="middle" font-weight="700">NOT OBSERVED</text>
+
+  <text x="500" y="770" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">ausência de telemetria não é evidência negativa</text>
+</svg>

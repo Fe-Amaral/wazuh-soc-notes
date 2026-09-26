@@ -1,0 +1,90 @@
+<svg viewBox="0 0 1200 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow13j" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="1080" fill="#0a0e14"/>
+  <text x="600" y="46" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">INVESTIGATION DECISION TREE</text>
+  <line x1="460" y1="62" x2="740" y2="62" stroke="#21262d" stroke-width="1"/>
+
+  <g font-family="Consolas,monospace" font-size="12.5" font-weight="700" text-anchor="middle">
+    <rect x="450" y="84" width="300" height="42" rx="8" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="600" y="111" fill="#e6edf3">4624</text>
+    <line x1="600" y1="126" x2="600" y2="144" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow13j)"/>
+    <rect x="450" y="146" width="300" height="42" rx="8" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="600" y="173" fill="#e6edf3">TYPE 10</text>
+    <line x1="600" y1="188" x2="600" y2="206" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow13j)"/>
+    <rect x="450" y="208" width="300" height="42" rx="8" fill="#0d1421" stroke="#58a6ff" stroke-width="1.8"/>
+    <text x="600" y="235" fill="#e6edf3">::1</text>
+    <line x1="600" y1="250" x2="600" y2="268" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow13j)"/>
+    <rect x="450" y="270" width="300" height="50" rx="8" fill="#0f1f14" stroke="#3fb950" stroke-width="1.8"/>
+    <text x="600" y="293" fill="#e6edf3">REMOTEINTERACTIVE</text>
+    <text x="600" y="310" fill="#3fb950" font-size="9.5">CONFIRMED</text>
+    <line x1="600" y1="320" x2="600" y2="340" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow13j)"/>
+    <rect x="450" y="342" width="300" height="50" rx="8" fill="#1a1608" stroke="#d29922" stroke-width="2"/>
+    <text x="600" y="373" fill="#d29922" font-size="14">AUTHORIZED?</text>
+  </g>
+
+  <g font-family="Consolas,monospace" font-size="12" font-weight="700">
+    <line x1="520" y1="392" x2="200" y2="450" stroke="#3fb950" stroke-width="1.6" marker-end="url(#arrow13j)"/>
+    <text x="330" y="418" fill="#3fb950">YES</text>
+    <line x1="600" y1="392" x2="600" y2="450" stroke="#f85149" stroke-width="1.6" marker-end="url(#arrow13j)"/>
+    <text x="614" y="425" fill="#f85149">NO</text>
+    <line x1="680" y1="392" x2="1000" y2="450" stroke="#d29922" stroke-width="2.4" marker-end="url(#arrow13j)"/>
+    <text x="830" y="418" fill="#d29922">UNKNOWN</text>
+  </g>
+
+  <g font-family="Consolas,monospace" font-size="11.5" text-anchor="middle">
+    <!-- YES -->
+    <rect x="60" y="452" width="280" height="56" rx="8" fill="#0f1f14" stroke="#3fb950" stroke-width="1.6"/>
+    <text x="200" y="486" fill="#e6edf3" font-weight="700">VALIDATE SUPPORTING TELEMETRY</text>
+    <line x1="200" y1="508" x2="200" y2="530" stroke="#4b5563" stroke-width="1.4" marker-end="url(#arrow13j)"/>
+    <rect x="60" y="532" width="280" height="64" rx="8" fill="#0f1f14" stroke="#3fb950" stroke-width="1.6"/>
+    <text x="200" y="560" fill="#e6edf3" font-weight="700">CONTEXTUAL FP / EXPECTED ACTIVITY</text>
+    <text x="200" y="580" fill="#8b949e" font-size="10">if evidence supports</text>
+
+    <!-- NO -->
+    <rect x="460" y="452" width="280" height="72" rx="8" fill="#1a1214" stroke="#f85149" stroke-width="1.6"/>
+    <text x="600" y="484" fill="#e6edf3" font-weight="700">INVESTIGATE AS</text>
+    <text x="600" y="504" fill="#e6edf3" font-weight="700">UNAUTHORIZED ACTIVITY</text>
+
+    <!-- UNKNOWN -->
+    <rect x="860" y="452" width="280" height="128" rx="8" fill="#1a1608" stroke="#d29922" stroke-width="2.4"/>
+    <text x="1000" y="478" fill="#d29922" font-weight="700">CORRELATE TELEMETRY</text>
+    <text x="1000" y="504" fill="#e6edf3">PROCESS TREE</text>
+    <text x="1000" y="524" fill="#e6edf3">NETWORK</text>
+    <text x="1000" y="544" fill="#e6edf3">TERMINAL SERVICES</text>
+    <text x="1000" y="564" fill="#e6edf3">ACCOUNT CONTEXT</text>
+    <line x1="1000" y1="580" x2="1000" y2="602" stroke="#4b5563" stroke-width="1.4" marker-end="url(#arrow13j)"/>
+    <rect x="860" y="604" width="280" height="46" rx="8" fill="#0d1421" stroke="#d29922" stroke-width="1.8"/>
+    <text x="1000" y="633" fill="#d29922" font-weight="700">TUNNEL EVIDENCE?</text>
+    <line x1="1000" y1="650" x2="1000" y2="672" stroke="#4b5563" stroke-width="1.4" marker-end="url(#arrow13j)"/>
+
+    <rect x="860" y="674" width="280" height="44" rx="8" fill="#1a1214" stroke="#f85149" stroke-width="1.6"/>
+    <text x="1000" y="701" fill="#e6edf3" font-weight="700">YES: ESCALATE</text>
+    <rect x="860" y="730" width="280" height="56" rx="8" fill="#15161a" stroke="#8b949e" stroke-width="1.6"/>
+    <text x="1000" y="754" fill="#e6edf3" font-weight="700">NO, SEARCHED</text>
+    <text x="1000" y="774" fill="#8b949e">NOT OBSERVED</text>
+    <rect x="860" y="798" width="280" height="56" rx="8" fill="#15161a" stroke="#8b949e" stroke-width="1.6" stroke-dasharray="5 3"/>
+    <text x="1000" y="822" fill="#e6edf3" font-weight="700">TELEMETRY MISSING</text>
+    <text x="1000" y="842" fill="#8b949e">NOT AVAILABLE</text>
+  </g>
+
+  <g font-family="Consolas,monospace" text-anchor="middle">
+    <rect x="80" y="660" width="700" height="200" rx="10" fill="#0d1421" stroke="#e6edf3" stroke-width="1.8"/>
+    <text x="430" y="694" fill="#e6edf3" font-size="13" font-weight="700" letter-spacing="0.5">CASO #010 (CAMINHO UNKNOWN)</text>
+    <line x1="110" y1="708" x2="750" y2="708" stroke="#21262d"/>
+    <text x="430" y="742" fill="#d29922" font-size="13" font-weight="700">AUTHORIZATION = NOT CONFIRMED</text>
+    <text x="430" y="776" fill="#d29922" font-size="13" font-weight="700">REVERSE TUNNEL = NOT CONFIRMED</text>
+    <text x="430" y="810" fill="#d29922" font-size="13" font-weight="700">COMPROMISE = NOT CONFIRMED</text>
+    <text x="430" y="842" fill="#8b949e" font-size="11">telemetria complementar NOT AVAILABLE IN CASE SOURCE</text>
+  </g>
+
+  <g font-family="Consolas,monospace" font-size="14" font-weight="700" text-anchor="middle">
+    <text x="430" y="920" fill="#e6edf3">UNKNOWN  ≠  UNAUTHORIZED</text>
+    <text x="430" y="952" fill="#e6edf3">MISSING TELEMETRY  ≠  FALSE POSITIVE</text>
+  </g>
+
+  <text x="600" y="1030" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">a árvore preserva a incerteza, em vez de resolvê-la por suposição</text>
+</svg>

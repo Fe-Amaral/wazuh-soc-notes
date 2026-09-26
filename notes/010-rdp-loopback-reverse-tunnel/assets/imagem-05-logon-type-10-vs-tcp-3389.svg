@@ -1,0 +1,39 @@
+<svg viewBox="0 0 1100 640" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1100" height="640" fill="#0a0e14"/>
+  <text x="550" y="46" font-family="Consolas,monospace" font-size="15" fill="#8b949e" text-anchor="middle" letter-spacing="3">LOGON TYPE 10 ≠ TCP/3389 EVIDENCE</text>
+  <line x1="380" y1="62" x2="720" y2="62" stroke="#21262d" stroke-width="1"/>
+
+  <text x="290" y="106" font-family="Consolas,monospace" font-size="13.5" fill="#3fb950" text-anchor="middle" font-weight="700" letter-spacing="1">AUTHENTICATION TELEMETRY</text>
+  <g font-family="Consolas,monospace">
+    <rect x="70" y="126" width="440" height="300" rx="10" fill="#0f1f14" stroke="#3fb950" stroke-width="1.8"/>
+    <line x1="100" y1="146" x2="480" y2="146" stroke="#1f3a24"/>
+    <text x="100" y="184" font-size="13" fill="#e6edf3">Event 4624</text>
+    <text x="440" y="184" font-size="11" fill="#3fb950" text-anchor="end" font-weight="700">CONFIRMED</text>
+    <text x="100" y="230" font-size="13" fill="#e6edf3">Logon Type 10</text>
+    <text x="440" y="230" font-size="11" fill="#3fb950" text-anchor="end" font-weight="700">CONFIRMED</text>
+    <text x="100" y="276" font-size="13" fill="#e6edf3">RemoteInteractive</text>
+    <text x="440" y="276" font-size="11" fill="#3fb950" text-anchor="end" font-weight="700">CONFIRMED</text>
+    <text x="290" y="380" font-size="11.5" fill="#8b949e" text-anchor="middle">descreve uma sessão de autenticação</text>
+  </g>
+
+  <text x="810" y="106" font-family="Consolas,monospace" font-size="13.5" fill="#8b949e" text-anchor="middle" font-weight="700" letter-spacing="1">NETWORK TELEMETRY</text>
+  <g font-family="Consolas,monospace">
+    <rect x="590" y="126" width="440" height="300" rx="10" fill="#15161a" stroke="#8b949e" stroke-width="1.8" stroke-dasharray="6 4"/>
+    <line x1="620" y1="146" x2="1000" y2="146" stroke="#2a2d33"/>
+    <text x="620" y="184" font-size="13" fill="#e6edf3">TCP/3389 Connection</text>
+    <text x="1000" y="184" font-size="11" fill="#8b949e" text-anchor="end" font-weight="700">NOT AVAILABLE</text>
+    <text x="620" y="230" font-size="13" fill="#e6edf3">Source Endpoint</text>
+    <text x="1000" y="230" font-size="11" fill="#8b949e" text-anchor="end" font-weight="700">NOT AVAILABLE</text>
+    <text x="620" y="276" font-size="13" fill="#e6edf3">Destination Endpoint</text>
+    <text x="1000" y="276" font-size="11" fill="#8b949e" text-anchor="end" font-weight="700">NOT AVAILABLE</text>
+    <text x="620" y="322" font-size="13" fill="#e6edf3">Session Path</text>
+    <text x="1000" y="322" font-size="11" fill="#8b949e" text-anchor="end" font-weight="700">NOT AVAILABLE</text>
+  </g>
+
+  <rect x="220" y="470" width="660" height="70" rx="8" fill="#0d1421" stroke="#e6edf3" stroke-width="1.6"/>
+  <text x="550" y="500" font-family="Consolas,monospace" font-size="14" fill="#e6edf3" text-anchor="middle" font-weight="700">REMOTEINTERACTIVE LOGON</text>
+  <text x="550" y="518" font-family="Consolas,monospace" font-size="13" fill="#8b949e" text-anchor="middle">≠</text>
+  <text x="550" y="534" font-family="Consolas,monospace" font-size="14" fill="#f0883e" text-anchor="middle" font-weight="700">NETWORK SESSION RECONSTRUCTION</text>
+
+  <text x="550" y="590" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">o 4624 não substitui firewall, Sysmon de rede, EDR ou captura de pacotes</text>
+</svg>
