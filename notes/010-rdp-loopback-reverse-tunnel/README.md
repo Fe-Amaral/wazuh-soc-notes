@@ -4,6 +4,8 @@
 
 ![Capa do case](assets/imagem-01-capa.svg)
 
+🔗 [Publicado no LinkedIn](https://www.linkedin.com/posts/felipe-r-amaral_wazuh-soc-ir-share-7509762062848307200-2kst)
+
 ---
 
 ## Executive Summary
